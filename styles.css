@@ -144,9 +144,10 @@ header h1 a {
 
 #about-section {
     margin: 40px auto;
-    max-width: 600px;
+    max-width: 1000px;
     padding: 20px;
-    background-color: #f4f4f4;
+    color: #ffffff;
+    background-color: #afafaf00;
     border-radius: 10px;
     text-align: center;
 }
@@ -161,6 +162,22 @@ header h1 a {
 #about-section h2 {
     font-size: 2.2em;
     margin-bottom: 20px;
+}
+
+
+/* Image grid styling */
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.image-grid img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -267,52 +284,60 @@ footer {
     color: #666;
 }
 
-/* Contact form styling */
-.contact-form {
-    max-width: 600px;
+/* Contact Section */
+#contact-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Center Contact Methods List */
+.contact-methods ul {
+    list-style: none;
+    padding: 0;
     margin: 0 auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center; /* Ensure list items are centered */
 }
 
-.contact-form label {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 10px;
+.contact-methods li {
+    font-size: 18px;
+    margin: 10px 0;
+    width: 100%; /* Take full width to center child elements */
+    text-align: center;
+}
+
+.contact-methods a {
     color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+    display: inline-block;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+.contact-methods a:hover {
+    color: #007BFF;
+    border-color: #007BFF;
 }
 
-.contact-form textarea {
-    resize: vertical;
+/* Icon Styling */
+.contact-methods i {
+    margin-right: 10px;
+    color: #007BFF;
+    font-size: 20px;
 }
 
-.contact-form .btn-submit {
-    display: block;
-    width: 100%;
+/* Footer Styling */
+footer {
+    padding: 20px;
+    text-align: center;
     background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    cursor: pointer;
+    color: white;
 }
 
-.contact-form .btn-submit:hover {
-    background-color: #444;
+footer p {
+    margin: 0;
 }
 
 /* Media Queries for responsiveness */
