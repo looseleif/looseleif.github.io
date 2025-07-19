@@ -1,86 +1,85 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Teams</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
 
         header {
             text-align: center;
-            padding: 30px 0;
-            background: linear-gradient(135deg, #333, #333);
-            color: #fff;
+            padding: 40px 20px 20px;
         }
 
         header h1 a {
             text-decoration: none;
             color: #fff;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         header p {
+            font-size: 1.1em;
+            color: #aaa;
             margin-top: 10px;
-            font-size: 1.2em;
         }
 
-        header nav ul {
+        nav ul {
             list-style: none;
-            padding: 0;
             display: flex;
             justify-content: center;
-            margin: 20px 0 0;
+            gap: 25px;
+            padding: 0;
+            margin: 30px 0 0;
         }
 
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
+        nav a {
+            color: #fff;
             text-decoration: none;
-            color: #f0db4f;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-weight: 400;
+            font-size: 1em;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
         }
 
-        header nav ul li a:hover {
-            color: #ef933d;
+        nav a:hover {
+            opacity: 0.6;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
         }
 
         .team-card {
             display: flex;
             flex-wrap: wrap;
-            background-color: #fff;
+            background-color: #111;
             border-radius: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 0 15px rgba(255,255,255,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .team-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
         }
 
         .team-card img {
-            max-width: 35%;
+            width: 180px;
             height: auto;
             border-radius: 10px;
             margin-left: 20px;
@@ -97,49 +96,55 @@
 
         .team-card h3 {
             margin: 0 0 10px;
-            font-size: 1.8em;
-            color: #333;
+            font-size: 1.6em;
+            font-weight: 700;
+            text-transform: uppercase;
         }
 
         .team-card p {
-            margin: 10px 0;
+            margin: 8px 0;
             line-height: 1.6;
+            color: #ccc;
+            font-size: 0.95em;
+        }
+
+        .team-card p strong {
+            color: #fff;
         }
 
         footer {
             text-align: center;
-            padding: 15px 0;
-            background: #333;
-            color: #fff;
-            margin-top: 40px;
-            font-size: 0.9em;
+            padding: 20px;
+            background: #111;
+            color: #777;
+            font-size: 0.85em;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="index.html">Chase Anderson</a></h1>
-            <p>Making it Mad</p>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="socials.html">Socials</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1><a href="index.html">CHASE ANDERSON</a></h1>
+        <p>Making it Mad</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="socials.html">Socials</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="teams" class="container">
+
         <!-- HPE Supercomputing -->
         <div class="team-card">
             <div class="team-card-content">
                 <h3>HPC Engineering</h3>
                 <p><strong>Firmware Security Engineer</strong></p>
                 <p><strong>Jun 2022 – Present</strong></p>
-                <p>At HPE, I work on embedded firmware and security systems for Exascale Networking ASICs, supporting high-performance computing platforms. My focus includes hardware emulation, cryptographic protocols, continuous integration/testing (CI/CT), and code validation, collaborating with teams across Minnesota, California, and internationally. I contribute to secure boot flows, cryptographic primitives, and system verification, aiming to deliver resilient, high-efficiency solutions.</p>
+                <p>At HPE, I work on embedded firmware and security systems for Exascale Networking ASICs, supporting high-performance computing platforms. My focus includes hardware emulation, cryptographic protocols, continuous integration/testing (CI/CT), and code validation, collaborating with teams across Minnesota, California, and internationally.</p>
             </div>
             <img src="images/hpe.png" alt="HPE Image">
         </div>
@@ -150,7 +155,7 @@
                 <h3>CHOICE Robotics Lab</h3>
                 <p><strong>Graduate Researcher</strong></p>
                 <p><strong>Mar 2022 – Jul 2024</strong></p>
-                <p>At the University of Minnesota, I worked on robotic perception and manipulation, focusing on mechanical search in high-occlusion environments. I developed AGGRO, a deep reinforcement learning platform that improved target exploration and retrieval tasks. My work extended the Grasping the Invisible (GTI) and Image-Oriented Search and Grasp (IOSG) pipelines, combining open-source hardware and state-of-the-art visual models. This research became the basis of my Master’s thesis in Electronics Engineering.</p>
+                <p>At the University of Minnesota, I worked on robotic perception and manipulation, focusing on mechanical search in high-occlusion environments. I developed AGGRO, a deep reinforcement learning platform that improved target exploration and retrieval tasks, extending GTI and IOSG pipelines.</p>
             </div>
             <img src="images/choice.jpg" alt="Choice Robotics Lab Image">
         </div>
@@ -161,7 +166,7 @@
                 <h3>Canopy Systems</h3>
                 <p><strong>MVP Challenge Winner</strong></p>
                 <p><strong>Sep 2023 – Jun 2024</strong></p>
-                <p>With Canopy Systems, I worked on a sensor fusion platform for soil and nutrient monitoring, collaborating through the MinCorps MVP Challenge. Our team refined the hardware goals, evaluated market fit, and presented the technology at entrepreneurial events, gathering valuable insights for future development.</p>
+                <p>With Canopy Systems, I worked on a sensor fusion platform for soil and nutrient monitoring, collaborating through the MinCorps MVP Challenge. We refined hardware goals, evaluated market fit, and presented at entrepreneurial events, gathering insights for future development.</p>
             </div>
             <img src="images/canopy.png" alt="Canopy Systems Image">
         </div>
@@ -172,18 +177,18 @@
                 <h3>Senior Design 2023</h3>
                 <p><strong>Hardware and Product Lead</strong></p>
                 <p><strong>Sep 2023 – May 2024</strong></p>
-                <p>As team lead, I oversaw the development of a wearable cardiac monitoring system, addressing biomedical design, power management, and data communication. We used tools like GitHub, Altium Designer, and Onshape to coordinate hardware and software integration, delivering a functional device for live demonstration at the end of the project.</p>
+                <p>As team lead, I oversaw the development of a wearable cardiac monitoring system, addressing biomedical design, power management, and data communication. We coordinated using GitHub, Altium, and Onshape, delivering a functional device for live demonstration.</p>
             </div>
             <img src="images/senior.jpg" alt="Senior Design Image">
         </div>
 
-        <!-- IEEE Student Branch & Catalyst -->
+        <!-- IEEE Student Branch -->
         <div class="team-card">
             <div class="team-card-content">
                 <h3>IEEE Student Branch</h3>
                 <p><strong>Membership Coordinator, Chair, Treasurer</strong></p>
                 <p><strong>Sep 2021 – Sep 2024</strong></p>
-                <p>During my time with IEEE, I helped rebuild chapter engagement post-pandemic, increased industry collaboration, and led local and international initiatives. As president, I focused on creating hands-on technical events; as treasurer, I provided project mentorship and funding oversight. At the global level, I worked with IEEE Catalyst to host webinars supporting student chapters worldwide.</p>
+                <p>During IEEE, I rebuilt chapter engagement post-pandemic, increased industry collaboration, and led local/international initiatives. As president, I created hands-on technical events; as treasurer, I provided project mentorship and funding oversight, and globally, I supported IEEE Catalyst webinars.</p>
             </div>
             <img src="images/ieee.png" alt="IEEE Student Branch Image">
         </div>
@@ -192,21 +197,17 @@
         <div class="team-card">
             <div class="team-card-content">
                 <h3>Solar Vehicle Project</h3>
-                <p><strong>Infotainment & Telemetry Engineer, Photography and Video Production</strong></p>
+                <p><strong>Infotainment & Telemetry Engineer, Media Lead</strong></p>
                 <p><strong>Sep 2021 – Jun 2022</strong></p>
-                <p>As part of the University of Minnesota Solar Vehicle Project, I worked on firmware and hardware for two vehicle generations, focusing on the infotainment system and real-time telemetry. I designed and assembled a four-layer PCB using XBee, Bluetooth, and CAN communication, with backup systems like SD storage and supercapacitor-based UPS. I also supported team outreach through media production during FSGP and ASC competitions.</p>
+                <p>At the University of Minnesota Solar Vehicle Project, I worked on firmware and hardware for two vehicle generations, focusing on infotainment and telemetry. I designed a four-layer PCB with XBee, Bluetooth, and CAN, plus SD storage and supercapacitor-based UPS, while also leading team media production at competitions.</p>
             </div>
             <img src="images/solar.png" alt="Solar Vehicle Project Image">
         </div>
+
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Chase Anderson. All rights reserved.</p>
-        </div>
+        © 2025 Chase Anderson. All rights reserved.
     </footer>
 </body>
 </html>
-
-
-
