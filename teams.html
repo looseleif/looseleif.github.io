@@ -1,67 +1,213 @@
-<section id="teams" class="container">
-    <!-- HPE Supercomputing -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>HPC Engineering</h3>
-            <p><strong>Firmware Security Engineer</strong></p>
-            <p><strong>Jun 2022 – Present</strong></p>
-            <p>At HPE, I work on embedded firmware and security systems for Exascale Networking ASICs, supporting high-performance computing platforms. My focus includes hardware emulation, cryptographic protocols, continuous integration/testing (CI/CT), and code validation, collaborating with teams across Minnesota, California, and internationally. I contribute to secure boot flows, cryptographic primitives, and system verification, aiming to deliver resilient, high-efficiency solutions.</p>
-        </div>
-        <img src="images/hpe.png" alt="HPE Image">
-    </div>
 
-    <!-- CHOICE Robotics Lab -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>CHOICE Robotics</h3>
-            <p><strong>Graduate Researcher</strong></p>
-            <p><strong>Mar 2022 – Jul 2024</strong></p>
-            <p>At the University of Minnesota, I worked on robotic perception and manipulation, focusing on mechanical search in high-occlusion environments. I developed AGGRO, a deep reinforcement learning platform that improved target exploration and retrieval tasks. My work extended the Grasping the Invisible (GTI) and Image-Oriented Search and Grasp (IOSG) pipelines, combining open-source hardware and state-of-the-art visual models. This research became the basis of my Master’s thesis in Electronics Engineering.</p>
-        </div>
-        <img src="images/choice.jpg" alt="Choice Robotics Lab Image">
-    </div>
 
-    <!-- Canopy Systems -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>Canopy Systems</h3>
-            <p><strong>MVP Challenge Winner</strong></p>
-            <p><strong>Sep 2023 – Jun 2024</strong></p>
-            <p>With Canopy Systems, I worked on a sensor fusion platform for soil and nutrient monitoring, collaborating through the MinCorps MVP Challenge. Our team refined the hardware goals, evaluated market fit, and presented the technology at entrepreneurial events, gathering valuable insights for future development.</p>
-        </div>
-        <img src="images/canopy.png" alt="Canopy Systems Image">
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Teams</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-    <!-- Senior Design 2023 -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>Senior Design 2023</h3>
-            <p><strong>Hardware and Product Lead</strong></p>
-            <p><strong>Sep 2023 – May 2024</strong></p>
-            <p>As team lead, I oversaw the development of a wearable cardiac monitoring system, addressing biomedical design, power management, and data communication. We used tools like GitHub, Altium Designer, and Onshape to coordinate hardware and software integration, delivering a functional device for live demonstration at the end of the project.</p>
-        </div>
-        <img src="images/senior.jpg" alt="Senior Design Image">
-    </div>
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #333, #333);
+            color: #fff;
+        }
 
-    <!-- IEEE Student Branch & Catalyst -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>IEEE Student Branch</h3>
-            <p><strong>Membership Coordinator, Chair, Treasurer</strong></p>
-            <p><strong>Sep 2021 – Sep 2024</strong></p>
-            <p>During my time with IEEE, I helped rebuild chapter engagement post-pandemic, increased industry collaboration, and led local and international initiatives. As president, I focused on creating hands-on technical events; as treasurer, I provided project mentorship and funding oversight. At the global level, I worked with IEEE Catalyst to host webinars supporting student chapters worldwide.</p>
-        </div>
-        <img src="images/ieee.png" alt="IEEE Student Branch Image">
-    </div>
+        header h1 a {
+            text-decoration: none;
+            color: #fff;
+        }
 
-    <!-- Solar Vehicle Project -->
-    <div class="team-card">
-        <div class="team-card-content">
-            <h3>Solar Vehicle Project</h3>
-            <p><strong>Infotainment & Telemetry Engineer, Photography and Video Production</strong></p>
-            <p><strong>Sep 2021 – Jun 2022</strong></p>
-            <p>As part of the University of Minnesota Solar Vehicle Project, I worked on firmware and hardware for two vehicle generations, focusing on the infotainment system and real-time telemetry. I designed and assembled a four-layer PCB using XBee, Bluetooth, and CAN communication, with backup systems like SD storage and supercapacitor-based UPS. I also supported team outreach through media production during FSGP and ASC competitions.</p>
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #f0db4f;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ef933d;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .team-card {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card img {
+            max-width: 35%;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 20px;
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+
+        .team-card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .team-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .team-card p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Chase Anderson</a></h1>
+            <p>Engineering Communication</p>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                </ul>
+            </nav>
         </div>
-        <img src="images/solar.png" alt="Solar Vehicle Project Image">
-    </div>
-</section>
+    </header>
+
+    <section id="teams" class="container">
+        <!-- HPE Supercomputing -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>HPC Engineering</h3>
+                <p><strong>Firmware Security Engineer</strong></p>
+                <p><strong>Jun 2022 – Present</strong></p>
+                <p>At HPE, I work on embedded firmware and security systems for Exascale Networking ASICs, supporting high-performance computing platforms. My focus includes hardware emulation, cryptographic protocols, continuous integration/testing (CI/CT), and code validation, collaborating with teams across Minnesota, California, and internationally. I contribute to secure boot flows, cryptographic primitives, and system verification, aiming to deliver resilient, high-efficiency solutions.</p>
+            </div>
+            <img src="images/hpe.png" alt="HPE Image">
+        </div>
+
+        <!-- CHOICE Robotics Lab -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>CHOICE Robotics Lab</h3>
+                <p><strong>Graduate Researcher</strong></p>
+                <p><strong>Mar 2022 – Jul 2024</strong></p>
+                <p>At the University of Minnesota, I worked on robotic perception and manipulation, focusing on mechanical search in high-occlusion environments. I developed AGGRO, a deep reinforcement learning platform that improved target exploration and retrieval tasks. My work extended the Grasping the Invisible (GTI) and Image-Oriented Search and Grasp (IOSG) pipelines, combining open-source hardware and state-of-the-art visual models. This research became the basis of my Master’s thesis in Electronics Engineering.</p>
+            </div>
+            <img src="images/choice.jpg" alt="Choice Robotics Lab Image">
+        </div>
+
+        <!-- Canopy Systems -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>Canopy Systems</h3>
+                <p><strong>MVP Challenge Winner</strong></p>
+                <p><strong>Sep 2023 – Jun 2024</strong></p>
+                <p>With Canopy Systems, I worked on a sensor fusion platform for soil and nutrient monitoring, collaborating through the MinCorps MVP Challenge. Our team refined the hardware goals, evaluated market fit, and presented the technology at entrepreneurial events, gathering valuable insights for future development.</p>
+            </div>
+            <img src="images/canopy.png" alt="Canopy Systems Image">
+        </div>
+
+        <!-- Senior Design 2023 -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>Senior Design 2023</h3>
+                <p><strong>Hardware and Product Lead</strong></p>
+                <p><strong>Sep 2023 – May 2024</strong></p>
+                <p>As team lead, I oversaw the development of a wearable cardiac monitoring system, addressing biomedical design, power management, and data communication. We used tools like GitHub, Altium Designer, and Onshape to coordinate hardware and software integration, delivering a functional device for live demonstration at the end of the project.</p>
+            </div>
+            <img src="images/senior.jpg" alt="Senior Design Image">
+        </div>
+
+        <!-- IEEE Student Branch & Catalyst -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>IEEE Student Branch</h3>
+                <p><strong>Membership Coordinator, Chair, Treasurer</strong></p>
+                <p><strong>Sep 2021 – Sep 2024</strong></p>
+                <p>During my time with IEEE, I helped rebuild chapter engagement post-pandemic, increased industry collaboration, and led local and international initiatives. As president, I focused on creating hands-on technical events; as treasurer, I provided project mentorship and funding oversight. At the global level, I worked with IEEE Catalyst to host webinars supporting student chapters worldwide.</p>
+            </div>
+            <img src="images/ieee.png" alt="IEEE Student Branch Image">
+        </div>
+
+        <!-- Solar Vehicle Project -->
+        <div class="team-card">
+            <div class="team-card-content">
+                <h3>Solar Vehicle Project</h3>
+                <p><strong>Infotainment & Telemetry Engineer, Photography and Video Production</strong></p>
+                <p><strong>Sep 2021 – Jun 2022</strong></p>
+                <p>As part of the University of Minnesota Solar Vehicle Project, I worked on firmware and hardware for two vehicle generations, focusing on the infotainment system and real-time telemetry. I designed and assembled a four-layer PCB using XBee, Bluetooth, and CAN communication, with backup systems like SD storage and supercapacitor-based UPS. I also supported team outreach through media production during FSGP and ASC competitions.</p>
+            </div>
+            <img src="images/solar.png" alt="Solar Vehicle Project Image">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Chase Anderson. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
