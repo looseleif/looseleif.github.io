@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Teams</title>
+    <title>Portfolio - Projects</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -61,7 +61,7 @@
             padding: 20px;
         }
 
-        .team-card {
+        .project-card {
             display: flex;
             flex-wrap: wrap;
             background-color: #fff;
@@ -72,34 +72,34 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .team-card:hover {
+        .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .team-card img {
-            max-width: 35%; /* Controls the width relative to the card */
-            height: auto; /* Ensures the height adjusts proportionally */
+        .project-card img {
+            max-width: 35%;
+            height: auto;
             border-radius: 10px;
-            margin-left: 20px;
-            flex-shrink: 0; /* Prevents the image from shrinking */
-            object-fit: contain; /* Ensures the image is not cropped or stretched */
+            margin-right: 20px;
+            flex-shrink: 0;
+            object-fit: contain;
         }
 
-        .team-card-content {
+        .project-card-content {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        .team-card h3 {
+        .project-card h3 {
             margin: 0 0 10px;
             font-size: 1.8em;
             color: #333;
         }
 
-        .team-card p {
+        .project-card p {
             margin: 10px 0;
             line-height: 1.6;
         }
@@ -131,74 +131,37 @@
         </div>
     </header>
 
-    <section id="teams" class="container">
-        <!-- HPE Supercomputing -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>HPE Supercomputing</h3>
-                <p><strong>Firmware Security Engineer</strong></p>
-                <p><strong>Jun 2022 – Present</strong></p>
-                <p>At HPE, I work on embedded firmware and security systems for Exascale Networking ASICs, supporting high-performance computing platforms. My focus includes hardware emulation, cryptographic protocols, continuous integration/testing (CI/CT), and code validation, collaborating with teams across Minnesota, California, and internationally. I contribute to secure boot flows, cryptographic primitives, and system verification, aiming to deliver resilient, high-efficiency solutions.</p>
+    <section id="projects" class="container">
+
+        <!-- Example Project (repeat as needed) -->
+        <div class="project-card">
+            <img src="images/fan.gif" alt="FAN Project Image">
+            <div class="project-card-content">
+                <h3>FAN (Follow Anything Now)</h3>
+                <p><strong>Aug 2024 – Present</strong></p>
+                <p>FAN is a real-time object tracking and control system combining vision models with robotic actuation. Using lightweight hardware (like Raspberry Pi and microcontrollers) and state-of-the-art segmentation (SAM2, YOLOv8), FAN enables small robots to visually lock onto and follow selected objects or people, demonstrating portable visual intelligence without cloud dependency.</p>
             </div>
-            <img src="images/hpe.png" alt="HPE Image">
         </div>
 
-        <!-- CHOICE Robotics Lab -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>CHOICE Robotics Lab</h3>
-                <p><strong>Graduate Researcher</strong></p>
-                <p><strong>Mar 2022 – Jul 2024</strong></p>
-                <p>At the University of Minnesota, I worked on robotic perception and manipulation, focusing on mechanical search in high-occlusion environments. I developed AGGRO, a deep reinforcement learning platform that improved target exploration and retrieval tasks. My work extended the Grasping the Invisible (GTI) and Image-Oriented Search and Grasp (IOSG) pipelines, combining open-source hardware and state-of-the-art visual models. This research became the basis of my Master’s thesis in Electronics Engineering.</p>
+        <div class="project-card">
+            <img src="images/synctank.gif" alt="Sync Tank Project Image">
+            <div class="project-card-content">
+                <h3>Sync Tank</h3>
+                <p><strong>Sep 2024 – Present</strong></p>
+                <p>Sync Tank is a combined hardware-software system for monitoring small ecosystems, such as aquariums or terrariums. It uses AI models for environmental recognition (fish, water clarity, plant health) and integrates with microcontrollers for monitoring temperature, pH, and water levels. The system outputs actionable alerts and logs, aiming to bridge environmental sensing with autonomous observation.</p>
             </div>
-            <img src="images/choice.jpg" alt="Choice Robotics Lab Image">
         </div>
 
-        <!-- Canopy Systems -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>Canopy Systems</h3>
-                <p><strong>MVP Challenge Winner</strong></p>
-                <p><strong>Sep 2023 – Jun 2024</strong></p>
-                <p>With Canopy Systems, I worked on a sensor fusion platform for soil and nutrient monitoring, collaborating through the MinCorps MVP Challenge. Our team refined the hardware goals, evaluated market fit, and presented the technology at entrepreneurial events, gathering valuable insights for future development.</p>
+        <div class="project-card">
+            <img src="images/cocktail.gif" alt="Cocktail Party Project Image">
+            <div class="project-card-content">
+                <h3>Cocktail Party</h3>
+                <p><strong>Jul 2024 – Present</strong></p>
+                <p>The Cocktail Party is an experimental social game platform exploring multi-agent communication using large language models. It simulates complex conversation dynamics, letting human players interact with AI agents in real time, focusing on information propagation, deception, and detection. Built in Unity, the project integrates LLM-based agents, live dialogue systems, and networked play.</p>
             </div>
-            <img src="images/canopy.png" alt="Canopy Systems Image">
         </div>
 
-        <!-- Senior Design 2023 -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>Senior Design 2023</h3>
-                <p><strong>Hardware and Product Lead</strong></p>
-                <p><strong>Sep 2023 – May 2024</strong></p>
-                <p>As team lead, I oversaw the development of a wearable cardiac monitoring system, addressing biomedical design, power management, and data communication. We used tools like GitHub, Altium Designer, and Onshape to coordinate hardware and software integration, delivering a functional device for live demonstration at the end of the project.</p>
-            </div>
-            <img src="images/senior.jpg" alt="Senior Design Image">
-        </div>
-
-        <!-- IEEE Student Branch & Catalyst -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>IEEE Student Branch</h3>
-                <p><strong>Membership Coordinator, Chair, Treasurer</strong></p>
-                <p><strong>Sep 2021 – Sep 2024</strong></p>
-                <p>During my time with IEEE, I helped rebuild chapter engagement post-pandemic, increased industry collaboration, and led local and international initiatives. As president, I focused on creating hands-on technical events; as treasurer, I provided project mentorship and funding oversight. At the global level, I worked with IEEE Catalyst to host webinars supporting student chapters worldwide.</p>
-            </div>
-            <img src="images/ieee.png" alt="IEEE Student Branch Image">
-        </div>
-
-        <!-- Solar Vehicle Project -->
-        <div class="team-card">
-            <div class="team-card-content">
-                <h3>Solar Vehicle Project</h3>
-                <p><strong>Infotainment & Telemetry Engineer, Photography and Video Production</strong></p>
-                <p><strong>Sep 2021 – Jun 2022</strong></p>
-                <p>As part of the University of Minnesota Solar Vehicle Project, I worked on firmware and hardware for two vehicle generations, focusing on the infotainment system and real-time telemetry. I designed and assembled a four-layer PCB using XBee, Bluetooth, and CAN communication, with backup systems like SD storage and supercapacitor-based UPS. I also supported team outreach through media production during FSGP and ASC competitions.</p>
-            </div>
-            <img src="images/solar.png" alt="Solar Vehicle Project Image">
-        </div>
     </section>
-
 
     <footer>
         <div class="container">
