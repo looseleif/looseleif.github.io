@@ -3,16 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Home</title>
+    <title>Chase Anderson - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            height: 100%;
+        }
+        .gif-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .gif-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+        .overlay h1 {
+            font-size: 3em;
+            margin: 0.2em 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .overlay p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            opacity: 0.85;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1.5em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd166;
+        }
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <!-- Fullscreen GIF background with specific ID -->
-    <div id="overlay" class="gif-container">
-        <img src="images/sauce.gif" alt="Background GIF" class="about-gif">
-        <!-- Overlay content -->
+    <div class="gif-container">
+        <img src="images/sauce.gif" alt="Background GIF">
         <div class="overlay">
             <h1>Chase Anderson</h1>
             <p>Making it Mad</p>
@@ -26,12 +89,8 @@
             </nav>
         </div>
     </div>
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Chase Anderson. All rights reserved.</p>
-        </div>
+        <p>© 2025 Chase Anderson. All rights reserved.</p>
     </footer>
 </body>
 </html>
