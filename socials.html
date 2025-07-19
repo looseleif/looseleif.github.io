@@ -3,46 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> looseleif </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>looseleif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 0;
+            margin: 30px 0 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1em;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .contact-methods ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .contact-methods li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-methods i {
+            margin-right: 10px;
+            font-size: 1.5em;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-methods a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: opacity 0.3s;
+        }
+
+        .contact-methods a:hover {
+            opacity: 0.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #777;
+            font-size: 0.85em;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div id="header" class="container">
-            <h1><a href="index.html">Chase Anderson</a></h1>
-            <p>Making it Mad</p>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="socials.html">Socials</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>    
+        <h1><a href="index.html">CHASE ANDERSON</a></h1>
+        <p>Making it Mad</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="contact-section" class="container">
-        <h2>Great to meet you!</h2>
-        <p>Reach out to me through any of the methods below</p>
+        <h2>Great to Meet You</h2>
+        <p>Reach out to me through any of the methods below.</p>
 
         <div class="contact-methods">
             <ul>
                 <li><i class="fab fa-github"></i> <a href="https://github.com/looseleif">looseleif</a></li>
                 <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/chaseleifanderson">Chase Anderson</a></li>
                 <li><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@looselief">@looselief</a></li>
-                <li><i class="fab fa-x"></i> <a href="https://x.com/loosele1f">@loosele1f</a></li>
+                <li><i class="fab fa-x-twitter"></i> <a href="https://x.com/loosele1f">@loosele1f</a></li>
                 <li><i class="fab fa-discord"></i> <a href="https://discord.com/">looseleif</a></li>
             </ul>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Chase Anderson. All rights reserved.</p>
-        </div>
+        © 2025 Chase Anderson. All rights reserved.
     </footer>
 </body>
 </html>
