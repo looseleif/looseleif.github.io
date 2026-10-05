@@ -1575,8 +1575,8 @@ window.portfolioProjects = [
     "tint": "#191817",
     "page": "project-open-sauce.html",
     "paragraphs": [
-      "A collection of Open Sauce demonstrations, builds, and event photos, organized by year.",
-      "In 2024 I presented AGGRO, aWear, and The Feedback Loop."
+      "Present Sync Tank through demonstrations of interactive robotics, networked cameras, and real-time embedded processing.",
+      "Daly City / San Mateo, California. Event history covers 2024, 2025, and 2026 so far."
     ],
     "stills": [
       0,
@@ -1584,16 +1584,10 @@ window.portfolioProjects = [
       2,
       3,
       4,
+      5,
       6,
       7,
-      8,
-      9,
-      10,
-      12,
-      13,
-      14,
-      15,
-      16
+      8
     ]
   },
   {
@@ -1679,15 +1673,19 @@ window.portfolioProjects = [
     "tint": "#191817",
     "page": "project-maker-faire.html",
     "paragraphs": [
-      "A collection of Maker Faire demonstrations, builds, and event photos, organized by year.",
-      "The 2024 collection includes AGGRO, aWear, and The Feedback Loop."
+      "Present Sync Tank and explain how its robotics, camera network, and embedded software connect. Share the build process through hands-on demonstrations and conversations with visitors.",
+      "Mare Island / Vallejo, California. Event history covers 2024, 2025, and 2026 so far."
     ],
     "stills": [
       0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
