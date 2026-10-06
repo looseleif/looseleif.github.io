@@ -141,3 +141,26 @@ video::-webkit-media-controls { display:none !important; }
   .cinematic-showcase .system-slide>.software-stage { height:300px; }
 }
 @media(prefers-reduced-motion:reduce) { .composition-tile img { transition:none; } }
+
+/* The project itself remains visible behind the case study as it is read. */
+.has-project-background { background:#090909; isolation:isolate; }
+.project-background { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none; background:#090909; }
+.project-background>video,.project-background>img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.85; }
+.project-background::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#070707d9,#070707bd 60%,#070707b8),linear-gradient(0deg,#07070780,transparent 45%); }
+.has-project-background .site-header { background:#09090980; }
+.has-project-background .case-intro { min-height:70vh; padding-top:45px; }
+.has-project-background .case-summary { text-shadow:0 2px 12px #000; }
+.has-project-background main>section { position:relative; }
+.has-project-background .case-deck { color:#fff; }
+.has-project-background footer { background:#090909a6; }
+.thesis-feature { margin:12px 0 45px; padding:30px; max-width:920px; background:#101010c9; border:1px solid #ffffff25; }
+.thesis-feature h2 { font-size:32px; margin:8px 0 15px; }
+.thesis-feature>p:not(.eyebrow) { max-width:760px; color:#ddd; }
+.thesis-feature .text-link { display:inline-block; margin:12px 0; }
+.thesis-feature .thesis-degree { font:12px/1.7 var(--mono); color:#aaa; margin-top:18px; }
+@media(max-width:700px) {
+  .has-project-background .case-intro { min-height:0; padding-top:30px; }
+  .project-background::after { background:#070707c9; }
+  .thesis-feature { padding:22px 18px; }
+}
+@media print { .project-background { display:none; } }

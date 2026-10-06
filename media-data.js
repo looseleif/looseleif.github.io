@@ -635,6 +635,10 @@ window.portfolioProjects = [
     ],
     "links": [
       {
+        "label": "Master's thesis",
+        "url": "https://conservancy.umn.edu/items/a0cb6982-84e6-4fb9-bf83-e43d46128791"
+      },
+      {
         "label": "Related research: IOSG",
         "url": "https://arxiv.org/abs/2308.05821"
       },
