@@ -19,7 +19,7 @@
     if (!visible || document.hidden || galleryOpen) return;
     const durations = [...slides[index].querySelectorAll('.project-loop')].map(video => {
       const clip = (window.portfolioSemantics || {})[video.dataset.src];
-      return clip ? (clip.duration / clip.playbackRate + 2) * 1000 : 0;
+      return clip ? (clip.duration / window.portfolioMotion.rateFor(video.dataset.src) + 2) * 1000 : 0;
     });
     // Every visible recording gets time to finish at its actual playback speed.
     const delay = Math.max(12000, ...durations);

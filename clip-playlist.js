@@ -6,8 +6,7 @@
     let index = 0;
     const footer = document.createElement('div');footer.className = 'recording-navigation';
     const label = document.createElement('p');
-    const next = document.createElement('button');next.type = 'button';next.textContent = 'Next recording';
-    footer.append(label,next);group.after(footer);
+    footer.append(label);group.after(footer);
     function show(nextIndex) {
       index = (nextIndex + clips.length) % clips.length;
       clips.forEach((clip,i) => {
@@ -25,7 +24,6 @@
       if (i) video.preload = 'none';
       video.addEventListener('ended', () => show(index + 1));
     });
-    next.addEventListener('click', () => show(index + 1));
     show(0);
   });
 })();

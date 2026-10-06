@@ -100,6 +100,10 @@ body:has(.case-intro) .focused-reel figcaption { padding-inline:0; }
 @media(prefers-reduced-motion:reduce) { .cinematic-showcase .reel-slide,.work-showcase .reel-slide { animation:none; } }
 
 /* A small visual narrative: one main view and two complementary details. */
+video::-webkit-media-controls { display:none !important; }
+.clip-controls,.clip-chapters,.motion-control { display:none !important; }
+.clip-player>.motion-fallback { display:block; width:100%; max-height:70vh; object-fit:contain; }
+.gallery-stage>.motion-fallback { max-width:100%; max-height:75vh; object-fit:contain; }
 .project-composition { margin:0; min-width:0; }
 .composition-grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:clamp(320px,36vw,500px) 190px; gap:6px; }
 .composition-tile { position:relative; display:block; min-width:0; min-height:0; overflow:hidden; background:#141414; }

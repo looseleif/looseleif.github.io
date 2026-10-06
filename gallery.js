@@ -1,7 +1,6 @@
 (() => {
   const projects = window.portfolioProjects || [];
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = reducedMotion.matches;
+  const paused = false;
   let dialogOpen = false;
   const loops = [...document.querySelectorAll('.project-loop')];
   const visible = new Set();
@@ -10,7 +9,7 @@
       if (!paused && !dialogOpen && !document.hidden && visible.has(video) && !video.closest('[hidden]')) {
         video.autoplay = true;
         if (!video.getAttribute('src')) video.src = video.dataset.src;
-        if (video.paused) video.play().catch(() => {});
+        window.portfolioMotion.play(video);
       } else { video.autoplay = false;video.pause(); }
     });
   }
@@ -19,24 +18,10 @@
     syncMotion();
   }, { threshold: 0.12 });
   loops.forEach(video => {
-    const rate = (window.portfolioSemantics || {})[video.dataset.src || video.getAttribute('src')]?.playbackRate || 0.65;
-    video.defaultMuted = true;video.muted = true;video.playsInline = true;
-    video.defaultPlaybackRate = rate; video.playbackRate = rate;
+    window.portfolioMotion.configure(video, video.dataset.src || video.getAttribute('src'));
     video.addEventListener('canplay', syncMotion);
     observer.observe(video);
   });
-  const motionButton = document.querySelector('.motion-control');
-  function updateMotionButton() {
-    if (!motionButton) return;
-    motionButton.textContent = paused ? 'Play motion ▷' : 'Pause motion Ⅱ';
-    motionButton.setAttribute('aria-pressed', String(paused));
-  }
-  if (motionButton) {
-    motionButton.hidden = false;
-    updateMotionButton();
-    motionButton.addEventListener('click', () => { paused = !paused; updateMotionButton(); syncMotion(); });
-  }
-  reducedMotion.addEventListener('change', event => { paused = event.matches; updateMotionButton(); syncMotion(); });
   document.addEventListener('visibilitychange', syncMotion);
   document.addEventListener('portfolio:system', syncMotion);
   window.addEventListener('pageshow', syncMotion);
@@ -97,9 +82,7 @@
     originalLink.href = item.original || item.src;
     if (item.kind === 'video') {
       element.preload = 'auto';
-      element.controls = true;
-      element.defaultPlaybackRate = (window.portfolioSemantics || {})[item.src]?.playbackRate || 0.65;
-      element.playbackRate = element.defaultPlaybackRate;
+      window.portfolioMotion.configure(element, item.src);
       element.loop = true;
       element.muted = true;
       element.playsInline = true;
@@ -115,7 +98,7 @@
         seekTime = null;
         element.addEventListener('loadeddata', () => {
           element.currentTime = Math.min(requestedTime, element.duration);
-          if (!paused) element.play().catch(() => {});
+          if (!paused) window.portfolioMotion.play(element);
         }, { once: true });
       }
     } else element.alt = item.caption;
@@ -125,7 +108,7 @@
     dialog.querySelector('.gallery-position').textContent = `${String(activeIndices.indexOf(index) + 1).padStart(2, '0')} / ${String(activeIndices.length).padStart(2, '0')} / ${item.year ? item.year + ' / ' : ''}${item.kind === 'video' ? 'VIDEO' : 'IMAGE'}`;
     dialog.querySelector('.gallery-details').href = currentProject.page || `projects.html#${currentProject.id}`;
     dialog.querySelectorAll('.gallery-prev, .gallery-next').forEach(button => { button.disabled = activeIndices.length < 2; });
-    if (item.kind === 'video' && !paused) element.play().catch(() => {});
+    if (item.kind === 'video' && !paused) window.portfolioMotion.play(element);
   }
   function step(delta) { index = activeIndices[(activeIndices.indexOf(index) + delta + activeIndices.length) % activeIndices.length]; render(); }
   document.querySelectorAll('[data-project]').forEach(link => link.addEventListener('click', event => {

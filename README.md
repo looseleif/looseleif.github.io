@@ -18,15 +18,15 @@ No build step or package installation is required.
 
 ## Media and motion
 
-`media-data.js` holds project media and captions. `focused-photos.js` provides curated source images; `focused-media.js` selects three complementary views for each visual showcase. Robot, simulation, search-environment, and biology-device demonstrations play as muted inline MP4s in their respective tiles without a click, with full playback controls available in the expanded view. GIFs that contain photo sequences are presented as complementary stills, with the original sequences retained on project pages.
+`media-data.js` holds project media and captions. `focused-photos.js` provides curated source images; `focused-media.js` selects three complementary views for each visual showcase. Robot, simulation, search-environment, and biology-device demonstrations play as muted inline MP4s in their respective tiles without a click, including in the expanded view. There are no play buttons, timelines, speed selectors, or native player controls. GIFs that contain photo sequences are presented as complementary stills, with the original sequences retained on project pages.
 
 The home showcase holds each project for at least 12 seconds. Each composition stays visible for its longest demonstration at the configured playback speed, plus two seconds. Case-page photo reels advance every 7-9 seconds. `terminal-text.js` completes each text reveal in one second. The current home showcase is highlighted in the project directory.
 
-`clip-playlist.js` displays one recording at a time. `clip-player.js` supports playback, speed changes, scrubbing, and captions from `media-semantics.js`. Expanded media uses `gallery.js`. Hidden recordings pause, and gallery viewing suspends background media.
+`clip-playlist.js` advances automatically through recordings. `clip-player.js` handles automatic playback and scene captions from `media-semantics.js`. Expanded media uses `gallery.js` without player controls. Hidden recordings pause, and closing the gallery resumes background media. `motion-settings.js` centralizes playback speed: `speed` scales all clips, and `overrides` sets individual source rates. Adjust these in response to chat feedback. A rejected or unsupported video automatically falls back to its original animated GIF at the source GIF timing.
 
 Original photos and GIFs are preserved. GIF-derived MP4 clips and extracted source frames are used for browser playback and image previews. Frame captions describe visible content and do not establish ownership of other exhibitors' work. Open Sauce and Maker Faire entries describe Chase's Sync Tank demonstrations and use Sync Tank project images, without attributing unverified event dates.
 
-Only the About portrait is monochrome. Project images retain their color. Reduced-motion preferences remove sliding transitions while keeping explicitly requested timed image/text updates; videos respect reduced-motion preferences.
+Only the About portrait is monochrome. Project images retain their color. Reduced-motion preferences remove sliding transitions. Project demonstrations retain the explicitly requested automatic playback.
 
 ## Publishing
 
