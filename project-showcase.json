@@ -55,7 +55,7 @@
         "frameIndex": 0,
         "timestamp": 0,
         "src": "images/semantic/aggro3-00000.png",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "title": "Top-down trials"
       },
       {
@@ -64,7 +64,7 @@
         "frameIndex": 0,
         "timestamp": 0,
         "src": "images/semantic/aggro4-00000.png",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "title": "Mask changes"
       },
       {
@@ -137,7 +137,7 @@
         "frameIndex": 3,
         "timestamp": 1.35,
         "src": "images/semantic/awear-00003.png",
-        "caption": "Two sides of the circular PCB are shown together.",
+        "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor.",
         "title": "Both board faces"
       },
       {

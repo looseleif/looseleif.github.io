@@ -63,14 +63,14 @@ window.focusedProjectPhotos = {
       "displaySource": "images/semantic/aggro3-00000.png",
       "originalSource": "videos/loops/aggro3.mp4",
       "timestamp": 0.0,
-      "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements."
+      "caption": "Simulated clutter rearrangement during robotic search experiments."
     },
     {
       "mediaIndex": 14,
       "displaySource": "images/semantic/aggro4-00000.png",
       "originalSource": "videos/loops/aggro4.mp4",
       "timestamp": 0.0,
-      "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone."
+      "caption": "Perception view during simulated block rearrangement."
     },
     {
       "mediaIndex": 20,
@@ -137,7 +137,7 @@ window.focusedProjectPhotos = {
       "displaySource": "images/semantic/awear-00003.png",
       "originalSource": "videos/loops/awear.mp4",
       "timestamp": 1.35,
-      "caption": "Two sides of the circular PCB are shown together."
+      "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor."
     },
     {
       "mediaIndex": 11,
@@ -209,7 +209,7 @@ window.focusedProjectPhotos = {
       "displaySource": "images/semantic/homeo-00000.png",
       "originalSource": "videos/loops/homeo.mp4",
       "timestamp": 0.0,
-      "caption": "A circular circuit board is wired on a workbench."
+      "caption": "Custom electronics for the modular biology teaching device, wired for bench testing."
     },
     {
       "mediaIndex": 18,

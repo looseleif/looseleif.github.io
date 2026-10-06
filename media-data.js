@@ -140,9 +140,9 @@ window.portfolioProjects = [
   },
   {
     "id": "aggro",
-    "title": "AGGRO: Robotic Search & Retrieval",
+    "title": "Robotic Search in Clutter",
     "category": "Robotics",
-    "line": "Perception, reinforcement learning, and robotic manipulation.",
+    "line": "Self-supervised Q-learning for mechanical search and grasping.",
     "media": [
       {
         "src": "images/full/aggro-0000.png",
@@ -222,7 +222,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro3-0000.png",
         "poster": "images/frames/aggro3-0000.webp",
         "kind": "image",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "source": "videos/loops/aggro3.mp4",
         "timestamp": 0.0,
         "width": 224,
@@ -232,7 +232,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro3-0009.png",
         "poster": "images/frames/aggro3-0009.webp",
         "kind": "image",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "source": "videos/loops/aggro3.mp4",
         "timestamp": 1.8,
         "width": 224,
@@ -242,7 +242,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro3-0016.png",
         "poster": "images/frames/aggro3-0016.webp",
         "kind": "image",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "source": "videos/loops/aggro3.mp4",
         "timestamp": 3.2,
         "width": 224,
@@ -252,7 +252,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro3-0034.png",
         "poster": "images/frames/aggro3-0034.webp",
         "kind": "image",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "source": "videos/loops/aggro3.mp4",
         "timestamp": 6.8,
         "width": 224,
@@ -262,7 +262,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro3-0072.png",
         "poster": "images/frames/aggro3-0072.webp",
         "kind": "image",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "source": "videos/loops/aggro3.mp4",
         "timestamp": 14.4,
         "width": 224,
@@ -279,7 +279,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro4-0000.png",
         "poster": "images/frames/aggro4-0000.webp",
         "kind": "image",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "source": "videos/loops/aggro4.mp4",
         "timestamp": 0.0,
         "width": 224,
@@ -289,7 +289,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro4-0019.png",
         "poster": "images/frames/aggro4-0019.webp",
         "kind": "image",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "source": "videos/loops/aggro4.mp4",
         "timestamp": 3.8,
         "width": 224,
@@ -299,7 +299,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro4-0026.png",
         "poster": "images/frames/aggro4-0026.webp",
         "kind": "image",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "source": "videos/loops/aggro4.mp4",
         "timestamp": 5.2,
         "width": 224,
@@ -309,7 +309,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro4-0034.png",
         "poster": "images/frames/aggro4-0034.webp",
         "kind": "image",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "source": "videos/loops/aggro4.mp4",
         "timestamp": 6.8,
         "width": 224,
@@ -319,7 +319,7 @@ window.portfolioProjects = [
         "src": "images/full/aggro4-0045.png",
         "poster": "images/frames/aggro4-0045.webp",
         "kind": "image",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "source": "videos/loops/aggro4.mp4",
         "timestamp": 9.0,
         "width": 224,
@@ -535,14 +535,13 @@ window.portfolioProjects = [
         "caption": "The gripper rises; the green marker remains visible on the tabletop."
       }
     ],
-    "role": "Master’s thesis / CHOICE Robotics Lab",
+    "role": "Master's research / CHOICE Robotics Lab",
     "tint": "#181919",
     "page": "project-aggro.html",
     "paragraphs": [
-      "September 2022 - July 2024",
-      "AGGRO stands for Autonomous Gatherer with Guided Retrieval Operations. It was my master's thesis at the University of Minnesota.",
-      "The research focused on finding and retrieving objects in cluttered environments. I used self-supervised reinforcement learning to study spatial attention and object permanence, combining robotic perception with manipulation.",
-      "The gallery includes physical robot tests, simulation views, perception masks, and the CHOICE Robotics Lab team."
+      "My master's research at the University of Minnesota built on earlier CHOICE Robotics Lab work, including Houjian Yu's research on image-driven object searching and grasping, using Q-learning and self-supervised reinforcement learning. The goal was to find objects within clutter by acting on the surrounding environment.",
+      "I built a second, simplified robotic platform to test the approach beyond the original setup. I also evaluated secondary tasks, including clutter clearing, dilation, and more complex search environments.",
+      "The work connected visual perception, learned action selection, and physical manipulation. The recordings show physical robot tests, simulated tasks, and perception views."
     ],
     "stills": [
       0,
@@ -598,7 +597,7 @@ window.portfolioProjects = [
         "frameIndex": 0,
         "timestamp": 0,
         "src": "images/semantic/aggro3-00000.png",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "title": "Top-down trials"
       },
       {
@@ -607,7 +606,7 @@ window.portfolioProjects = [
         "frameIndex": 0,
         "timestamp": 0,
         "src": "images/semantic/aggro4-00000.png",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "title": "Mask changes"
       },
       {
@@ -619,13 +618,23 @@ window.portfolioProjects = [
         "caption": "White shapes separate, rotate, and regroup on a black background.",
         "title": "Object silhouettes"
       }
+    ],
+    "links": [
+      {
+        "label": "Related research: IOSG",
+        "url": "https://arxiv.org/abs/2308.05821"
+      },
+      {
+        "label": "Related research: Grasping the Invisible",
+        "url": "https://choice.umn.edu/deep-learning-approach-grasping-invisible"
+      }
     ]
   },
   {
     "id": "solar",
     "title": "Solar Vehicle Project",
     "category": "Hardware",
-    "line": "F1 infotainment application and G1 telemetry hardware.",
+    "line": "Infotainment and telemetry engineering, team media, and race driving.",
     "media": [
       {
         "src": "images/solar.png",
@@ -699,14 +708,13 @@ window.portfolioProjects = [
         "caption": "A hand interacts with a map displayed on a tablet."
       }
     ],
-    "role": "Infotainment, telemetry hardware & racing",
+    "role": "Software & hardware design / Media / Driver",
     "tint": "#191816",
     "page": "project-solar.html",
     "paragraphs": [
-      "November 2021 - May 2023",
-      "I worked as an engineer and racer with the University of Minnesota Solar Vehicle Project, contributing to the team's first-place finish in the 2022 American Solar Challenge.",
-      "I designed the F1 infotainment application and G1 telemetry hardware for the 2023 World Solar Challenge. My work included firmware, PCB design, and vehicle communications.",
-      "The gallery includes the solar vehicle and team."
+      "I worked as an infotainment and telemetry engineer with the University of Minnesota Solar Vehicle Project, contributing software development, hardware design, and system architecture to both existing systems and new work.",
+      "My engineering work included the F1 infotainment application and G1 telemetry hardware. I also served as a driver in the American Solar Challenge, contributing to the team's first-place finish in 2022.",
+      "Alongside engineering and driving, I filmed and developed promotional material for the team. These roles let me contribute across software and hardware architecture, media production, and vehicle operation."
     ],
     "stills": [
       0
@@ -761,9 +769,9 @@ window.portfolioProjects = [
   },
   {
     "id": "awear",
-    "title": "aWear: Wearable Cardiac Sensing",
+    "title": "Wearable Cardiac Monitor",
     "category": "Hardware",
-    "line": "Optical sensing, data collection, and wearable electronics.",
+    "line": "Custom sensing hardware, power management, and wearable integration.",
     "media": [
       {
         "src": "images/full/awear-0000.png",
@@ -818,7 +826,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/awear.mp4",
         "poster": "images/previews/awear.webp",
-        "caption": "aWear development: circuit assembly, enclosure, and wrist-worn prototype.",
+        "caption": "Wearable cardiac monitor: custom circuit assembly, enclosure, and wrist-worn prototype.",
         "kind": "video",
         "original": "images/awear.gif"
       },
@@ -852,7 +860,7 @@ window.portfolioProjects = [
         "poster": "images/semantic/awear-00003.png",
         "source": "videos/loops/awear.mp4",
         "timestamp": 1.35,
-        "caption": "Two sides of the circular PCB are shown together."
+        "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor."
       },
       {
         "kind": "image",
@@ -919,12 +927,13 @@ window.portfolioProjects = [
         "caption": "A side view shows the enclosure, strap, and attached cable."
       }
     ],
-    "role": "Hardware design / Senior design project",
+    "role": "Custom hardware design / Biomedical collaboration",
     "tint": "#191817",
     "page": "project-awear.html",
     "paragraphs": [
-      "I worked on the hardware and product development of a wearable cardiac-monitoring prototype at the University of Minnesota.",
-      "The design combines optical sensing, an accelerometer, and onboard storage. My work covered circuit design, power management, and data collection."
+      "I designed custom hardware for a wearable cardiac-monitoring prototype at the University of Minnesota. The device combines optical sensing, an accelerometer, and onboard storage, with my work covering circuit design, power management, and data collection.",
+      "I worked with biomedical engineers and teammates responsible for firmware development and design considerations around appearance, placement, and practical use. This connected the electronics to how the device would be worn and used.",
+      "The team named the prototype aWear. The photographs and recording document the custom circuit board, enclosure, and wrist-worn assembly."
     ],
     "stills": [
       0,
@@ -941,7 +950,7 @@ window.portfolioProjects = [
         "frameIndex": 3,
         "timestamp": 1.35,
         "src": "images/semantic/awear-00003.png",
-        "caption": "Two sides of the circular PCB are shown together.",
+        "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor.",
         "title": "Both board faces"
       },
       {
@@ -984,15 +993,15 @@ window.portfolioProjects = [
   },
   {
     "id": "feedback-loop",
-    "title": "The Feedback Loop: Interactive Physiology",
+    "title": "Modular Biology Teaching Device",
     "category": "Hardware",
-    "line": "Physical controls and sensors for exploring homeostasis.",
+    "line": "Custom electronics for hands-on biology and introductory programming.",
     "media": [
       {
         "src": "images/full/homeo-0000.png",
         "poster": "images/frames/homeo-0000.webp",
         "kind": "image",
-        "caption": "A circular circuit board is wired on a workbench.",
+        "caption": "Custom electronics for the modular biology teaching device, wired for bench testing.",
         "source": "videos/loops/homeo.mp4",
         "timestamp": 0.0,
         "width": 405,
@@ -1041,7 +1050,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/homeo.mp4",
         "poster": "images/previews/homeo.webp",
-        "caption": "The Feedback Loop: an illuminated bench demonstration followed by assembly photos.",
+        "caption": "Modular biology teaching device: bench demonstration and assembly.",
         "kind": "video",
         "original": "images/homeo.gif"
       },
@@ -1098,7 +1107,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/homeo2.mp4",
         "poster": "images/previews/homeo2.webp",
-        "caption": "The Feedback Loop assembly: wiring, mounted modules, sensor, and light ring.",
+        "caption": "Biology teaching device assembly: custom electronics, sensors, and light ring.",
         "kind": "video",
         "original": "images/homeo2.gif"
       },
@@ -1155,7 +1164,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/homeo1.mp4",
         "poster": "images/previews/homeo1.webp",
-        "caption": "The Feedback Loop: hands-on testing with changing perimeter lights.",
+        "caption": "Biology teaching device: hands-on testing of the custom electronics and light ring.",
         "kind": "video",
         "original": "images/homeo1.gif"
       },
@@ -1248,12 +1257,13 @@ window.portfolioProjects = [
         "caption": "The red perimeter lights change state while the connected hardware remains in view."
       }
     ],
-    "role": "Educational hardware / Embedded control",
+    "role": "Custom hardware design / Biology education",
     "tint": "#191817",
     "page": "project-feedback-loop.html",
     "paragraphs": [
-      "I built an educational device that represents feedback systems in the body through physical controls and sensors.",
-      "Knobs, flex sensors, and a microcontroller let users explore temperature regulation and muscle-control feedback. The media documents the boards, wiring, and assembled prototype."
+      "I designed custom hardware for a modular educational device developed alongside a team of biologists. It gives biology students a simple physical system for learning how devices work and writing code that interacts with hardware.",
+      "The device uses controls, sensors, and a microcontroller to connect code with observable behavior. Students can explore biological feedback and homeostasis while learning how inputs, processing, and outputs fit together.",
+      "We called the project The Feedback Loop. My contribution centered on the custom electronics and hardware integration, developed in collaboration with the biology team."
     ],
     "stills": [
       0,
@@ -1315,7 +1325,7 @@ window.portfolioProjects = [
     "id": "electric-drives",
     "title": "Electric Drives & Control",
     "category": "Hardware",
-    "line": "Motor control, drivetrain integration, and a mobile rover prototype.",
+    "line": "Electric vehicles, custom batteries, FPV drones, and a VESC-based rover.",
     "media": [
       {
         "src": "images/full/board-0000.png",
@@ -1387,12 +1397,13 @@ window.portfolioProjects = [
         "height": 227
       }
     ],
-    "role": "Electric drives / Mobile robotics",
+    "role": "Vehicle integration / Electric drivetrains / Remote operation",
     "tint": "#181819",
     "page": "project-electric-drives.html",
     "paragraphs": [
-      "I build and test electric drive systems, from battery and motor-controller integration to a mobile rover with onboard computing and camera-based tracking.",
-      "The mountain board build covers drivetrain assembly, handheld control, bench testing, and VESC configuration. The rover extends this work into mobile robotics and visual tracking."
+      "I build and modify electric vehicles, applying the same fundamentals of batteries, motor controllers, drivetrains, and control across ground vehicles and FPV drones.",
+      "This work spans an electric mountain board assembled from off-the-shelf parts, a self-balancing vehicle with a custom battery, Onewheel modifications, and custom FPV drone rigs for filming, racing, and recreational flight.",
+      "My current rover work uses VESC motor controllers for remote operation and exploration. The media below documents the mountain board build and the rover hardware prototype."
     ],
     "stills": [
       0,
@@ -1642,10 +1653,10 @@ window.portfolioProjects = [
     "line": "Conversational supplements for wearable devices.",
     "page": "socio/",
     "media": [],
-    "role": "Wearable devices / Conversation support",
+    "role": "Company / Wearable communication tools",
     "paragraphs": [
-      "Socio is a project by Socio Studios with the goal of providing conversational supplements for wearable devices.",
-      "remorse is the conversation software prototype; IYKYD documents the tools in use and their development."
+      "Socio is the company behind remorse and IYKYD. Its goal is to create supplemental communication mechanisms, including haptics and wearable devices, that support higher-quality conversations.",
+      "remorse is the product in development. IYKYD is the brand and YouTube channel used to show the tools in use and document their development."
     ]
   }
 ];

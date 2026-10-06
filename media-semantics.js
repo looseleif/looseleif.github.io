@@ -133,7 +133,7 @@ window.portfolioSemantics = {
         "start": 0,
         "end": 14.6,
         "title": "Top-down trials",
-        "caption": "Gray blocks shift around orange regions, exposing green regions across repeated arrangements.",
+        "caption": "Simulated clutter rearrangement during robotic search experiments.",
         "evidenceFrame": 0,
         "confidence": "visual observation"
       }
@@ -148,7 +148,7 @@ window.portfolioSemantics = {
         "start": 0,
         "end": 10.0,
         "title": "Mask changes",
-        "caption": "Gray and white areas change within a compact grid as blocks move. The color legend is not established by the footage alone.",
+        "caption": "Perception view during simulated block rearrangement.",
         "evidenceFrame": 0,
         "confidence": "visual observation"
       }
@@ -170,7 +170,7 @@ window.portfolioSemantics = {
     ]
   },
   "videos/loops/awear.mp4": {
-    "summary": "aWear development: circuit assembly, enclosure, and wrist-worn prototype.",
+    "summary": "Wearable cardiac monitor: custom circuit assembly, enclosure, and wrist-worn prototype.",
     "playbackRate": 0.25,
     "duration": 5.85,
     "scenes": [
@@ -202,7 +202,7 @@ window.portfolioSemantics = {
         "start": 1.35,
         "end": 1.8,
         "title": "Both board faces",
-        "caption": "Two sides of the circular PCB are shown together.",
+        "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor.",
         "evidenceFrame": 3,
         "confidence": "visual observation"
       },
@@ -391,7 +391,7 @@ window.portfolioSemantics = {
     ]
   },
   "videos/loops/homeo.mp4": {
-    "summary": "The Feedback Loop: an illuminated bench demonstration followed by assembly photos.",
+    "summary": "Modular biology teaching device: bench demonstration and assembly.",
     "playbackRate": 0.65,
     "duration": 13.7,
     "scenes": [
@@ -399,7 +399,7 @@ window.portfolioSemantics = {
         "start": 0,
         "end": 0.9,
         "title": "Bench prototype",
-        "caption": "A circular circuit board is wired on a workbench.",
+        "caption": "Custom electronics for the modular biology teaching device, wired for bench testing.",
         "evidenceFrame": 0,
         "confidence": "visual observation"
       },
@@ -470,7 +470,7 @@ window.portfolioSemantics = {
     ]
   },
   "videos/loops/homeo1.mp4": {
-    "summary": "The Feedback Loop: hands-on testing with changing perimeter lights.",
+    "summary": "Biology teaching device: hands-on testing of the custom electronics and light ring.",
     "playbackRate": 0.65,
     "duration": 10.1,
     "scenes": [
@@ -501,7 +501,7 @@ window.portfolioSemantics = {
     ]
   },
   "videos/loops/homeo2.mp4": {
-    "summary": "The Feedback Loop assembly: wiring, mounted modules, sensor, and light ring.",
+    "summary": "Biology teaching device assembly: custom electronics, sensors, and light ring.",
     "playbackRate": 0.25,
     "duration": 1.68,
     "scenes": [
