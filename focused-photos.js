@@ -33,7 +33,8 @@ window.focusedProjectPhotos = {
       "displaySource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
       "originalSource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
       "timestamp": null,
-      "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state."
+      "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state.",
+      "fit": "contain"
     },
     {
       "mediaIndex": 4,
@@ -63,21 +64,24 @@ window.focusedProjectPhotos = {
       "displaySource": "images/semantic/aggro3-00000.png",
       "originalSource": "videos/loops/aggro3.mp4",
       "timestamp": 0.0,
-      "caption": "Simulated clutter rearrangement during robotic search experiments."
+      "caption": "Simulated clutter rearrangement during robotic search experiments.",
+      "fit": "contain"
     },
     {
       "mediaIndex": 14,
       "displaySource": "images/semantic/aggro4-00000.png",
       "originalSource": "videos/loops/aggro4.mp4",
       "timestamp": 0.0,
-      "caption": "Perception view during simulated block rearrangement."
+      "caption": "Perception view during simulated block rearrangement.",
+      "fit": "contain"
     },
     {
       "mediaIndex": 20,
       "displaySource": "images/semantic/aggro5-00000.png",
       "originalSource": "videos/loops/aggro5.mp4",
       "timestamp": 0.0,
-      "caption": "White shapes separate, rotate, and regroup on a black background."
+      "caption": "White shapes separate, rotate, and regroup on a black background.",
+      "fit": "contain"
     },
     {
       "mediaIndex": 32,
@@ -89,18 +93,18 @@ window.focusedProjectPhotos = {
   ],
   "solar": [
     {
-      "mediaIndex": 2,
-      "displaySource": "images/semantic/solar-00000.png",
-      "originalSource": "videos/loops/solar.mp4",
-      "timestamp": 0,
-      "caption": "Close-up of a circuit board with soldered jumper wires."
-    },
-    {
       "mediaIndex": 3,
       "displaySource": "images/semantic/solar-00001.png",
       "originalSource": "videos/loops/solar.mp4",
       "timestamp": 1,
       "caption": "A populated circuit board with controls and connectors."
+    },
+    {
+      "mediaIndex": 2,
+      "displaySource": "images/semantic/solar-00000.png",
+      "originalSource": "videos/loops/solar.mp4",
+      "timestamp": 0,
+      "caption": "Close-up of a circuit board with soldered jumper wires."
     },
     {
       "mediaIndex": 4,
@@ -308,34 +312,6 @@ window.focusedProjectPhotos = {
     }
   ],
   "electric-drives": [
-    {
-      "mediaIndex": 0,
-      "displaySource": "images/semantic/board-00000.png",
-      "originalSource": "videos/loops/board.mp4",
-      "timestamp": 0.0,
-      "caption": "Close-up of the wheel and mechanical drive components."
-    },
-    {
-      "mediaIndex": 7,
-      "displaySource": "images/fanimg.jpg",
-      "originalSource": "images/fanimg.jpg",
-      "timestamp": null,
-      "caption": "The mobile rover hardware prototype."
-    },
-    {
-      "mediaIndex": 1,
-      "displaySource": "images/semantic/board-00001.png",
-      "originalSource": "videos/loops/board.mp4",
-      "timestamp": 0.5,
-      "caption": "A handheld controller shows red and green indicator lights."
-    },
-    {
-      "mediaIndex": 2,
-      "displaySource": "images/semantic/board-00002.png",
-      "originalSource": "videos/loops/board.mp4",
-      "timestamp": 1.0,
-      "caption": "The mountain board is shown under red lighting."
-    },
     {
       "mediaIndex": 4,
       "displaySource": "images/board1.jpeg",

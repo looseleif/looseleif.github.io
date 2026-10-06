@@ -136,7 +136,21 @@ window.portfolioProjects = [
         "caption": "The Sync Tank aquarium, electronics, and exhibition display.",
         "title": "Sync Tank: Aquarium Cameras & Control"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Connected hardware / Aquarium systems",
+      "contribution": "I integrate cameras, control electronics, and a local observation interface so aquarium footage stays connected to the tank and position it came from.",
+      "context": [
+        [
+          "Work",
+          "Camera integration, embedded control, spatial interfaces"
+        ],
+        [
+          "Setting",
+          "Public demonstrations and ongoing system development"
+        ]
+      ]
+    }
   },
   {
     "id": "aggro",
@@ -628,7 +642,21 @@ window.portfolioProjects = [
         "label": "Related research: Grasping the Invisible",
         "url": "https://choice.umn.edu/deep-learning-approach-grasping-invisible"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Robotics research / University of Minnesota",
+      "contribution": "I extended self-supervised robotic search work with a second, simplified platform and additional tests for finding and retrieving objects in clutter.",
+      "context": [
+        [
+          "Work",
+          "Robot integration, Q-learning, physical and simulated tests"
+        ],
+        [
+          "Research",
+          "Mechanical search, clutter clearing, and grasping"
+        ]
+      ]
+    }
   },
   {
     "id": "solar",
@@ -765,7 +793,21 @@ window.portfolioProjects = [
         "caption": "A hand interacts with a map displayed on a tablet.",
         "title": "Tablet interface"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Vehicle engineering / University of Minnesota",
+      "contribution": "I developed infotainment software and telemetry hardware, produced promotional media, and drove for the team in the American Solar Challenge.",
+      "context": [
+        [
+          "Work",
+          "Software and hardware architecture, filming, race driving"
+        ],
+        [
+          "Team",
+          "Solar Vehicle Project / 2022 American Solar Challenge"
+        ]
+      ]
+    }
   },
   {
     "id": "awear",
@@ -989,7 +1031,21 @@ window.portfolioProjects = [
         "caption": "Green lights illuminate around the central sensor opening.",
         "title": "Optical sensor"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Wearable electronics / Biomedical collaboration",
+      "contribution": "I designed the custom sensing hardware and power electronics, working with biomedical engineers and teammates on firmware, placement, and wearable design.",
+      "context": [
+        [
+          "Work",
+          "Circuit design, power management, hardware integration"
+        ],
+        [
+          "Build",
+          "Optical cardiac-sensing prototype"
+        ]
+      ]
+    }
   },
   {
     "id": "feedback-loop",
@@ -1319,7 +1375,21 @@ window.portfolioProjects = [
         "caption": "Side view of the populated circuit board above the perimeter light strip.",
         "title": "Light-ring assembly"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Educational hardware / Biology",
+      "contribution": "I designed custom electronics alongside biologists to give students a modular physical system for learning how devices work and writing code that interacts with hardware.",
+      "context": [
+        [
+          "Work",
+          "Custom hardware, sensors, and embedded integration"
+        ],
+        [
+          "Purpose",
+          "Hands-on biology and introductory programming"
+        ]
+      ]
+    }
   },
   {
     "id": "electric-drives",
@@ -1448,7 +1518,21 @@ window.portfolioProjects = [
         "caption": "The rover hardware prototype.",
         "title": "Mobile Rover: Vision & Control"
       }
-    ]
+    ],
+    "presentation": {
+      "field": "Electric vehicles / Control systems",
+      "contribution": "I build and modify electric vehicles and FPV drones, integrating batteries, motor controllers, and drivetrains. My current rover work focuses on remote operation and exploration.",
+      "context": [
+        [
+          "Builds",
+          "Mountain board, self-balancing vehicle, FPV rigs, Onewheel"
+        ],
+        [
+          "Current",
+          "VESC-based exploration rover"
+        ]
+      ]
+    }
   },
   {
     "id": "open-sauce",
@@ -1657,6 +1741,20 @@ window.portfolioProjects = [
     "paragraphs": [
       "Socio is the company behind remorse and IYKYD. Its goal is to create supplemental communication mechanisms, including haptics and wearable devices, that support higher-quality conversations.",
       "remorse is the product in development. IYKYD is the brand and YouTube channel used to show the tools in use and document their development."
-    ]
+    ],
+    "presentation": {
+      "field": "Company / Wearable communication",
+      "contribution": "I am developing supplemental communication tools through haptics and wearable devices, with the goal of supporting higher-quality conversations.",
+      "context": [
+        [
+          "Product",
+          "remorse / conversational support in development"
+        ],
+        [
+          "Brand",
+          "IYKYD / tools in use and development documentation"
+        ]
+      ]
+    }
   }
 ];

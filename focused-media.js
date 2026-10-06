@@ -18,6 +18,8 @@
       link.setAttribute('aria-label', `Expand: ${photo.caption}`);
       const img = document.createElement('img');
       img.src = photo.displaySource; img.alt = photo.caption;
+      img.style.objectPosition = photo.position || '50% 50%';
+      if (photo.fit) img.style.objectFit = photo.fit;
       img.loading = index ? 'lazy' : 'eager'; img.decoding = 'async';
       link.append(img);
       const caption = document.createElement('figcaption');caption.textContent = photo.caption;
@@ -40,11 +42,35 @@
     reel.addEventListener('portfolio:frame', syncCaption); syncCaption();
   });
   document.querySelectorAll('.project-exhibit').forEach(card => {
-    const id = card.querySelector('[data-project]')?.dataset.project;
-    const reel = reelFor(id); if (!reel) return;
+    const id = card.id;
+    const project = projects.find(project => project.id === id);
+    if (!project) return;
+    const reel = reelFor(id);
     const copy = card.querySelector('.exhibit-copy');
     copy.classList.add('focused-copy');
-    card.replaceChildren(reel, copy);
+    if (project.presentation) {
+      const { field, contribution, context } = project.presentation;
+      copy.querySelector('.eyebrow').textContent = field;
+      copy.querySelector('h2 + p').textContent = contribution;
+      const details = document.createElement('dl');
+      details.className = 'work-context';
+      context.forEach(([label, text]) => {
+        const dt = document.createElement('dt');dt.textContent = label;
+        const dd = document.createElement('dd');dd.textContent = text;
+        details.append(dt, dd);
+      });
+      copy.querySelector('.exhibit-link').before(details);
+      copy.querySelector('.exhibit-link').textContent = 'Explore the work';
+    }
+    card.classList.add('work-showcase');
+    if (reel) card.replaceChildren(reel, copy);
+    else if (id === 'socio') {
+      const diagram = document.createElement('figure');
+      diagram.className = 'concept-stage';
+      diagram.setAttribute('aria-label', 'Socio product direction: conversation context, remorse, and wearable feedback');
+      diagram.innerHTML = '<div class="concept-label">PRODUCT DIRECTION</div><div class="concept-wordmark">socio</div><div class="concept-flow"><div><span>INPUT</span><strong>Conversation</strong><small>Context &amp; speaker activity</small></div><div><span>PRODUCT</span><strong>remorse</strong><small>Conversational support</small></div><div><span>COMPANION</span><strong>Wearables</strong><small>Haptics &amp; feedback</small></div></div><figcaption>A product in development, connecting conversation context with wearable feedback.</figcaption>';
+      card.replaceChildren(diagram, copy);
+    }
   });
   document.querySelectorAll('.work-card').forEach(card => {
     const id = card.querySelector('[data-project]')?.dataset.project;
