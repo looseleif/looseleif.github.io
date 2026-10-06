@@ -806,5 +806,61 @@ window.portfolioSemantics = {
         "confidence": "visual observation"
       }
     ]
+  },
+  "videos/remorse/live-context.mp4": {
+    "summary": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions.",
+    "playbackRate": 0.8,
+    "duration": 10,
+    "scenes": [
+      {
+        "start": 0,
+        "end": 10,
+        "title": "Live transcript & open questions",
+        "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
+      }
+    ],
+    "sourceUrl": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s"
+  },
+  "videos/remorse/field-trial.mp4": {
+    "summary": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session.",
+    "playbackRate": 0.8,
+    "duration": 12,
+    "scenes": [
+      {
+        "start": 0,
+        "end": 12,
+        "title": "Speaker presence & mobile feed",
+        "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session."
+      }
+    ],
+    "sourceUrl": "https://www.youtube.com/watch?v=kI74m7SITUA&t=720s"
+  },
+  "videos/remorse/watch-companion.mp4": {
+    "summary": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed.",
+    "playbackRate": 0.8,
+    "duration": 14,
+    "scenes": [
+      {
+        "start": 0,
+        "end": 14,
+        "title": "Desktop & companion view",
+        "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed."
+      }
+    ],
+    "sourceUrl": "https://www.youtube.com/watch?v=TUNlif5HVnk&t=72s"
+  },
+  "videos/remorse/conversation-prompts.mp4": {
+    "summary": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond.",
+    "playbackRate": 0.8,
+    "duration": 14,
+    "scenes": [
+      {
+        "start": 0,
+        "end": 14,
+        "title": "Conversation prompts",
+        "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+      }
+    ],
+    "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=222s"
   }
 };

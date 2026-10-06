@@ -333,5 +333,35 @@ window.focusedProjectPhotos = {
       "timestamp": null,
       "caption": "The assembled mountain board, illuminated."
     }
+  ],
+  "socio": [
+    {
+      "mediaIndex": 0,
+      "displaySource": "images/remorse/live-context.jpg",
+      "originalSource": "videos/remorse/live-context.mp4",
+      "timestamp": 0,
+      "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
+    },
+    {
+      "mediaIndex": 1,
+      "displaySource": "images/remorse/field-trial.jpg",
+      "originalSource": "videos/remorse/field-trial.mp4",
+      "timestamp": 0,
+      "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session."
+    },
+    {
+      "mediaIndex": 2,
+      "displaySource": "images/remorse/watch-companion.jpg",
+      "originalSource": "videos/remorse/watch-companion.mp4",
+      "timestamp": 0,
+      "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed."
+    },
+    {
+      "mediaIndex": 3,
+      "displaySource": "images/remorse/conversation-prompts.jpg",
+      "originalSource": "videos/remorse/conversation-prompts.mp4",
+      "timestamp": 0,
+      "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+    }
   ]
 };

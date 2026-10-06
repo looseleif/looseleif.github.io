@@ -1,4 +1,5 @@
 (() => {
+  const mediaRoot = new URL('.', document.currentScript.src);
   // Tune here in response to chat feedback, without adding controls to the site.
   const settings = {
     speed: 1.25,
@@ -7,6 +8,7 @@
       return (this.overrides[source] ?? window.portfolioSemantics?.[source]?.playbackRate ?? 0.65) * this.speed;
     },
     configure(video, source) {
+      video.dataset.motionSource = source;
       video.controls = false;
       video.removeAttribute('controls');
       video.defaultMuted = true;
@@ -24,7 +26,7 @@
       if (!original) return;
       const image = document.createElement('img');
       image.className = 'motion-fallback';
-      image.src = original;
+      image.src = new URL(original, mediaRoot).href;
       image.alt = video.getAttribute('aria-label') || 'Project demonstration';
       video.dataset.fallback = 'true';video.hidden = true;
       video.after(image);
@@ -33,7 +35,7 @@
       if (!video.paused || video.dataset.fallback) return;
       video.play().catch(error => {
         // An intentional pause during navigation can abort an in-flight play.
-        if (error.name !== 'AbortError') this.fallback(video, video.dataset.src || video.getAttribute('src'));
+        if (error.name !== 'AbortError') this.fallback(video, video.dataset.motionSource || video.dataset.src || video.getAttribute('src'));
       });
     }
   };

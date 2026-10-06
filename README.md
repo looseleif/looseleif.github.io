@@ -9,7 +9,7 @@ Static personal website published at https://looseleif.github.io/ through GitHub
 - `project-*.html`: project descriptions, recordings, and additional photographs.
 - `about.html`: background, printable resume, education, and volunteering.
 - `socials.html`: contact profiles.
-- `socio/index.html`: Socio, its conversation software prototype, and IYKYD development documentation.
+- `socio/index.html`: remorse, the Socio product, shown through real IYKYD field recordings.
 
 ## Local preview
 
@@ -29,6 +29,8 @@ Original photos and GIFs are preserved. GIF-derived MP4 clips and extracted sour
 Only the About portrait is monochrome. Project images retain their color. Reduced-motion preferences remove sliding transitions. Project demonstrations retain the explicitly requested automatic playback.
 
 `project-background.js` places each case study's main recording behind its content with a dark readability layer. These backgrounds use the shared playback speed and pause while a gallery is open or the document is hidden. Projects without footage use their own photographs.
+
+The remorse showcase uses four short, silent excerpts from Chase's IYKYD recordings. `socio/field-notes.json` records source videos and exact excerpt offsets; `socio/source-notes.md` documents transcript evidence. The excerpts play at their recorded pace (base rate 0.8 times the global 1.25 speed). Full recordings remain linked on YouTube.
 
 ## Publishing
 

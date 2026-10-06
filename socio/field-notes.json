@@ -1,0 +1,50 @@
+{
+  "channel": "https://www.youtube.com/@ifyouknowyoudont",
+  "transcriptsReviewed": 22,
+  "clips": [
+    {
+      "slug": "live-context",
+      "videoId": "Ir4QtvsJtm4",
+      "title": "Too slow too fast",
+      "date": "2026-10-01",
+      "start": 88,
+      "duration": 10,
+      "label": "Live transcript & open questions",
+      "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions.",
+      "url": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s"
+    },
+    {
+      "slug": "field-trial",
+      "videoId": "kI74m7SITUA",
+      "title": "We're driving without mirrors",
+      "date": "2026-06-01",
+      "start": 720,
+      "duration": 12,
+      "label": "Speaker presence & mobile feed",
+      "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session.",
+      "url": "https://www.youtube.com/watch?v=kI74m7SITUA&t=720s"
+    },
+    {
+      "slug": "watch-companion",
+      "videoId": "TUNlif5HVnk",
+      "title": "Intention is all you need?",
+      "date": "2026-07-01",
+      "start": 72,
+      "duration": 14,
+      "label": "Desktop & companion view",
+      "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed.",
+      "url": "https://www.youtube.com/watch?v=TUNlif5HVnk&t=72s"
+    },
+    {
+      "slug": "conversation-prompts",
+      "videoId": "ua6I0DFg8N8",
+      "title": "Not enough information",
+      "date": "2026-09-01",
+      "start": 222,
+      "duration": 14,
+      "label": "Conversation prompts",
+      "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond.",
+      "url": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=222s"
+    }
+  ]
+}

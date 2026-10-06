@@ -29,6 +29,7 @@
   }
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
+    socio: { picks:[0,1,3], videos:[0,1,3], labels:['Live session','Speaker presence','Conversation prompts'], caption:'remorse running in IYKYD field recordings: live context, speaker activity, and conversational prompts.' },
     'sync-tank': { picks:[0,2,3], labels:['Aquarium system','Camera feeds & tank model','Camera mechanism'], caption:'An aquarium system connecting cameras, a spatial interface, and a motorized camera platform.' },
     aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },

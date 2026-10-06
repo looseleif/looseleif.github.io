@@ -1736,29 +1736,64 @@ window.portfolioProjects = [
   },
   {
     "id": "socio",
-    "title": "Socio",
+    "title": "remorse",
     "category": "Software",
-    "line": "Conversational supplements for wearable devices.",
+    "line": "Live conversation context, speaker activity, and companion views.",
     "page": "socio/",
-    "media": [],
-    "role": "Company / Wearable communication tools",
+    "media": [
+      {
+        "kind": "video",
+        "src": "videos/remorse/live-context.mp4",
+        "poster": "images/remorse/live-context.jpg",
+        "original": "images/remorse/live-context.gif",
+        "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/field-trial.mp4",
+        "poster": "images/remorse/field-trial.jpg",
+        "original": "images/remorse/field-trial.gif",
+        "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/watch-companion.mp4",
+        "poster": "images/remorse/watch-companion.jpg",
+        "original": "images/remorse/watch-companion.gif",
+        "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/conversation-prompts.mp4",
+        "poster": "images/remorse/conversation-prompts.jpg",
+        "original": "images/remorse/conversation-prompts.gif",
+        "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+      }
+    ],
+    "role": "A Socio product / IYKYD field tests",
     "paragraphs": [
-      "Socio is the company behind remorse and IYKYD. Its goal is to create supplemental communication mechanisms, including haptics and wearable devices, that support higher-quality conversations.",
-      "remorse is the product in development. IYKYD is the brand and YouTube channel used to show the tools in use and document their development."
+      "I am developing remorse at Socio as a conversational companion, bringing live transcripts, speaker activity, and prompts into a shared session.",
+      "IYKYD recordings document the prototype running in real conversations and the ongoing exploration of mobile and wearable feedback."
     ],
     "presentation": {
-      "field": "Company / Wearable communication",
-      "contribution": "I am developing supplemental communication tools through haptics and wearable devices, with the goal of supporting higher-quality conversations.",
+      "field": "Conversation software / A Socio product",
+      "contribution": "I?m developing remorse through real conversation tests, connecting a live transcript, speaker activity, conversational prompts, and a mobile companion.",
       "context": [
         [
-          "Product",
-          "remorse / conversational support in development"
+          "Work",
+          "Conversation software and companion interfaces"
         ],
         [
-          "Brand",
-          "IYKYD / tools in use and development documentation"
+          "Evidence",
+          "Prototype footage from IYKYD field recordings"
         ]
       ]
-    }
+    },
+    "links": [
+      {
+        "label": "IYKYD field recordings",
+        "url": "https://www.youtube.com/@ifyouknowyoudont"
+      }
+    ]
   }
 ];
