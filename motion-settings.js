@@ -1,7 +1,7 @@
 (() => {
   // Tune here in response to chat feedback, without adding controls to the site.
   const settings = {
-    speed: 1,
+    speed: 1.25,
     overrides: {},
     rateFor(source) {
       return (this.overrides[source] ?? window.portfolioSemantics?.[source]?.playbackRate ?? 0.65) * this.speed;
