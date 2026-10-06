@@ -9,7 +9,7 @@ Static personal website published at https://looseleif.github.io/ through GitHub
 - `project-*.html`: project descriptions, recordings, and additional photographs.
 - `about.html`: background, printable resume, volunteering, and leadership.
 - `socials.html`: contact profiles.
-- `socio/index.html`: Socio Studios, remorse, and IYKYD.
+- `socio/index.html`: Socio, its conversation software prototype, and IYKYD development documentation.
 
 ## Local preview
 
@@ -29,3 +29,5 @@ Only the About portrait is monochrome. Project images retain their color. Reduce
 ## Publishing
 
 GitHub Pages publishes the root of `main`. `.nojekyll` marks this as a static site. Changes should be checked for local links, missing assets, mobile overflow, playback, and automatic rotation before pushing to `main`.
+
+Electric Drives & Control combines the rover and electric drive builds in `project-electric-drives.html`. Old rover, mountain board, and remorse URLs redirect to the consolidated projects.

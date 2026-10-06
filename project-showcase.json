@@ -179,17 +179,6 @@
     ]
   },
   {
-    "project": "rover",
-    "items": [
-      {
-        "mediaIndex": 0,
-        "src": "images/fanimg.jpg",
-        "caption": "The rover hardware prototype.",
-        "title": "Mobile Rover: Vision & Control"
-      }
-    ]
-  },
-  {
     "project": "feedback-loop",
     "items": [
       {
@@ -231,18 +220,7 @@
     ]
   },
   {
-    "project": "remorse",
-    "items": [
-      {
-        "mediaIndex": 0,
-        "src": "images/previews/remorse.webp",
-        "caption": "The remorse application icon.",
-        "title": "remorse: Conversation Interfaces"
-      }
-    ]
-  },
-  {
-    "project": "mountain-board",
+    "project": "electric-drives",
     "items": [
       {
         "mediaIndex": 0,
@@ -270,6 +248,12 @@
         "src": "images/semantic/board-00002.png",
         "caption": "The mountain board is shown under red lighting.",
         "title": "Assembled board"
+      },
+      {
+        "mediaIndex": 7,
+        "src": "images/fanimg.jpg",
+        "caption": "The rover hardware prototype.",
+        "title": "Mobile Rover: Vision & Control"
       }
     ]
   },

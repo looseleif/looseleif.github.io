@@ -983,40 +983,6 @@ window.portfolioProjects = [
     ]
   },
   {
-    "id": "rover",
-    "title": "Mobile Rover: Vision & Control",
-    "category": "Robotics",
-    "line": "Onboard computing and camera-based object tracking.",
-    "media": [
-      {
-        "src": "images/fanimg.jpg",
-        "poster": "images/fanimg.jpg",
-        "caption": "The rover hardware prototype.",
-        "kind": "image",
-        "width": 128,
-        "height": 227
-      }
-    ],
-    "role": "Mobile robotics / Prototype development",
-    "tint": "#181817",
-    "page": "project-rover.html",
-    "paragraphs": [
-      "I am developing a mobile rover that combines robot hardware, onboard computing, and camera-based tracking.",
-      "The project began with Follow Anything Now, an exploration of following selected people or objects. The current portfolio documents the hardware prototype."
-    ],
-    "stills": [
-      0
-    ],
-    "showcase": [
-      {
-        "mediaIndex": 0,
-        "src": "images/fanimg.jpg",
-        "caption": "The rover hardware prototype.",
-        "title": "Mobile Rover: Vision & Control"
-      }
-    ]
-  },
-  {
     "id": "feedback-loop",
     "title": "The Feedback Loop: Interactive Physiology",
     "category": "Hardware",
@@ -1346,44 +1312,10 @@ window.portfolioProjects = [
     ]
   },
   {
-    "id": "remorse",
-    "title": "remorse: Conversation Interfaces",
-    "category": "Software",
-    "line": "Live transcription, speaker tracking, and haptic feedback.",
-    "media": [
-      {
-        "src": "images/previews/remorse.webp",
-        "poster": "images/previews/remorse.webp",
-        "caption": "The remorse application icon.",
-        "kind": "image",
-        "width": 256,
-        "height": 256
-      }
-    ],
-    "role": "Desktop software / Phone & watch integration",
-    "tint": "#181819",
-    "page": "project-remorse.html",
-    "paragraphs": [
-      "I am developing remorse as a desktop hub for live conversations. The application brings together transcription, speaker tracking, questions, and session history.",
-      "Phone and watch clients connect to the hub, with support for haptic feedback. Optional local language-model tools support transcript retrieval."
-    ],
-    "stills": [
-      0
-    ],
-    "showcase": [
-      {
-        "mediaIndex": 0,
-        "src": "images/previews/remorse.webp",
-        "caption": "The remorse application icon.",
-        "title": "remorse: Conversation Interfaces"
-      }
-    ]
-  },
-  {
-    "id": "mountain-board",
-    "title": "Electric Mountain Board: Drive & Control",
+    "id": "electric-drives",
+    "title": "Electric Drives & Control",
     "category": "Hardware",
-    "line": "Battery, drivetrain, controller, and VESC configuration.",
+    "line": "Motor control, drivetrain integration, and a mobile rover prototype.",
     "media": [
       {
         "src": "images/full/board-0000.png",
@@ -1445,14 +1377,22 @@ window.portfolioProjects = [
         "kind": "image",
         "width": 800,
         "height": 360
+      },
+      {
+        "src": "images/fanimg.jpg",
+        "poster": "images/fanimg.jpg",
+        "caption": "The rover hardware prototype.",
+        "kind": "image",
+        "width": 128,
+        "height": 227
       }
     ],
-    "role": "Hardware assembly / Motor-control integration",
+    "role": "Electric drives / Mobile robotics",
     "tint": "#181819",
-    "page": "project-mountain-board.html",
+    "page": "project-electric-drives.html",
     "paragraphs": [
-      "I assembled and tested an electric mountain board, integrating the battery, drivetrain, handheld controller, and motor control.",
-      "The build involved bench testing and VESC configuration. The gallery documents components and the assembled board."
+      "I build and test electric drive systems, from battery and motor-controller integration to a mobile rover with onboard computing and camera-based tracking.",
+      "The mountain board build covers drivetrain assembly, handheld control, bench testing, and VESC configuration. The rover extends this work into mobile robotics and visual tracking."
     ],
     "stills": [
       0,
@@ -1460,7 +1400,8 @@ window.portfolioProjects = [
       2,
       4,
       5,
-      6
+      6,
+      7
     ],
     "showcase": [
       {
@@ -1489,6 +1430,12 @@ window.portfolioProjects = [
         "src": "images/semantic/board-00002.png",
         "caption": "The mountain board is shown under red lighting.",
         "title": "Assembled board"
+      },
+      {
+        "mediaIndex": 7,
+        "src": "images/fanimg.jpg",
+        "caption": "The rover hardware prototype.",
+        "title": "Mobile Rover: Vision & Control"
       }
     ]
   },
@@ -1690,10 +1637,15 @@ window.portfolioProjects = [
   },
   {
     "id": "socio",
-    "title": "Socio Studios",
+    "title": "Socio",
     "category": "Software",
-    "line": "The company behind remorse. IYKYD documents its tools in use over time.",
+    "line": "Conversational supplements for wearable devices.",
     "page": "socio/",
-    "media": []
+    "media": [],
+    "role": "Wearable devices / Conversation support",
+    "paragraphs": [
+      "Socio is a project by Socio Studios with the goal of providing conversational supplements for wearable devices.",
+      "remorse is the conversation software prototype; IYKYD documents the tools in use and their development."
+    ]
   }
 ];

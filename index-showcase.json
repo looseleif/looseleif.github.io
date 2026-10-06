@@ -235,7 +235,7 @@
     ]
   },
   {
-    "project": "mountain-board",
+    "project": "electric-drives",
     "visibleDetails": [
       {
         "mediaIndex": 0,
@@ -243,6 +243,13 @@
         "originalSource": "videos/loops/board.mp4",
         "timestamp": 0.0,
         "caption": "Close-up of the wheel and mechanical drive components."
+      },
+      {
+        "mediaIndex": 7,
+        "displaySource": "images/fanimg.jpg",
+        "originalSource": "images/fanimg.jpg",
+        "timestamp": null,
+        "caption": "The mobile rover hardware prototype."
       },
       {
         "mediaIndex": 1,
@@ -374,13 +381,5 @@
         "caption": "Sync Tank project: PCA9685 controller and wiring in the Reeflex camera platform."
       }
     ]
-  },
-  {
-    "project": "rover",
-    "visibleDetails": []
-  },
-  {
-    "project": "remorse",
-    "visibleDetails": []
   }
 ]
