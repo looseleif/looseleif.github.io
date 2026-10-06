@@ -27,25 +27,59 @@
     });
     return reel;
   }
+  // Each composition pairs a project-level view with distinct implementation details.
+  const compositions = {
+    'sync-tank': { picks:[0,2,3], labels:['Aquarium system','Camera feeds & tank model','Camera mechanism'], caption:'An aquarium system connecting cameras, a spatial interface, and a motorized camera platform.' },
+    aggro: { picks:[0,1,2], video:31, labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
+    solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
+    awear: { picks:[3,0,4], labels:['Wrist-worn prototype','Custom circuit board','Optical sensor'], caption:'The wearable cardiac monitor, its custom electronics, and the assembled optical sensor.' },
+    'feedback-loop': { picks:[0,1,3], video:17, labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
+    'electric-drives': { picks:[0,2,1], labels:['Drivetrain assembly','Complete mountain board','Handheld control'], caption:'The electric mountain board: motor integration, assembled vehicle, and handheld control. Rover development is documented in the project.' }
+  };
+  function compositionFor(id) {
+    const project = projects.find(p => p.id === id), config = compositions[id];
+    if (!project || !config) return null;
+    const figure = document.createElement('figure');
+    figure.className = 'project-composition';
+    figure.setAttribute('aria-label', `${project.title}: overview and details`);
+    const grid = document.createElement('div');grid.className = 'composition-grid';
+    config.picks.forEach((pick, index) => {
+      const photo = picks[id][pick];
+      const clip = index === 0 && config.video != null ? project.media[config.video] : null;
+      const link = document.createElement('a');link.className = 'composition-tile';
+      link.dataset.project = id;link.dataset.index = clip ? config.video : photo.mediaIndex;
+      link.href = clip?.src || photo.originalSource || photo.displaySource;
+      if (!clip && photo.timestamp != null) link.dataset.start = photo.timestamp;
+      link.setAttribute('aria-label', `${clip ? 'Watch full demonstration' : 'Expand image'}: ${config.labels[index]}`);
+      const media = document.createElement(clip ? 'video' : 'img');
+      if (clip) {
+        media.className = 'project-loop';media.dataset.src = clip.src;
+        media.poster = photo.displaySource;media.muted = true;media.loop = true;
+        media.playsInline = true;media.preload = 'none';
+        media.setAttribute('aria-label', clip.caption);
+      } else {
+        media.src = photo.displaySource;media.alt = photo.caption;
+        media.loading = 'lazy';media.decoding = 'async';
+      }
+      const label = document.createElement('span');label.className = 'composition-label';
+      label.textContent = config.labels[index] + (clip ? ' / Play & scrub' : '');
+      link.append(media,label);grid.append(link);
+    });
+    const caption = document.createElement('figcaption');caption.textContent = config.caption;
+    figure.append(grid,caption);return figure;
+  }
   document.querySelectorAll('.system-slide').forEach(slide => {
-    const reel = reelFor(slide.id.replace('system-', ''));
-    if (!reel) return;
-    slide.querySelector('.exhibit-stage').replaceWith(reel);
+    const composition = compositionFor(slide.id.replace('system-', ''));
+    if (!composition) return;
+    slide.querySelector('.exhibit-stage').replaceWith(composition);
     const description = slide.querySelector('.terminal-panel dd:last-of-type');
-    const syncCaption = () => {
-      if (!description) return;
-      const caption = reel.querySelector('.reel-slide:not([hidden]) figcaption');
-      const text = caption.dataset.terminalText || caption.textContent;
-      if (window.retypeProjectPanel) window.retypeProjectPanel(slide, text);
-      else description.textContent = text;
-    };
-    reel.addEventListener('portfolio:frame', syncCaption); syncCaption();
+    if (description) description.textContent = composition.querySelector('figcaption').textContent;
   });
   document.querySelectorAll('.project-exhibit').forEach(card => {
     const id = card.id;
     const project = projects.find(project => project.id === id);
     if (!project) return;
-    const reel = reelFor(id);
+    const reel = compositionFor(id);
     const copy = card.querySelector('.exhibit-copy');
     copy.classList.add('focused-copy');
     if (project.presentation) {

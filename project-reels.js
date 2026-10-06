@@ -16,7 +16,7 @@
       clearTimeout(timer);
       reel.classList.remove('is-cycling');
       if (showcase || !visible || galleryOpen || document.hidden) return;
-      const delay = 2000 + Math.random() * 2000;
+      const delay = 7000 + Math.random() * 2000;
       reel.style.setProperty('--reel-duration', `${delay}ms`);
       reel.dataset.nextDelay = String(Math.round(delay));
       void progress.offsetWidth;

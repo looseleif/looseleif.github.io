@@ -17,7 +17,10 @@
   const schedule = () => {
     clearTimeout(timer); root.classList.remove('is-running');
     if (!visible || document.hidden || galleryOpen) return;
-    const delay = 2000 + Math.random() * 2000;
+    const video = slides[index].querySelector('.project-loop');
+    const clip = (window.portfolioSemantics || {})[video?.dataset.src];
+    // Leave room for the entire recording at its actual playback speed.
+    const delay = Math.max(12000, clip ? (clip.duration / clip.playbackRate + 2) * 1000 : 0);
     root.style.setProperty('--system-duration', `${delay}ms`);
     root.dataset.nextDelay = String(Math.round(delay));
     void root.offsetWidth;
@@ -29,6 +32,8 @@
     index = (next + slides.length) % slides.length;
     slides.forEach((slide, i) => { slide.hidden = i !== index; });
     tabs.forEach((tab, i) => { tab.setAttribute('aria-selected', String(i === index)); tab.tabIndex = i === index ? 0 : -1; });
+    const video = slides[index].querySelector('.project-loop');
+    if (video?.readyState) video.currentTime = 0;
     highlightProject();
     document.dispatchEvent(new CustomEvent('portfolio:system'));
     schedule();

@@ -41,6 +41,12 @@
       if (entries[0].isIntersecting && !shown) { shown = true;revealReel(reel); }
     }, { threshold:.05 }).observe(reel);
   });
+  document.querySelectorAll('.work-showcase .project-composition figcaption').forEach(caption => {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) { typeText(caption, captionText(caption));observer.disconnect(); }
+    }, { threshold:.1 });
+    observer.observe(caption);
+  });
   function retypeProjectPanel(slide, text) {
     const panel = slide?.querySelector('.terminal-panel');
     const description = panel?.querySelector('dd:last-of-type');

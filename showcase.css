@@ -98,3 +98,42 @@ body:has(.case-intro) .focused-reel figcaption { padding-inline:0; }
   body:has(.case-intro) .case-intro h1 { font-size:42px; }
 }
 @media(prefers-reduced-motion:reduce) { .cinematic-showcase .reel-slide,.work-showcase .reel-slide { animation:none; } }
+
+/* A small visual narrative: one main view and two complementary details. */
+.project-composition { margin:0; min-width:0; }
+.composition-grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:clamp(320px,36vw,500px) 190px; gap:6px; }
+.composition-tile { position:relative; display:block; min-width:0; min-height:0; overflow:hidden; background:#141414; }
+.composition-tile:first-child { grid-column:1 / -1; }
+.composition-tile img,.composition-tile video { display:block; width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+.composition-tile:hover img { transform:scale(1.025); }
+.composition-tile:focus-visible { outline:2px solid white; outline-offset:3px; z-index:1; }
+.composition-label { position:absolute; inset:auto 0 0; padding:28px 14px 12px; background:linear-gradient(transparent,#000b); color:white; font:11px/1.5 var(--mono); pointer-events:none; }
+.project-composition>figcaption { padding:17px 0 0; font:15px/1.7 var(--mono); color:#bcbcbc; }
+.visual-index #electric-drives .composition-grid { grid-template-rows:240px 240px; grid-template-columns:1.2fr 1fr; }
+.visual-index #electric-drives .composition-tile:first-child { grid-column:1; grid-row:1 / 3; }
+.visual-index #electric-drives .composition-tile:nth-child(2) { grid-column:2; }
+.visual-index #electric-drives .composition-tile:nth-child(3) { grid-column:2; }
+.cinematic-showcase .system-slide { display:block; min-height:0; }
+.cinematic-showcase .composition-grid { grid-template-columns:1.9fr 1fr; grid-template-rows:repeat(2,minmax(0,1fr)); height:clamp(430px,45vw,610px); }
+.cinematic-showcase .composition-tile:first-child { grid-column:1; grid-row:1 / 3; }
+.cinematic-showcase .composition-tile:nth-child(2),.cinematic-showcase .composition-tile:nth-child(3) { grid-column:2; }
+.cinematic-showcase .composition-label { font-size:12px; padding:35px 20px 16px; }
+.cinematic-showcase .project-composition>figcaption { display:none; }
+.cinematic-showcase .terminal-panel { position:relative; inset:auto; min-height:245px; padding:25px 0 30px; background:none; pointer-events:auto; }
+.cinematic-showcase .system-slide>.software-stage { height:clamp(430px,45vw,610px); }
+@media(max-width:1000px) {
+  .composition-grid { grid-template-rows:270px 160px; }
+}
+@media(max-width:700px) {
+  .composition-grid { grid-template-rows:260px 160px; }
+  .composition-label { font-size:10px; padding:26px 10px 9px; }
+  .project-composition>figcaption { font-size:14px; }
+  .cinematic-showcase .composition-grid { height:auto; grid-template-columns:1fr 1fr; grid-template-rows:270px 150px; }
+  .cinematic-showcase .composition-tile:first-child { grid-column:1 / -1; grid-row:1; }
+  .cinematic-showcase .composition-tile:nth-child(2) { grid-column:1; grid-row:2; }
+  .cinematic-showcase .composition-tile:nth-child(3) { grid-column:2; grid-row:2; }
+  .cinematic-showcase .composition-label { font-size:10px; padding:26px 10px 9px; }
+  .cinematic-showcase .terminal-panel { padding:23px 0; min-height:390px; }
+  .cinematic-showcase .system-slide>.software-stage { height:300px; }
+}
+@media(prefers-reduced-motion:reduce) { .composition-tile img { transition:none; } }

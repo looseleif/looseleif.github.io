@@ -34,6 +34,7 @@
   }
   reducedMotion.addEventListener('change', event => { paused = event.matches; updateMotionButton(); syncMotion(); });
   document.addEventListener('visibilitychange', syncMotion);
+  document.addEventListener('portfolio:system', syncMotion);
 
   const filters = document.querySelector('.filters');
   if (filters) {
