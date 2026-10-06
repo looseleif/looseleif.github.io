@@ -164,3 +164,19 @@ video::-webkit-media-controls { display:none !important; }
   .thesis-feature { padding:22px 18px; }
 }
 @media print { .project-background { display:none; } }
+
+/* A countdown to the next project, placed directly against the imagery. */
+.cinematic-showcase .composition-grid { position:relative; }
+.cinematic-showcase .system-progress {
+  position:absolute; inset:auto 0 0; z-index:4;
+  display:block!important; height:3px; margin:0;
+  background:#ffffff26; pointer-events:none; overflow:hidden;
+}
+.cinematic-showcase .system-progress::after { content:none; animation:none; }
+.system-progress-fill {
+  display:block; width:100%; height:100%; background:#fff;
+  transform:scaleX(0); transform-origin:left;
+  box-shadow:0 0 6px #ffffff40;
+}
+.project-reel .reel-progress { height:2px; background:#ffffff26; }
+.project-reel .reel-progress::after { background:#fff; }

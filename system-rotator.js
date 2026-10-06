@@ -3,7 +3,17 @@
   if (!root) return;
   const tabs = [...root.querySelectorAll('[role=tab]')];
   const slides = [...root.querySelectorAll('.system-slide')];
-  let index = 0, visible = false, galleryOpen = false, timer;
+  let index = 0, visible = false, galleryOpen = false, timer, frame;
+  let elapsed = 0, startedAt = 0, duration = 0, running = false;
+  const progress = root.querySelector('.system-progress');
+  const fill = document.createElement('span');
+  fill.className = 'system-progress-fill';
+  progress.replaceChildren(fill);
+  const paint = () => {
+    const current = elapsed + (running ? performance.now() - startedAt : 0);
+    fill.style.transform = `scaleX(${Math.min(1, current / (duration || 1))})`;
+  };
+  const tick = () => { paint();if (running) frame = requestAnimationFrame(tick); };
   const highlightProject = () => {
     const id = slides[index].id.replace('system-', '');
     const project = (window.portfolioProjects || []).find(item => item.id === id);
@@ -14,20 +24,26 @@
       else link.removeAttribute('aria-current');
     });
   };
-  const schedule = () => {
-    clearTimeout(timer); root.classList.remove('is-running');
+  const schedule = (reset = false) => {
+    clearTimeout(timer);cancelAnimationFrame(frame);
+    if (running) elapsed += performance.now() - startedAt;
+    running = false;root.classList.remove('is-running');
+    if (reset || !duration) {
+      const durations = [...slides[index].querySelectorAll('.project-loop')].map(video => {
+        const clip = (window.portfolioSemantics || {})[video.dataset.src];
+        return clip ? (clip.duration / window.portfolioMotion.rateFor(video.dataset.src) + 1) * 1000 : 0;
+      });
+      duration = Math.max(8000, ...durations);elapsed = 0;
+      root.dataset.nextDelay = String(Math.round(duration));
+    }
+    const media = slides[index].querySelector('.composition-grid,.exhibit-stage');
+    if (media && progress.parentElement !== media) media.append(progress);
+    paint();
     if (!visible || document.hidden || galleryOpen) return;
-    const durations = [...slides[index].querySelectorAll('.project-loop')].map(video => {
-      const clip = (window.portfolioSemantics || {})[video.dataset.src];
-      return clip ? (clip.duration / window.portfolioMotion.rateFor(video.dataset.src) + 1) * 1000 : 0;
-    });
-    // Every visible recording gets time to finish at its actual playback speed.
-    const delay = Math.max(8000, ...durations);
-    root.style.setProperty('--system-duration', `${delay}ms`);
-    root.dataset.nextDelay = String(Math.round(delay));
-    void root.offsetWidth;
+    startedAt = performance.now();running = true;
     root.classList.add('is-running');
-    timer = setTimeout(() => show(index + 1), delay);
+    tick();
+    timer = setTimeout(() => show(index + 1), Math.max(0, duration - elapsed));
   };
   const show = next => {
     slides[index].querySelectorAll('video').forEach(video => { video.autoplay = false;video.pause(); });
@@ -37,7 +53,7 @@
     slides[index].querySelectorAll('.project-loop').forEach(video => { if (video.readyState) video.currentTime = 0; });
     highlightProject();
     document.dispatchEvent(new CustomEvent('portfolio:system'));
-    schedule();
+    schedule(true);
   };
   tabs.forEach((tab, i) => {
     tab.addEventListener('click', () => show(i));
@@ -64,7 +80,7 @@
     const nextVisible = entries[0].isIntersecting;
     if (visible !== nextVisible) { visible = nextVisible;schedule(); }
   }, { threshold: 0 }).observe(root);
-  document.addEventListener('visibilitychange', schedule);
+  document.addEventListener('visibilitychange', () => schedule());
   document.addEventListener('portfolio:gallery', event => { galleryOpen = event.detail.open; schedule(); });
   const box = root.getBoundingClientRect();
   highlightProject();
