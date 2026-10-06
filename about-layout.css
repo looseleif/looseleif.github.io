@@ -1,0 +1,49 @@
+/* Match the resume to the quieter, borderless project presentation. */
+.about-page .about-grid { padding-bottom:46px; }
+.about-page .resume-heading { padding-top:32px; }
+.about-page .resume-section { padding-bottom:38px; }
+.about-page .resume-section>h2 { font-size:34px; letter-spacing:-.04em; }
+.about-page .experience-row { grid-template-columns:minmax(0,1fr) minmax(0,1.8fr); padding:28px 0; gap:44px; background:none; }
+.about-page .experience-row h3 { font-size:25px; line-height:1.25; }
+.about-page .experience-row h4 { font-size:16px; font-weight:500; line-height:1.5; margin-bottom:7px; }
+.about-page .experience-row .experience-date { font:12px/1.7 var(--mono); color:#999; margin-top:11px; }
+.about-page .experience-row .experience-location { font:12px/1.7 var(--mono); color:#999; margin:0 0 15px; }
+.about-page .resume-bullets { font-size:15px; line-height:1.8; margin-top:12px; }
+.about-page #volunteering .experience-row>div>p:not(.experience-date):not(.experience-location) { font-size:15px; line-height:1.8; }
+.education-section { scroll-margin-top:24px; }
+.about-page .education-section>h2 { margin-bottom:9px; }
+.education-institution { font-size:16px; color:#bbb; margin-bottom:26px; }
+.education-list { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:42px; }
+.education-entry { padding:24px 0 6px; border-top:1px solid #ffffff26; }
+.degree-heading { display:flex; align-items:baseline; justify-content:space-between; gap:22px; margin-bottom:15px; }
+.degree-heading h3 { font-size:27px; line-height:1.2; }
+.degree-heading .degree-year { flex-shrink:0; font:12px var(--mono); color:#aaa; }
+.education-entry>p { font-size:15px; line-height:1.75; }
+.education-entry .degree-focus { color:#eee; margin-bottom:9px; }
+.education-entry .degree-recognition { margin-top:19px; font-size:13px; color:#bcbcbc; }
+.education-entry .text-link { margin-top:12px; }
+@media(max-width:900px) {
+  .education-list { grid-template-columns:1fr; gap:22px; }
+  .degree-heading h3 { font-size:26px; }
+}
+@media(max-width:700px) {
+  .about-page .experience-row { grid-template-columns:1fr; gap:18px; padding:25px 0; }
+  .about-page .experience-row h3 { font-size:24px; }
+  .about-page .resume-section>h2 { font-size:30px; }
+  .about-page .experience-row .experience-date { margin-top:8px; }
+  .about-page .experience-row .experience-location { margin-bottom:13px; }
+  .degree-heading { gap:14px; }.degree-heading h3 { font-size:24px; }
+  .education-institution { font-size:15px; }
+}
+@media print {
+  .about-page .experience-row { grid-template-columns:180px 1fr; padding:12pt 0; gap:20px; }
+  .about-page .experience-row h3 { font-size:13pt; }.about-page .experience-row h4 { font-size:11pt; }
+  .about-page .experience-row .experience-date,.about-page .experience-row .experience-location { font-size:9pt; }
+  .about-page .resume-bullets,.about-page #volunteering .experience-row>div>p:not(.experience-date):not(.experience-location) { font-size:10pt; line-height:1.5; }
+  .about-page .resume-section>h2 { font-size:18pt; }
+  .education-list { grid-template-columns:1fr 1fr; gap:20pt; }
+  .education-entry { break-inside:avoid; padding-top:10pt; }
+  .degree-heading { display:block; }.degree-heading h3 { font-size:13pt; }.degree-heading .degree-year { margin-top:6pt; font-size:9pt; }
+  .education-entry>p,.education-institution { font-size:10pt; }
+  .education-entry .degree-recognition { font-size:9pt; }
+}
