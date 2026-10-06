@@ -5,7 +5,7 @@
   const time = value => `${Math.floor(value / 60)}:${String(Math.floor(value % 60)).padStart(2, '0')}`;
   const sync = state => {
     if (state.visible && !state.video.closest('[hidden]') && !state.manualPause && !reduced.matches && !galleryOpen && !document.hidden) {
-      state.video.play().catch(() => {});
+      if (state.video.paused) state.video.play().catch(() => {});
     } else state.video.pause();
   };
   document.querySelectorAll('.clip-player').forEach(player => {
@@ -17,7 +17,7 @@
     const state = { video, visible: false, manualPause: false };
     states.push(state);
     controls.hidden = false;
-    video.controls = false;
+    video.controls = false;video.defaultMuted = true;video.muted = true;video.playsInline = true;
     const semantics = (window.portfolioSemantics || {})[video.getAttribute('src')];
     const rate = semantics?.playbackRate || 0.65;
     video.defaultPlaybackRate = rate;
@@ -99,7 +99,7 @@
     new IntersectionObserver(entries => {
       state.visible = entries[0].isIntersecting;
       sync(state);
-    }, { threshold: 0.25 }).observe(player);
+    }, { threshold: 0.12 }).observe(video);
     update();
   });
   document.addEventListener('portfolio:gallery', event => { galleryOpen = event.detail.open; states.forEach(sync); });

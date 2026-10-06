@@ -8,9 +8,10 @@
   function syncMotion() {
     loops.forEach(video => {
       if (!paused && !dialogOpen && !document.hidden && visible.has(video) && !video.closest('[hidden]')) {
+        video.autoplay = true;
         if (!video.getAttribute('src')) video.src = video.dataset.src;
-        video.play().catch(() => {});
-      } else video.pause();
+        if (video.paused) video.play().catch(() => {});
+      } else { video.autoplay = false;video.pause(); }
     });
   }
   const observer = new IntersectionObserver(entries => {
@@ -19,7 +20,10 @@
   }, { threshold: 0.12 });
   loops.forEach(video => {
     const rate = (window.portfolioSemantics || {})[video.dataset.src || video.getAttribute('src')]?.playbackRate || 0.65;
-    video.defaultPlaybackRate = rate; video.playbackRate = rate; observer.observe(video);
+    video.defaultMuted = true;video.muted = true;video.playsInline = true;
+    video.defaultPlaybackRate = rate; video.playbackRate = rate;
+    video.addEventListener('canplay', syncMotion);
+    observer.observe(video);
   });
   const motionButton = document.querySelector('.motion-control');
   function updateMotionButton() {
@@ -35,6 +39,7 @@
   reducedMotion.addEventListener('change', event => { paused = event.matches; updateMotionButton(); syncMotion(); });
   document.addEventListener('visibilitychange', syncMotion);
   document.addEventListener('portfolio:system', syncMotion);
+  window.addEventListener('pageshow', syncMotion);
 
   const filters = document.querySelector('.filters');
   if (filters) {

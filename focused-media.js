@@ -30,10 +30,10 @@
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
     'sync-tank': { picks:[0,2,3], labels:['Aquarium system','Camera feeds & tank model','Camera mechanism'], caption:'An aquarium system connecting cameras, a spatial interface, and a motorized camera platform.' },
-    aggro: { picks:[0,1,2], video:31, labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
+    aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
     awear: { picks:[3,0,4], labels:['Wrist-worn prototype','Custom circuit board','Optical sensor'], caption:'The wearable cardiac monitor, its custom electronics, and the assembled optical sensor.' },
-    'feedback-loop': { picks:[0,1,3], video:17, labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
+    'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
     'electric-drives': { picks:[0,2,1], labels:['Drivetrain assembly','Complete mountain board','Handheld control'], caption:'The electric mountain board: motor integration, assembled vehicle, and handheld control. Rover development is documented in the project.' }
   };
   function compositionFor(id) {
@@ -45,16 +45,17 @@
     const grid = document.createElement('div');grid.className = 'composition-grid';
     config.picks.forEach((pick, index) => {
       const photo = picks[id][pick];
-      const clip = index === 0 && config.video != null ? project.media[config.video] : null;
+      const videoIndex = config.videos?.[index];
+      const clip = videoIndex != null ? project.media[videoIndex] : null;
       const link = document.createElement('a');link.className = 'composition-tile';
-      link.dataset.project = id;link.dataset.index = clip ? config.video : photo.mediaIndex;
+      link.dataset.project = id;link.dataset.index = clip ? videoIndex : photo.mediaIndex;
       link.href = clip?.src || photo.originalSource || photo.displaySource;
       if (!clip && photo.timestamp != null) link.dataset.start = photo.timestamp;
       link.setAttribute('aria-label', `${clip ? 'Watch full demonstration' : 'Expand image'}: ${config.labels[index]}`);
       const media = document.createElement(clip ? 'video' : 'img');
       if (clip) {
         media.className = 'project-loop';media.dataset.src = clip.src;
-        media.poster = photo.displaySource;media.muted = true;media.loop = true;
+        media.poster = photo.displaySource;media.defaultMuted = true;media.muted = true;media.loop = true;
         media.playsInline = true;media.preload = 'none';
         media.setAttribute('aria-label', clip.caption);
       } else {
@@ -62,7 +63,7 @@
         media.loading = 'lazy';media.decoding = 'async';
       }
       const label = document.createElement('span');label.className = 'composition-label';
-      label.textContent = config.labels[index] + (clip ? ' / Play & scrub' : '');
+      label.textContent = config.labels[index] + (clip ? ' / Expand clip' : '');
       link.append(media,label);grid.append(link);
     });
     const caption = document.createElement('figcaption');caption.textContent = config.caption;
