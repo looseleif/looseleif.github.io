@@ -1,9 +1,9 @@
 window.portfolioProjects = [
   {
     "id": "sync-tank",
-    "title": "Sync Tank: Aquarium Cameras & Control",
+    "title": "Sync Tank: Aquarium Networking & Habitat Monitoring",
     "category": "Hardware",
-    "line": "Camera hardware, spatial tank models, and a local observation hub.",
+    "line": "Networked aquariums, habitat monitoring, and a shared observation hub.",
     "media": [
       {
         "src": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
@@ -191,7 +191,7 @@ window.portfolioProjects = [
     "tint": "#171918",
     "page": "project-sync-tank.html",
     "paragraphs": [
-      "I am developing Sync Tank as a local aquarium observation system. Raspberry Pi tank nodes connect cameras and devices to a shared hub, with a spatial model that relates each camera view to its position in the tank.",
+      "I am developing Sync Tank as a local network for aquarium observation and habitat monitoring. Raspberry Pi tank nodes connect cameras and devices to a shared hub, with a spatial model that relates each camera view to its position in the tank.",
       "The work spans camera hardware, control electronics, interface development, and physical testing. SEE SEA TV presents feeds, while Sightings saves observations with their tank and camera context.",
       "The public site includes build notes and a photo-reference tank builder. The builder is a planning tool; live feeds and device controls run through the local hub."
     ],
@@ -228,34 +228,34 @@ window.portfolioProjects = [
         "mediaIndex": 0,
         "src": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
         "caption": "Two-tank test setup with cameras and control hardware, before the portrait display was installed.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 2,
         "src": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
         "caption": "Dry-bench test of the tank model above a live camera feed.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 3,
         "src": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
         "caption": "Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 7,
         "src": "images/synctankimg.jpg",
         "caption": "The Sync Tank aquarium, electronics, and exhibition display.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       }
     ],
     "presentation": {
-      "field": "Connected hardware / Aquarium systems",
-      "contribution": "I integrate cameras, control electronics, and a local observation interface so aquarium footage stays connected to the tank and position it came from.",
+      "field": "Aquarium networking / Habitat monitoring",
+      "contribution": "I connect aquarium nodes through a shared observation hub, keeping habitat footage and sightings linked to their tank and location.",
       "context": [
         [
           "Work",
-          "Camera integration, embedded control, spatial interfaces"
+          "Networked tank nodes, habitat observation, spatial interfaces"
         ],
         [
           "Setting",

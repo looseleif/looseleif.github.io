@@ -6,37 +6,37 @@
         "mediaIndex": 9,
         "src": "images/sync-tank/exhibit-table-close.jpg",
         "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 10,
         "src": "images/sync-tank/sstv3.png",
         "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 1,
         "src": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
         "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 11,
         "src": "images/sync-tank/tank-side-display.jpg",
         "caption": "A live underwater camera feed displayed beside the aquarium.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 2,
         "src": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
         "caption": "Dry-bench test of the tank model above a live camera feed.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 3,
         "src": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
         "caption": "Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2.",
-        "title": "Sync Tank: Aquarium Cameras & Control"
+        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
       }
     ]
   },
