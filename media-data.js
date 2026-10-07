@@ -763,9 +763,9 @@ window.portfolioProjects = [
     "tint": "#191816",
     "page": "project-solar.html",
     "paragraphs": [
-      "I worked as an infotainment and telemetry engineer with the University of Minnesota Solar Vehicle Project, contributing software development, hardware design, and system architecture to both existing systems and new work.",
-      "My engineering work included the F1 infotainment application and G1 telemetry hardware. I also served as a driver in the American Solar Challenge, contributing to the team's first-place finish in the Multi-Occupant Vehicle class in 2022.",
-      "Alongside engineering and driving, I filmed and developed promotional material for the team. These roles let me contribute across software and hardware architecture, media production, and vehicle operation."
+      "I developed infotainment software and telemetry hardware for the University of Minnesota Solar Vehicle Project from 2021 to 2023, working across circuit design, software development, and system integration.",
+      "My work included the F1 infotainment application and G1 telemetry hardware. I also drove in the 2022 American Solar Challenge and created promotional films for the team.",
+      "Freya won the Multi-Occupant Vehicle class in 2022, Minnesota's first American Solar Challenge road-race victory."
     ],
     "stills": [
       0
@@ -1077,7 +1077,7 @@ window.portfolioProjects = [
     "page": "project-awear.html",
     "paragraphs": [
       "I designed custom sensing hardware and power electronics for a wearable cardiac-monitoring prototype at the University of Minnesota. Named aWear, the team project explored optical pulse sensing in a small device intended to sit beneath an ordinary wristwatch.",
-      "My work connected circuit design, power management, and physical integration. I shared hardware development with Yuriy Shevchenko and worked alongside teammates developing the detection algorithm, firmware, and interface, with biomedical input on sensing and wearable use.",
+      "My work connected circuit design, power management, and physical integration. I shared hardware development with a teammate and collaborated with the algorithm and firmware team, with biomedical input on sensing and wearable use.",
       "The 2023 project brought together a four-layer, 35 mm board, a printed enclosure, PPG signal processing, and a prototype interface for reviewing readings. The repository preserves the design files, firmware, interface, and original evaluation material."
     ],
     "stills": [
