@@ -33,7 +33,7 @@
     'sync-tank': { picks:[0,1,7], labels:['Complete demo setup / 2025','Detection & caption experiment','Spatial interface prototype / 2026'], caption:'From the assembled aquarium and camera controls to early fish-caption experiments and a spatial interface for connected cameras.' },
     aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
-    awear: { picks:[3,0,4], labels:['Wrist-worn prototype','Custom circuit board','Optical sensor'], caption:'The wearable cardiac monitor, its custom electronics, and the assembled optical sensor.' },
+    awear: { picks:[0,1,2], labels:['Wearable prototype','35 mm custom electronics','Reading history interface'], caption:'From the custom sensing board and wearable enclosure to the prototype interface for reviewing optical pulse readings.' },
     'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
     'electric-drives': { picks:[0,2,1], labels:['Drivetrain assembly','Complete mountain board','Handheld control'], caption:'The electric mountain board: motor integration, assembled vehicle, and handheld control. Rover development is documented in the project.' }
   };
@@ -76,6 +76,7 @@
         viewport.setAttribute('viewBox',`${x} ${y} ${w} ${h}`);
         viewport.setAttribute('role','img');viewport.setAttribute('aria-label',photo.caption);
         viewport.classList.add('composition-crop');
+        if (id === 'awear' && index === 0) viewport.setAttribute('preserveAspectRatio','xMidYMid slice');
         const source = document.createElementNS(ns,'image');
         source.setAttribute('href',photo.displaySource);
         source.setAttribute('width',sourceWidth);source.setAttribute('height',sourceHeight);

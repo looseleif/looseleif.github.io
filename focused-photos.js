@@ -167,46 +167,46 @@ window.focusedProjectPhotos = {
   ],
   "awear": [
     {
-      "mediaIndex": 9,
-      "displaySource": "images/semantic/awear-00003.png",
-      "originalSource": "videos/loops/awear.mp4",
-      "timestamp": 1.35,
-      "caption": "Both sides of the custom circuit board I designed for the wearable cardiac monitor."
+      "mediaIndex": 18,
+      "displaySource": "images/cardiac-wearable/monitor.png",
+      "originalSource": "images/cardiac-wearable/monitor.png",
+      "caption": "The assembled aWear prototype and a trial placement beneath a wristwatch.",
+      "crop": [
+        1175,
+        182,
+        639,
+        847,
+        1920,
+        1080
+      ]
     },
     {
-      "mediaIndex": 11,
-      "displaySource": "images/semantic/awear-00005.png",
-      "originalSource": "videos/loops/awear.mp4",
-      "timestamp": 2.25,
-      "caption": "A blue indicator is illuminated on the assembled board."
+      "mediaIndex": 19,
+      "displaySource": "images/cardiac-wearable/hardware.png",
+      "originalSource": "images/cardiac-wearable/hardware.png",
+      "caption": "Four-layer, 35 mm circuit board with STM32L4, optical sensing, power electronics, and a printed enclosure.",
+      "crop": [
+        990,
+        12,
+        638,
+        625,
+        1920,
+        1080
+      ]
     },
     {
-      "mediaIndex": 14,
-      "displaySource": "images/semantic/awear-00008.png",
-      "originalSource": "videos/loops/awear.mp4",
-      "timestamp": 3.6,
-      "caption": "The white enclosure has a central opening exposing the sensor board."
-    },
-    {
-      "mediaIndex": 16,
-      "displaySource": "images/semantic/awear-00010.png",
-      "originalSource": "videos/loops/awear.mp4",
-      "timestamp": 4.5,
-      "caption": "The prototype is strapped to a wrist."
-    },
-    {
-      "mediaIndex": 4,
-      "displaySource": "images/semantic/awear-00012.png",
-      "originalSource": "videos/loops/awear.mp4",
-      "timestamp": 5.4,
-      "caption": "Green lights illuminate around the central sensor opening."
-    },
-    {
-      "mediaIndex": 6,
-      "displaySource": "images/senior.jpg",
-      "originalSource": "images/senior.jpg",
-      "timestamp": null,
-      "caption": "The senior design team presenting the wearable project."
+      "mediaIndex": 20,
+      "displaySource": "images/cardiac-wearable/interface.png",
+      "originalSource": "images/cardiac-wearable/interface.png",
+      "caption": "Prototype web interface showing a reading explanation and calendar-based event history.",
+      "crop": [
+        784,
+        293,
+        1044,
+        787,
+        1920,
+        1080
+      ]
     }
   ],
   "feedback-loop": [

@@ -850,7 +850,7 @@ window.portfolioProjects = [
     "id": "awear",
     "title": "Wearable Cardiac Monitor",
     "category": "Hardware",
-    "line": "Custom sensing hardware, power management, and wearable integration.",
+    "line": "A 35 mm sensing board, wearable enclosure, and optical cardiac-monitoring prototype.",
     "media": [
       {
         "src": "images/full/awear-0000.png",
@@ -1004,15 +1004,81 @@ window.portfolioProjects = [
         "source": "videos/loops/awear.mp4",
         "timestamp": 4.95,
         "caption": "A side view shows the enclosure, strap, and attached cable."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/monitor.png",
+        "poster": "images/cardiac-wearable/monitor.png",
+        "caption": "The assembled aWear prototype and a trial placement beneath a wristwatch."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/hardware.png",
+        "poster": "images/cardiac-wearable/hardware.png",
+        "caption": "Four-layer, 35 mm circuit board with STM32L4, optical sensing, power electronics, and a printed enclosure."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/interface.png",
+        "poster": "images/cardiac-wearable/interface.png",
+        "caption": "Prototype web interface showing a reading explanation and calendar-based event history."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/firmware.png",
+        "poster": "images/cardiac-wearable/firmware.png",
+        "caption": "Sensor bring-up, STM32 firmware, and a Bluetooth Low Energy characteristic update."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/power-profile.png",
+        "poster": "images/cardiac-wearable/power-profile.png",
+        "caption": "Original power-budget estimates comparing STM32WB and STM32L4 configurations, with a bench measurement photograph."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/parts-budget.png",
+        "poster": "images/cardiac-wearable/parts-budget.png",
+        "caption": "The 2023 prototype parts budget: approximately $43 including the battery."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/signal-processing.png",
+        "poster": "images/cardiac-wearable/signal-processing.png",
+        "caption": "Raw and filtered PPG signals, with the contact-gated sampling and low-pass filter design."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/peak-detection.png",
+        "poster": "images/cardiac-wearable/peak-detection.png",
+        "caption": "Peak interval variability and turning point ratio used by the detection algorithm."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/evaluation-counts.png",
+        "poster": "images/cardiac-wearable/evaluation-counts.png",
+        "caption": "Original recorded-PPG evaluation chart and example classification table."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/evaluation-comparison.png",
+        "poster": "images/cardiac-wearable/evaluation-comparison.png",
+        "caption": "The original presentation comparison, preserved as project documentation; results use different evaluation conditions."
+      },
+      {
+        "kind": "image",
+        "src": "images/cardiac-wearable/poster.png",
+        "poster": "images/cardiac-wearable/poster.png",
+        "caption": "The 2023 senior design poster, covering the hardware, methods, results, and team."
       }
     ],
     "role": "Custom hardware design / Biomedical collaboration",
     "tint": "#191817",
     "page": "project-awear.html",
     "paragraphs": [
-      "I designed custom hardware for a wearable cardiac-monitoring prototype at the University of Minnesota. The device combines optical sensing, an accelerometer, and onboard storage, with my work covering circuit design, power management, and data collection.",
-      "I worked with biomedical engineers and teammates responsible for firmware development and design considerations around appearance, placement, and practical use. This connected the electronics to how the device would be worn and used.",
-      "The team named the prototype aWear. The photographs and recording document the custom circuit board, enclosure, and wrist-worn assembly."
+      "I designed custom sensing hardware and power electronics for a wearable cardiac-monitoring prototype at the University of Minnesota. Named aWear, the team project explored optical pulse sensing in a small device intended to sit beneath an ordinary wristwatch.",
+      "My work connected circuit design, power management, and physical integration. I shared hardware development with Yuriy Shevchenko and worked alongside teammates developing the detection algorithm, firmware, and interface, with biomedical input on sensing and wearable use.",
+      "The 2023 project brought together a four-layer, 35 mm board, a printed enclosure, PPG signal processing, and a prototype interface for reviewing readings. The repository preserves the design files, firmware, interface, and original evaluation material."
     ],
     "stills": [
       0,
@@ -1071,18 +1137,24 @@ window.portfolioProjects = [
     ],
     "presentation": {
       "field": "Wearable electronics / Biomedical collaboration",
-      "contribution": "I designed the custom sensing hardware and power electronics, working with biomedical engineers and teammates on firmware, placement, and wearable design.",
+      "contribution": "I designed custom sensing hardware and power electronics for a 35 mm wearable prototype, working with a team on signal processing, firmware, and practical placement beneath a watch.",
       "context": [
         [
-          "Work",
-          "Circuit design, power management, hardware integration"
+          "Hardware",
+          "Four-layer PCB, optical sensing, battery charging, printed enclosure"
         ],
         [
-          "Build",
-          "Optical cardiac-sensing prototype"
+          "System",
+          "PPG processing, STM32 firmware, prototype reading history"
         ]
       ]
-    }
+    },
+    "links": [
+      {
+        "label": "Project repository",
+        "url": "https://github.com/looseleif/cardiac-wearable"
+      }
+    ]
   },
   {
     "id": "feedback-loop",
