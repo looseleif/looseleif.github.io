@@ -196,3 +196,23 @@ video::-webkit-media-controls { display:none !important; }
   .visual-index [data-composition="sync-tank"] .composition-tile:nth-child(3) { grid-column:2; grid-row:2; }
   .composition-crop { padding:6px 4px 40px; }
 }
+
+/* Thesis narrative: readable columns beside the live project background. */
+.research-section { display:grid; grid-template-columns:minmax(200px,.75fr) minmax(0,1.7fr); gap:clamp(28px,5vw,80px); padding:42px 0; border-top:1px solid #ffffff24; }
+.research-section h2 { max-width:310px; margin:0; font-size:clamp(25px,2.7vw,37px); line-height:1.15; letter-spacing:-.025em; }
+.research-section>div { max-width:800px; }
+.research-section p,.research-references>p { margin:0 0 20px; font-size:17px; line-height:1.85; color:#ddd; }
+.research-section p:last-child { margin-bottom:0; }
+.research-references { border-top:1px solid #ffffff24; padding:45px 0; }
+.research-references h2 { font-size:32px; margin:12px 0 24px; }
+.research-references>p { max-width:850px; }
+.research-references article { max-width:950px; padding:24px 0; border-top:1px solid #ffffff16; }
+.research-references h3 { font-size:20px; line-height:1.4; margin:0 0 10px; }
+.research-references article p { color:#bbb; font-size:15px; line-height:1.75; }
+.research-references .reference-authors { font-size:13px; color:#999; }
+.research-references a { text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:700px) {
+  .research-section { grid-template-columns:1fr; gap:20px; padding:30px 0; }
+  .research-section h2 { max-width:none; font-size:28px; }
+  .research-section p,.research-references>p { font-size:16px; line-height:1.8; }
+}

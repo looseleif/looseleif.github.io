@@ -183,7 +183,7 @@ window.portfolioProjects = [
     "id": "aggro",
     "title": "Robotic Search in Clutter",
     "category": "Robotics",
-    "line": "Self-supervised Q-learning for mechanical search and grasping.",
+    "line": "Self-supervised mechanical search, scalable experimentation, and robotic manipulation.",
     "media": [
       {
         "src": "images/full/aggro-0000.png",
@@ -580,9 +580,9 @@ window.portfolioProjects = [
     "tint": "#181919",
     "page": "project-aggro.html",
     "paragraphs": [
-      "My master's research at the University of Minnesota built on earlier CHOICE Robotics Lab work, including Houjian Yu's research on image-driven object searching and grasping, using Q-learning and self-supervised reinforcement learning. The goal was to find objects within clutter by acting on the surrounding environment.",
-      "I built a second, simplified robotic platform to test the approach beyond the original setup. I also evaluated secondary tasks, including clutter clearing, dilation, and more complex search environments.",
-      "The work connected visual perception, learned action selection, and physical manipulation. The recordings show physical robot tests, simulated tasks, and perception views."
+      "My master's research at the University of Minnesota investigated how robots can uncover and retrieve objects hidden in clutter. I developed the physical platform, perception pipeline, and reinforcement-learning experiments needed to study mechanical search across changing environments.",
+      "The work expanded experimentation through automatically generated clutter, task-specific reward functions, and six policy variants trained for 3,000 iterations each. It connects target discovery, uncovering, and singulation with a platform designed to support larger-scale experimentation and future real-world online learning.",
+      "My contribution spans robot integration, camera geometry, self-supervised Q-learning, and evaluation in simulation with initial physical validation. The central question is how a robot should change its surroundings to make a hidden target visible and accessible."
     ],
     "stills": [
       0,
@@ -664,27 +664,19 @@ window.portfolioProjects = [
       {
         "label": "Master's thesis",
         "url": "https://conservancy.umn.edu/items/a0cb6982-84e6-4fb9-bf83-e43d46128791"
-      },
-      {
-        "label": "Related research: IOSG",
-        "url": "https://arxiv.org/abs/2308.05821"
-      },
-      {
-        "label": "Related research: Grasping the Invisible",
-        "url": "https://choice.umn.edu/deep-learning-approach-grasping-invisible"
       }
     ],
     "presentation": {
       "field": "Robotics research / University of Minnesota",
-      "contribution": "I extended self-supervised robotic search work with a second, simplified platform and additional tests for finding and retrieving objects in clutter.",
+      "contribution": "I developed a robotic mechanical-search platform and evaluated six reinforcement-learning policies for uncovering hidden objects, with automated clutter generation and a path toward larger-scale online training.",
       "context": [
         [
           "Work",
-          "Robot integration, Q-learning, physical and simulated tests"
+          "Robot integration, RGB-D perception, reward design, and policy evaluation"
         ],
         [
-          "Research",
-          "Mechanical search, clutter clearing, and grasping"
+          "Experiments",
+          "Six policy variants; 3,000 simulation training iterations per policy"
         ]
       ]
     }
