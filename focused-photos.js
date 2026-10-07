@@ -155,11 +155,25 @@ window.focusedProjectPhotos = {
   ],
   "solar": [
     {
+      "mediaIndex": 0,
+      "displaySource": "images/solar.png",
+      "originalSource": "images/solar.png",
+      "caption": "The University of Minnesota solar vehicle team with their car.",
+      "fit": "contain"
+    },
+    {
       "mediaIndex": 3,
       "displaySource": "images/semantic/solar-00001.png",
-      "originalSource": "videos/loops/solar.mp4",
-      "timestamp": 1,
-      "caption": "A populated circuit board with controls and connectors."
+      "originalSource": "images/semantic/solar-00001.png",
+      "caption": "A populated circuit board with controls and connectors.",
+      "fit": "contain"
+    },
+    {
+      "mediaIndex": 5,
+      "displaySource": "images/semantic/solar-00003.png",
+      "originalSource": "images/semantic/solar-00003.png",
+      "caption": "Me driving the solar vehicle.",
+      "fit": "contain"
     },
     {
       "mediaIndex": 2,
@@ -176,25 +190,11 @@ window.focusedProjectPhotos = {
       "caption": "Electronics are visible through a translucent yellow enclosure."
     },
     {
-      "mediaIndex": 5,
-      "displaySource": "images/semantic/solar-00003.png",
-      "originalSource": "videos/loops/solar.mp4",
-      "timestamp": 3,
-      "caption": "A helmeted person sits in the vehicle cockpit."
-    },
-    {
       "mediaIndex": 8,
       "displaySource": "images/semantic/solar-00006.png",
       "originalSource": "videos/loops/solar.mp4",
       "timestamp": 6,
       "caption": "A hand interacts with a map displayed on a tablet."
-    },
-    {
-      "mediaIndex": 0,
-      "displaySource": "images/solar.png",
-      "originalSource": "images/solar.png",
-      "timestamp": null,
-      "caption": "The University of Minnesota solar vehicle team with their car."
     }
   ],
   "awear": [

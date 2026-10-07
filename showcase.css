@@ -331,3 +331,6 @@ video::-webkit-media-controls { display:none !important; }
  body:has(.case-intro) .case-intro h1 { margin-block:18px 22px; }
  body:has(.case-intro) .case-summary { gap:20px; padding-top:18px; }
 }
+
+.visual-index [data-composition="solar"] .composition-grid { grid-template-rows:auto clamp(220px,25vw,350px); }
+.visual-index [data-composition="solar"] .composition-tile:first-child { aspect-ratio:1927 / 1352; }

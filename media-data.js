@@ -820,7 +820,7 @@ window.portfolioProjects = [
         "poster": "images/semantic/solar-00003.png",
         "source": "videos/loops/solar.mp4",
         "timestamp": 3,
-        "caption": "A helmeted person sits in the vehicle cockpit."
+        "caption": "Me driving the solar vehicle."
       },
       {
         "kind": "image",
@@ -892,7 +892,7 @@ window.portfolioProjects = [
         "frameIndex": 3,
         "timestamp": 3,
         "src": "images/semantic/solar-00003.png",
-        "caption": "A helmeted person sits in the vehicle cockpit.",
+        "caption": "Me driving the solar vehicle.",
         "title": "Cockpit"
       },
       {

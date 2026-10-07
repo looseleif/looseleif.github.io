@@ -777,7 +777,7 @@ window.portfolioSemantics = {
         "start": 3,
         "end": 4,
         "title": "Cockpit",
-        "caption": "A helmeted person sits in the vehicle cockpit.",
+        "caption": "Me driving the solar vehicle.",
         "evidenceFrame": 3,
         "confidence": "visual observation"
       },
