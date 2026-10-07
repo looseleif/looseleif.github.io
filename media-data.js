@@ -76,6 +76,30 @@ window.portfolioProjects = [
         "kind": "image",
         "width": 960,
         "height": 707
+      },
+      {
+        "src": "images/sync-tank/exhibit-table-close.jpg",
+        "poster": "images/sync-tank/exhibit-table-close.jpg",
+        "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
+        "kind": "image",
+        "width": 1373,
+        "height": 1824
+      },
+      {
+        "src": "images/sync-tank/sstv3.png",
+        "poster": "images/sync-tank/sstv3.png",
+        "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
+        "kind": "image",
+        "width": 1902,
+        "height": 870
+      },
+      {
+        "src": "images/sync-tank/tank-side-display.jpg",
+        "poster": "images/sync-tank/tank-side-display.jpg",
+        "caption": "A live underwater camera feed displayed beside the aquarium.",
+        "kind": "image",
+        "width": 1824,
+        "height": 1373
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -95,7 +119,10 @@ window.portfolioProjects = [
       5,
       6,
       7,
-      8
+      8,
+      9,
+      10,
+      11
     ],
     "links": [
       {

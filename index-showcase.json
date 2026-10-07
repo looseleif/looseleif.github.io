@@ -3,32 +3,27 @@
     "project": "sync-tank",
     "visibleDetails": [
       {
-        "mediaIndex": 7,
-        "displaySource": "images/synctankimg.jpg",
-        "originalSource": "images/synctankimg.jpg",
+        "mediaIndex": 9,
+        "displaySource": "images/sync-tank/exhibit-table-close.jpg",
+        "originalSource": "images/sync-tank/exhibit-table-close.jpg",
         "timestamp": null,
-        "caption": "The Sync Tank aquarium, electronics, and exhibition display."
+        "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
+        "position": "50% 78%"
       },
       {
-        "mediaIndex": 0,
-        "displaySource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-        "originalSource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
+        "mediaIndex": 10,
+        "displaySource": "images/sync-tank/sstv3.png",
+        "originalSource": "images/sync-tank/sstv3.png",
         "timestamp": null,
-        "caption": "Two-tank test setup with cameras and control hardware, before the portrait display was installed."
-      },
-      {
-        "mediaIndex": 2,
-        "displaySource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-        "originalSource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-        "timestamp": null,
-        "caption": "Dry-bench test of the tank model above a live camera feed."
-      },
-      {
-        "mediaIndex": 3,
-        "displaySource": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
-        "originalSource": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
-        "timestamp": null,
-        "caption": "Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2."
+        "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
+        "crop": [
+          955,
+          100,
+          299,
+          360,
+          1902,
+          870
+        ]
       },
       {
         "mediaIndex": 1,
@@ -37,13 +32,6 @@
         "timestamp": null,
         "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state.",
         "fit": "contain"
-      },
-      {
-        "mediaIndex": 4,
-        "displaySource": "images/sync-tank/reeflex-servo-control-board.jpg",
-        "originalSource": "images/sync-tank/reeflex-servo-control-board.jpg",
-        "timestamp": null,
-        "caption": "PCA9685 controller and wiring in the Reeflex camera platform."
       }
     ]
   },

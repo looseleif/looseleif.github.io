@@ -1,6 +1,36 @@
 window.focusedProjectPhotos = {
   "sync-tank": [
     {
+      "mediaIndex": 9,
+      "displaySource": "images/sync-tank/exhibit-table-close.jpg",
+      "originalSource": "images/sync-tank/exhibit-table-close.jpg",
+      "timestamp": null,
+      "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
+      "position": "50% 78%"
+    },
+    {
+      "mediaIndex": 10,
+      "displaySource": "images/sync-tank/sstv3.png",
+      "originalSource": "images/sync-tank/sstv3.png",
+      "timestamp": null,
+      "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
+      "crop": [
+        955,
+        100,
+        299,
+        360,
+        1902,
+        870
+      ]
+    },
+    {
+      "mediaIndex": 11,
+      "displaySource": "images/sync-tank/tank-side-display.jpg",
+      "originalSource": "images/sync-tank/tank-side-display.jpg",
+      "timestamp": null,
+      "caption": "A live underwater camera feed displayed beside the aquarium."
+    },
+    {
       "mediaIndex": 7,
       "displaySource": "images/synctankimg.jpg",
       "originalSource": "images/synctankimg.jpg",
