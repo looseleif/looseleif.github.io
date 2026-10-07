@@ -357,6 +357,20 @@ window.focusedProjectPhotos = {
       "originalSource": "images/board3.jpeg",
       "timestamp": null,
       "caption": "The assembled mountain board, illuminated."
+    },
+    {
+      "mediaIndex": 8,
+      "displaySource": "images/electric-drives/two-wheel-prototype-floor.png",
+      "originalSource": "images/electric-drives/two-wheel-prototype-floor.png",
+      "caption": "Two-wheel prototype with its battery mounted beneath the chassis.",
+      "fit": "contain"
+    },
+    {
+      "mediaIndex": 9,
+      "displaySource": "images/electric-drives/two-wheel-prototype-electronics.png",
+      "originalSource": "images/electric-drives/two-wheel-prototype-electronics.png",
+      "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
+      "fit": "contain"
     }
   ],
   "socio": [

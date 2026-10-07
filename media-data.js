@@ -1669,6 +1669,26 @@ window.portfolioProjects = [
         "kind": "image",
         "width": 128,
         "height": 227
+      },
+      {
+        "src": "images/electric-drives/two-wheel-prototype-floor.png",
+        "poster": "images/electric-drives/two-wheel-prototype-floor.png",
+        "kind": "image",
+        "caption": "Two-wheel prototype with its battery mounted beneath the chassis.",
+        "sourceFilename": "Screenshot 2026-10-06 234528.png",
+        "context": "Two-wheel prototype",
+        "width": 543,
+        "height": 650
+      },
+      {
+        "src": "images/electric-drives/two-wheel-prototype-electronics.png",
+        "poster": "images/electric-drives/two-wheel-prototype-electronics.png",
+        "kind": "image",
+        "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
+        "sourceFilename": "Screenshot 2026-10-06 234714.png",
+        "context": "Two-wheel prototype",
+        "width": 523,
+        "height": 585
       }
     ],
     "role": "Vehicle integration / Electric drivetrains / Remote operation",
@@ -1677,7 +1697,7 @@ window.portfolioProjects = [
     "paragraphs": [
       "I build and modify electric vehicles, applying the same fundamentals of batteries, motor controllers, drivetrains, and control across ground vehicles and FPV drones.",
       "This work spans an electric mountain board assembled from off-the-shelf parts, a self-balancing vehicle with a custom battery, Onewheel modifications, and custom FPV drone rigs for filming, racing, and recreational flight.",
-      "My current rover work uses VESC motor controllers for remote operation and exploration. The media below documents the mountain board build and the rover hardware prototype."
+      "My current rover work uses VESC motor controllers for remote operation and exploration. The photos below document the mountain board, two-wheel prototypes, and rover hardware."
     ],
     "stills": [
       0,
@@ -1686,7 +1706,9 @@ window.portfolioProjects = [
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9
     ],
     "showcase": [
       {

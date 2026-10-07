@@ -162,5 +162,35 @@
         "index": 13
       }
     ]
+  },
+  {
+    "src": "images/electric-drives/two-wheel-prototype-floor.png",
+    "sourceFilename": "Screenshot 2026-10-06 234528.png",
+    "caption": "Two-wheel prototype with its battery mounted beneath the chassis.",
+    "context": "Two-wheel prototype",
+    "width": 543,
+    "height": 650,
+    "sha256": "6d973d7eda9d1a2a3929a2c4f5b3127dafbfaea2daebc6cc345367e0430abef5",
+    "uses": [
+      {
+        "project": "electric-drives",
+        "index": 8
+      }
+    ]
+  },
+  {
+    "src": "images/electric-drives/two-wheel-prototype-electronics.png",
+    "sourceFilename": "Screenshot 2026-10-06 234714.png",
+    "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
+    "context": "Two-wheel prototype",
+    "width": 523,
+    "height": 585,
+    "sha256": "732b2b92b0e5411262499c9e8295224ef6c42eab5f621f1fecab98359cce4be1",
+    "uses": [
+      {
+        "project": "electric-drives",
+        "index": 9
+      }
+    ]
   }
 ]
