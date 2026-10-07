@@ -29,7 +29,7 @@
     if (running) elapsed += performance.now() - startedAt;
     running = false;root.classList.remove('is-running');
     if (reset || !duration) {
-      duration = 6000;elapsed = 0;
+      duration = 7500;elapsed = 0;
       root.dataset.nextDelay = String(Math.round(duration));
     }
     const media = slides[index].querySelector('.composition-grid,.exhibit-stage');
