@@ -18,7 +18,11 @@
     const defaultCaption = semantics?.summary || caption?.textContent;
     video.addEventListener('timeupdate', () => {
       const cue = semantics?.scenes?.find(c => video.currentTime >= c.start && video.currentTime < c.end);
-      if (caption) caption.textContent = cue?.caption || defaultCaption;
+      if (caption) {
+        const text = cue?.caption || defaultCaption;
+        if (window.updatePortfolioText) window.updatePortfolioText(caption,text);
+        else if (caption.textContent !== text) caption.textContent = text;
+      }
     });
     video.addEventListener('canplay', () => sync(state));
     new IntersectionObserver(entries => {

@@ -1,74 +1,116 @@
 (() => {
   const active = new Map();
-  const targets = new Set();
-  function typeText(element, text) {
-    if (!element) return;
-    cancelAnimationFrame(active.get(element)); active.delete(element);
-    element.dataset.terminalText = text;
-    targets.add(element);
-    element.classList.add('terminal-reveal');
-    const measure = document.createElement('span');
-    measure.className = 'terminal-measure'; measure.textContent = text;
-    measure.setAttribute('aria-hidden', 'true');
-    const visual = document.createElement('span');
-    visual.className = 'terminal-visual';visual.setAttribute('aria-hidden', 'true');
-    const accessible = document.createElement('span');
-    accessible.className = 'sr-only';accessible.textContent = text;
-    element.replaceChildren(measure, visual, accessible);
-    const finish = () => { visual.textContent = text;element.classList.remove('is-typing');active.delete(element); };
-    if (document.hidden) { finish();return; }
-    const start = performance.now();
-    const duration = 1000;
-    element.classList.add('is-typing');
-    function tick(now) {
-      const length = Math.min(text.length, Math.ceil((now - start) / duration * text.length));
-      visual.textContent = text.slice(0, length);
-      if (length === text.length) finish();
-      else active.set(element, requestAnimationFrame(tick));
-    }
-    active.set(element, requestAnimationFrame(tick));
+  const registered = new WeakSet();
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const excluded = 'script,style,noscript,svg,textarea,select,option,.sr-only,.typed-accessible,.typed-run';
+  const blocks = 'h1,h2,h3,h4,h5,h6,p,li,dt,dd,figcaption,th,td,button,label,summary';
+  const segmenter = typeof Intl.Segmenter === 'function' ? new Intl.Segmenter(undefined,{granularity:'grapheme'}) : null;
+  const characters = text => segmenter ? [...segmenter.segment(text)].map(item => item.segment) : Array.from(text);
+  function finish(element) {
+    const state = active.get(element);
+    if (!state) return;
+    cancelAnimationFrame(state.frame);
+    state.glyphs.forEach(glyph => glyph.classList.remove('typed-pending'));
+    element.classList.remove('is-text-typing');
+    active.delete(element);
+  }
+  function typeText(element, replacement) {
+    if (!element || element.closest(excluded)) return;
+    finish(element);
+    // Callers can replace a changing caption; ordinary page text keeps its links and markup.
+    if (replacement !== undefined) element.textContent = replacement;
+    const runs = [...element.querySelectorAll('.typed-run')];
+    const glyphs = runs.flatMap(run => [...run.children]);
+    const walker = document.createTreeWalker(element,NodeFilter.SHOW_TEXT,{
+      acceptNode: node => node.textContent.trim() && !node.parentElement.closest(excluded) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+    });
+    const nodes = [];while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      const visual = document.createElement('span');visual.className = 'typed-run';visual.setAttribute('aria-hidden','true');
+      characters(node.textContent).forEach(char => {
+        const glyph = document.createElement('span');glyph.textContent = char;visual.append(glyph);
+      });
+      const accessible = document.createElement('span');accessible.className = 'typed-accessible sr-only';accessible.textContent = node.textContent;
+      node.replaceWith(visual,accessible);
+    });
+    // Query in document order, including runs inside inline links and emphasis.
+    glyphs.splice(0,glyphs.length,...element.querySelectorAll('.typed-run>span'));
+    element.dataset.terminalText = [...element.querySelectorAll('.typed-accessible')].map(node => node.textContent).join('');
+    if (!glyphs.length || reducedMotion.matches || document.hidden) return;
+    glyphs.forEach(glyph => glyph.classList.add('typed-pending'));
+    element.classList.add('is-text-typing');
+    const state = { glyphs, frame:0, shown:0, start:performance.now() };active.set(element,state);
+    const tick = now => {
+      const count = Math.min(glyphs.length,Math.ceil((now-state.start)/1000*glyphs.length));
+      while (state.shown<count) glyphs[state.shown++].classList.remove('typed-pending');
+      if (count===glyphs.length) finish(element);
+      else state.frame=requestAnimationFrame(tick);
+    };
+    state.frame=requestAnimationFrame(tick);
   }
   window.typePortfolioText = typeText;
-  const captionText = el => el.dataset.terminalText || el.textContent;
-  const revealReel = reel => {
-    const caption = reel.querySelector('.reel-slide:not([hidden]) figcaption');
-    if (caption && !reel.closest('.cinematic-showcase')) typeText(caption, captionText(caption));
+  window.updatePortfolioText = (element,text) => {
+    if (!element) return;
+    const accessible = [...element.querySelectorAll('.typed-accessible')];
+    const current = accessible.length ? accessible.map(node => node.textContent).join('') : element.textContent;
+    if (current !== text) typeText(element,text);
   };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);typeText(entry.target);
+    });
+  },{threshold:0});
+  function collect(root) {
+    const walker = document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{
+      acceptNode: node => node.textContent.trim() && !node.parentElement.closest(excluded) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+    });
+    const candidates = new Set();
+    while (walker.nextNode()) {
+      const parent = walker.currentNode.parentElement;
+      const element = parent.closest(blocks) || parent.closest('a') || parent;
+      if (!['BODY','MAIN','SECTION','ARTICLE'].includes(element.tagName)) candidates.add(element);
+    }
+    return [...candidates].filter(element => ![...candidates].some(other => other!==element && other.contains(element)));
+  }
+  function register(root) {
+    collect(root).forEach(element => {
+      if (registered.has(element)) return;
+      registered.add(element);observer.observe(element);
+    });
+  }
+  function retypeWithin(root) {
+    if (!root) return;
+    // Previously wrapped text no longer appears in collect(), so include its containing blocks.
+    const elements = new Set(collect(root));
+    if (root.hasAttribute('data-terminal-text')) elements.add(root);
+    root.querySelectorAll('[data-terminal-text]').forEach(element => elements.add(element));
+    [...elements].filter(element => ![...elements].some(other => other!==element && other.contains(element))).forEach(element => {
+      observer.unobserve(element);registered.add(element);typeText(element);
+    });
+  }
+  window.retypeProjectPanel = slide => retypeWithin(slide?.querySelector('.terminal-panel'));
+  document.addEventListener('portfolio:system',() => retypeWithin(document.querySelector('.system-slide:not([hidden])')));
   document.querySelectorAll('.project-reel').forEach(reel => {
-    reel.addEventListener('portfolio:frame', () => revealReel(reel));
-    let shown = false;
-    new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting && !shown) { shown = true;revealReel(reel); }
-    }, { threshold:.05 }).observe(reel);
+    reel.addEventListener('portfolio:frame',() => retypeWithin(reel.querySelector('.reel-slide:not([hidden]) figcaption')));
   });
-  document.querySelectorAll('.work-showcase .project-composition figcaption').forEach(caption => {
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) { typeText(caption, captionText(caption));observer.disconnect(); }
-    }, { threshold:.1 });
-    observer.observe(caption);
-  });
-  function retypeProjectPanel(slide, text) {
-    const panel = slide?.querySelector('.terminal-panel');
-    const description = panel?.querySelector('dd:last-of-type');
-    if (description) typeText(description, text || captionText(description));
-    const title = panel?.querySelector('h2');
-    if (title) typeText(title, captionText(title));
-    const command = panel?.querySelector('[data-type-command]');
-    if (command) typeText(command, '> ' + command.dataset.typeCommand);
-  }
-  window.retypeProjectPanel = retypeProjectPanel;
-  function revealProject() {
-    retypeProjectPanel(document.querySelector('.system-slide:not([hidden])'));
-  }
-  document.addEventListener('portfolio:system', revealProject);
-  revealProject();
-  document.querySelectorAll('.heading-note>p,.case-deck,.about-deck,.studio-hero>div>p:not(.eyebrow),.socio-hero .lead').forEach(el => typeText(el,el.textContent));
-  document.querySelectorAll('.social-handle').forEach(el => typeText(el, el.textContent));
-  const finishAll = () => targets.forEach(el => {
-    if (!active.has(el)) return;
-    cancelAnimationFrame(active.get(el));active.delete(el);
-    el.querySelector('.terminal-visual').textContent = el.dataset.terminalText;
-    el.classList.remove('is-typing');
-  });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) finishAll(); });
+  register(document.body);
+  // Captions and expanded galleries can be inserted or updated after the page loads.
+  new MutationObserver(records => {
+    const changed = new Set();
+    records.forEach(record => {
+      const element = record.target.nodeType===Node.TEXT_NODE ? record.target.parentElement : record.target;
+      if (!element || element.closest(excluded)) return;
+      if (record.type==='childList' && record.addedNodes.length && [...record.addedNodes].every(node => node.nodeType===1 && node.matches('.typed-run,.typed-accessible'))) return;
+      changed.add(element);
+    });
+    changed.forEach(element => {
+      register(element);
+      if (registered.has(element) && element.getClientRects().length) typeText(element);
+    });
+  }).observe(document.body,{childList:true,subtree:true,characterData:true});
+  const finishAll = () => [...active.keys()].forEach(finish);
+  document.addEventListener('visibilitychange',() => { if (document.hidden) finishAll(); });
+  reducedMotion.addEventListener('change',() => { if (reducedMotion.matches) finishAll(); });
+  window.addEventListener('beforeprint',finishAll);
 })();

@@ -703,3 +703,8 @@ a:focus-visible,button:focus-visible,select:focus-visible { outline-color:#ddd; 
 .contact-simple .social-handle .terminal-visual { text-align:left; }
 @media(max-width:700px) { .focused-reel .reel-slide figcaption { font-size:14px; min-height:105px; }.project-exhibit .focused-copy p,.project-directory-entry p { font-size:15px; }.cinematic-showcase .terminal-panel dd,.cinematic-showcase .terminal-panel dd:last-of-type { font-size:14px; }.clip-player figcaption,.recording-navigation p { font-size:14px; } }
 @media(prefers-reduced-motion:reduce) { .project-directory-entry { transition:none; } }
+
+/* Reserve each character's space, preserving inline links and natural line wrapping. */
+.typed-run>span { display:inline; }
+.typed-pending { visibility:hidden; }
+@media print { .typed-pending { visibility:visible; } }

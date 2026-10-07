@@ -91,7 +91,10 @@
       element.addEventListener('timeupdate', () => {
         const scenes = (window.portfolioSemantics || {})[item.src]?.scenes || [];
         const scene = scenes.find(cue => element.currentTime >= cue.start && element.currentTime < cue.end);
-        dialog.querySelector('.gallery-caption').textContent = scene?.caption || item.caption;
+        const caption = dialog.querySelector('.gallery-caption');
+        const text = scene?.caption || item.caption;
+        if (window.updatePortfolioText) window.updatePortfolioText(caption,text);
+        else if (caption.textContent !== text) caption.textContent = text;
       });
       if (seekTime !== null) {
         const requestedTime = seekTime;
