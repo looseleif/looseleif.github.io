@@ -1,0 +1,222 @@
+{
+  "archive": "img.zip",
+  "files": [
+    {
+      "sourceFilename": "bor1.png",
+      "project": "electric-drives",
+      "path": "images/electric-drives/two-wheel-bench.png",
+      "sha256": "0d1de1f158d3441d6d6a488817b7618e9291440c214c8765aefa484a87098598",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rov2.png",
+      "project": "electric-drives",
+      "path": "images/electric-drives/rover-electronics-overview.png",
+      "sha256": "082507cc7911e79ea2343a4c66ecebd0e45b5ee1d4cb6e1360e48f32c9990a85",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rov3.png",
+      "project": "electric-drives",
+      "path": "images/electric-drives/upright-rover-frame.png",
+      "sha256": "3808e7bed59c6ef861c28ca5a0e2d63db0b82d9e6cf6c36dd4f840fc54e07f35",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron1.png",
+      "project": "drones",
+      "path": "images/drones/fpv-electronics-bench.png",
+      "sha256": "e04ad4d0ca1997685d2e75950474e3fc112467bd24c68232bbe2b8f86604363d",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron2.png",
+      "project": "drones",
+      "path": "images/drones/fpv-camera-rig.png",
+      "sha256": "7096e34080f2a10c7b25796ad545d45b7179a71bffe03266e5ba33e07d39bbed",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron3.png",
+      "project": "drones",
+      "path": "images/drones/fpv-radio-setup.png",
+      "sha256": "c294bf1df06f4181249b86e9ebd1d05c05b7e3cdadb2f4b2e63a8c71fe8f25e6",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron4.png",
+      "project": "drones",
+      "path": "images/drones/fpv-build-workbench.png",
+      "sha256": "1d93313c58ba5e6502eaeae596ced997704690ab9982cf01c2fe5a62fce07c9b",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron5.png",
+      "project": "drones",
+      "path": "images/drones/drone-field-preparation.png",
+      "sha256": "8f116cfd849c02e13ce3c598692ecb92f23f3a0694b3c1dcadfa45872c63cc63",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron6.png",
+      "project": "drones",
+      "path": "images/drones/drone-field-workstation.png",
+      "sha256": "e41b92d1cbc9134c94f75ffe67f399fa1b4fa449eb1daa7e367cd5329476c0c9",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "dron7.png",
+      "project": "drones",
+      "path": "images/drones/holding-fpv-build.png",
+      "sha256": "e448c28f94fb3cd28d7d250a83472b6e5f13318017899cf242b453188d2535ef",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob1.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-clutter-arrangements.png",
+      "sha256": "4b389db06ef85c9a0a786974045ad6b4e3eaea56dd70bf6c752dab6b2f0d7162",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob2.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-camera-and-gripper.png",
+      "sha256": "b08043f0513349f779a36ed99e04635906ebb19b02260c007fe43b07ecb0b86d",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob3.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-control-enclosure.png",
+      "sha256": "3c337147a33d123a323bc6fb570aadf9f0c02aa11731c1ac136dd666e8e22088",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob4.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-camera-calibration.png",
+      "sha256": "9ca48eb620b3d7e7b3703f27cec084a4061460683ed2b23e863bc32141af8d3d",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob5.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-workspace.png",
+      "sha256": "0772ebd7b6bb07bb449620190578c8c00024fce393b1c17727ff9e6956c01e26",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rob6.png",
+      "project": "aggro",
+      "path": "images/aggro/lab-robot-testing.png",
+      "sha256": "5399820e0c83d18dece00052a024224c0fca10ec5cdeaa7d94f9ce6d75a8ab02",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "sync1.png",
+      "project": "sync-tank",
+      "path": "images/sync-tank/early-camera-arm.png",
+      "sha256": "716609c5bc1fb8dc02a0b222cecaafd4eb947f4302720c5ae23bac9b7be9269c",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "sync2.png",
+      "project": "sync-tank",
+      "path": "images/sync-tank/early-automated-feeder.png",
+      "sha256": "b3289ee6c0c5517e2d206736f6b74aa556628df92059781bea3f2345d75c1826",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "sync3.png",
+      "project": "sync-tank",
+      "path": "images/sync-tank/early-aquarium-electronics.png",
+      "sha256": "5debda336ddce809b7e8116a0fbafc43bffb45e1fc6b914087dc9949030444f3",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "make1.png",
+      "project": "maker-faire",
+      "path": "images/maker-faire/first-maker-faire.png",
+      "sha256": "27f5436eb763f8124f97163234f232453720994bd5b754ade82601ea1bd9889d",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee.png",
+      "project": "ieee",
+      "path": "images/ieee/laser-demonstration.png",
+      "sha256": "726cbebe41f6f76b9e8d2766226f00a3efab4f546567f6e81a0bcc39a1b691a9",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee1.png",
+      "project": "ieee",
+      "path": "images/ieee/breadboard-activity.png",
+      "sha256": "03990caed0099c7d507fa52903452ac532057c481297870b419ac3714801621f",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee2.png",
+      "project": "ieee",
+      "path": "images/ieee/chapter-gathering.png",
+      "sha256": "074f84464fb8153640de5ca99662efd3898ef237dd4d4839c97717157f79573b",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee3.png",
+      "project": "ieee",
+      "path": "images/ieee/electronics-display.png",
+      "sha256": "9ad53a81e698ec5bf9708fa1c32fb41670f0fb79ddb0e276bfbe35827794e5e3",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee4.png",
+      "project": "ieee",
+      "path": "images/ieee/chapter-workspace.png",
+      "sha256": "f106ddae2fa79492da1b1d7d91bac448af1d2e19e05417291cfe78b20a4f4df7",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee5.png",
+      "project": "ieee",
+      "path": "images/ieee/outdoor-outreach.png",
+      "sha256": "8a101e9308e610993ba3e23b0e3a00788c694313da4a31a75e677090028f0394",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee6.png",
+      "project": "ieee",
+      "path": "images/ieee/drone-workshop.png",
+      "sha256": "36b26fd25f0190cb3981c1e272ab0da9380be7f1e7d8d1990297d27638ed311f",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee7.png",
+      "project": "ieee",
+      "path": "images/ieee/pcb-design-workshop.png",
+      "sha256": "003d7ff0f03e3f474ee44e17fbfb0261a04ad176d03b3f6c860eca7fbeba238e",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "volunteer_ieee8.png",
+      "project": "ieee",
+      "path": "images/ieee/chapter-event.png",
+      "sha256": "fc608e0a26b7ab03014264d9ee1b3958c0a8ed3bee42d2d0eb5f913048494dbc",
+      "status": "added"
+    },
+    {
+      "sourceFilename": "rov1.png",
+      "project": "electric-drives",
+      "path": "images/electric-drives/two-wheel-prototype-floor.png",
+      "sha256": "6d973d7eda9d1a2a3929a2c4f5b3127dafbfaea2daebc6cc345367e0430abef5",
+      "status": "existing-identical-pixels"
+    },
+    {
+      "sourceFilename": "rov4.png",
+      "project": "electric-drives",
+      "path": "images/electric-drives/two-wheel-prototype-electronics.png",
+      "sha256": "732b2b92b0e5411262499c9e8295224ef6c42eab5f621f1fecab98359cce4be1",
+      "status": "existing-identical-pixels"
+    }
+  ]
+}

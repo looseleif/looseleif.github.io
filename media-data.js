@@ -185,6 +185,39 @@ window.portfolioProjects = [
         "year": "2026",
         "sourceFilename": "PXL_20260719_005430506.RAW-01.jpg",
         "context": "Open Sauce"
+      },
+      {
+        "src": "images/sync-tank/early-camera-arm.png",
+        "poster": "images/sync-tank/previews/early-camera-arm.webp",
+        "kind": "image",
+        "caption": "An early printed camera-arm prototype on the workbench.",
+        "width": 557,
+        "height": 991,
+        "sourceFilename": "sync1.png",
+        "context": "Early Sync Tank prototypes",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/sync-tank/early-automated-feeder.png",
+        "poster": "images/sync-tank/previews/early-automated-feeder.webp",
+        "kind": "image",
+        "caption": "An early automated feeder and microcontroller mounted above a planted glass bowl.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "sync2.png",
+        "context": "Early Sync Tank prototypes",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/sync-tank/early-aquarium-electronics.png",
+        "poster": "images/sync-tank/previews/early-aquarium-electronics.webp",
+        "kind": "image",
+        "caption": "An early Sync Tank aquarium with breadboard electronics and a small display.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "sync3.png",
+        "context": "Early Sync Tank prototypes",
+        "importBatch": "img-2026-10-07"
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -207,7 +240,10 @@ window.portfolioProjects = [
       8,
       9,
       10,
-      11
+      11,
+      21,
+      22,
+      23
     ],
     "links": [
       {
@@ -862,6 +898,78 @@ window.portfolioProjects = [
         "thesisFigure": 25,
         "pdfPage": 65,
         "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "src": "images/aggro/lab-clutter-arrangements.png",
+        "poster": "images/aggro/previews/lab-clutter-arrangements.webp",
+        "kind": "image",
+        "caption": "The gripper above four arrangements of colored blocks in the research workspace.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "rob1.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
+      },
+      {
+        "src": "images/aggro/lab-camera-and-gripper.png",
+        "poster": "images/aggro/previews/lab-camera-and-gripper.webp",
+        "kind": "image",
+        "caption": "The gantry carriage, camera mount, wiring, and blue gripper.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "rob2.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
+      },
+      {
+        "src": "images/aggro/lab-control-enclosure.png",
+        "poster": "images/aggro/previews/lab-control-enclosure.webp",
+        "kind": "image",
+        "caption": "The open controller enclosure and wiring on the gantry.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "rob3.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
+      },
+      {
+        "src": "images/aggro/lab-camera-calibration.png",
+        "poster": "images/aggro/previews/lab-camera-calibration.webp",
+        "kind": "image",
+        "caption": "The research rig with a tripod-mounted camera and calibration target.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "rob4.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
+      },
+      {
+        "src": "images/aggro/lab-workspace.png",
+        "poster": "images/aggro/previews/lab-workspace.webp",
+        "kind": "image",
+        "caption": "The gantry workspace with calibration targets, test objects, and build materials.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "rob5.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
+      },
+      {
+        "src": "images/aggro/lab-robot-testing.png",
+        "poster": "images/aggro/previews/lab-robot-testing.webp",
+        "kind": "image",
+        "caption": "Robot testing with software output visible beside the rig.",
+        "width": 557,
+        "height": 991,
+        "sourceFilename": "rob6.png",
+        "context": "Research lab",
+        "importBatch": "img-2026-10-07",
+        "collection": "research-photos"
       }
     ],
     "role": "Master's research / CHOICE Robotics Lab",
@@ -899,7 +1007,13 @@ window.portfolioProjects = [
       28,
       29,
       30,
-      32
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
     ],
     "showcase": [
       {
@@ -1659,7 +1773,11 @@ window.portfolioProjects = [
         "sourceFilename": "Screenshot 2026-10-06 234528.png",
         "context": "Two-wheel prototype",
         "width": 543,
-        "height": 650
+        "height": 650,
+        "importBatch": "img-2026-10-07",
+        "sourceAliases": [
+          "rov1.png"
+        ]
       },
       {
         "src": "images/electric-drives/two-wheel-prototype-electronics.png",
@@ -1669,7 +1787,121 @@ window.portfolioProjects = [
         "sourceFilename": "Screenshot 2026-10-06 234714.png",
         "context": "Two-wheel prototype",
         "width": 523,
-        "height": 585
+        "height": 585,
+        "importBatch": "img-2026-10-07",
+        "sourceAliases": [
+          "rov4.png"
+        ]
+      },
+      {
+        "src": "images/electric-drives/two-wheel-bench.png",
+        "poster": "images/electric-drives/previews/two-wheel-bench.webp",
+        "kind": "image",
+        "caption": "The two-wheel drivetrain on the electronics bench.",
+        "width": 1920,
+        "height": 909,
+        "sourceFilename": "bor1.png",
+        "context": "Vehicle prototypes",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/electric-drives/rover-electronics-overview.png",
+        "poster": "images/electric-drives/previews/rover-electronics-overview.webp",
+        "kind": "image",
+        "caption": "Rover electronics, motor controllers, and battery wiring across the chassis.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "rov2.png",
+        "context": "Vehicle prototypes",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/electric-drives/upright-rover-frame.png",
+        "poster": "images/electric-drives/previews/upright-rover-frame.webp",
+        "kind": "image",
+        "caption": "The upright rover frame, wheels, and exposed wiring during assembly.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "rov3.png",
+        "context": "Vehicle prototypes",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-electronics-bench.png",
+        "poster": "images/drones/previews/fpv-electronics-bench.webp",
+        "kind": "image",
+        "caption": "FPV drone assembly on the electronics bench, with the frame and wiring exposed.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron1.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-camera-rig.png",
+        "poster": "images/drones/previews/fpv-camera-rig.webp",
+        "kind": "image",
+        "caption": "A camera-equipped FPV drone with its action camera mounted above the frame.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "dron2.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-radio-setup.png",
+        "poster": "images/drones/previews/fpv-radio-setup.webp",
+        "kind": "image",
+        "caption": "The FPV drone and radio controller together on the workbench.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron3.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-build-workbench.png",
+        "poster": "images/drones/previews/fpv-build-workbench.webp",
+        "kind": "image",
+        "caption": "An FPV build in progress with the radio controller, battery, and test tools.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "dron4.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/drone-field-preparation.png",
+        "poster": "images/drones/previews/drone-field-preparation.webp",
+        "kind": "image",
+        "caption": "Preparing a drone outdoors with a laptop and positioning equipment.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron5.png",
+        "context": "Drone field work",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/drone-field-workstation.png",
+        "poster": "images/drones/previews/drone-field-workstation.webp",
+        "kind": "image",
+        "caption": "An outdoor drone workstation with flight hardware, a laptop, and support equipment.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron6.png",
+        "context": "Drone field work",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/holding-fpv-build.png",
+        "poster": "images/drones/previews/holding-fpv-build.webp",
+        "kind": "image",
+        "caption": "Me with one of my FPV builds.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron7.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
       }
     ],
     "role": "Vehicle integration / Electric drivetrains / Remote operation",
@@ -1689,7 +1921,17 @@ window.portfolioProjects = [
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "showcase": [
       {
@@ -2320,6 +2562,17 @@ window.portfolioProjects = [
         "width": 960,
         "height": 707,
         "archived": true
+      },
+      {
+        "src": "images/maker-faire/first-maker-faire.png",
+        "poster": "images/maker-faire/previews/first-maker-faire.webp",
+        "kind": "image",
+        "caption": "My first Maker Faire presentation, sharing the robotics research and university hardware projects.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "make1.png",
+        "context": "First Maker Faire presentation",
+        "importBatch": "img-2026-10-07"
       }
     ],
     "role": "Volunteering / Project demonstrations",
@@ -2328,6 +2581,231 @@ window.portfolioProjects = [
     "paragraphs": [
       "Present Sync Tank and explain how its robotics, camera network, and embedded software connect. Share the build process through hands-on demonstrations and conversations with visitors.",
       "Mare Island / Vallejo, California. Event history covers 2024, 2025, and 2026 so far."
+    ],
+    "stills": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "id": "drones",
+    "title": "Drone Work",
+    "category": "Hardware",
+    "line": "FPV builds, camera rigs, and field setups.",
+    "media": [
+      {
+        "src": "images/drones/fpv-electronics-bench.png",
+        "poster": "images/drones/previews/fpv-electronics-bench.webp",
+        "kind": "image",
+        "caption": "FPV drone assembly on the electronics bench, with the frame and wiring exposed.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron1.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-camera-rig.png",
+        "poster": "images/drones/previews/fpv-camera-rig.webp",
+        "kind": "image",
+        "caption": "A camera-equipped FPV drone with its action camera mounted above the frame.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "dron2.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-radio-setup.png",
+        "poster": "images/drones/previews/fpv-radio-setup.webp",
+        "kind": "image",
+        "caption": "The FPV drone and radio controller together on the workbench.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron3.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/fpv-build-workbench.png",
+        "poster": "images/drones/previews/fpv-build-workbench.webp",
+        "kind": "image",
+        "caption": "An FPV build in progress with the radio controller, battery, and test tools.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "dron4.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/drone-field-preparation.png",
+        "poster": "images/drones/previews/drone-field-preparation.webp",
+        "kind": "image",
+        "caption": "Preparing a drone outdoors with a laptop and positioning equipment.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron5.png",
+        "context": "Drone field work",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/drone-field-workstation.png",
+        "poster": "images/drones/previews/drone-field-workstation.webp",
+        "kind": "image",
+        "caption": "An outdoor drone workstation with flight hardware, a laptop, and support equipment.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron6.png",
+        "context": "Drone field work",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/drones/holding-fpv-build.png",
+        "poster": "images/drones/previews/holding-fpv-build.webp",
+        "kind": "image",
+        "caption": "Me with one of my FPV builds.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "dron7.png",
+        "context": "FPV builds",
+        "importBatch": "img-2026-10-07"
+      }
+    ],
+    "role": "Builds & field work",
+    "tint": "#191919",
+    "page": "project-electric-drives.html#drone-work",
+    "paragraphs": [
+      "FPV builds, camera rigs, and field setups."
+    ],
+    "stills": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "ieee",
+    "title": "IEEE Volunteering",
+    "category": "Volunteering",
+    "line": "Technical workshops, hands-on builds, and community outreach.",
+    "media": [
+      {
+        "src": "images/ieee/laser-demonstration.png",
+        "poster": "images/ieee/previews/laser-demonstration.webp",
+        "kind": "image",
+        "caption": "An IEEE laser demonstration with crossing red beams.",
+        "width": 991,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee.png",
+        "context": "IEEE outreach",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/breadboard-activity.png",
+        "poster": "images/ieee/previews/breadboard-activity.webp",
+        "kind": "image",
+        "caption": "Hands-on breadboard electronics during an IEEE outreach activity.",
+        "width": 991,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee1.png",
+        "context": "IEEE outreach",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/chapter-gathering.png",
+        "poster": "images/ieee/previews/chapter-gathering.webp",
+        "kind": "image",
+        "caption": "A chapter gathering with projects, food, and conversation.",
+        "width": 743,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee2.png",
+        "context": "IEEE chapter events",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/electronics-display.png",
+        "poster": "images/ieee/previews/electronics-display.webp",
+        "kind": "image",
+        "caption": "Circuit boards and electronics projects on display.",
+        "width": 235,
+        "height": 177,
+        "sourceFilename": "volunteer_ieee3.png",
+        "context": "IEEE demonstrations",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/chapter-workspace.png",
+        "poster": "images/ieee/previews/chapter-workspace.webp",
+        "kind": "image",
+        "caption": "The University of Minnesota IEEE banner in the chapter workspace.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee4.png",
+        "context": "IEEE chapter events",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/outdoor-outreach.png",
+        "poster": "images/ieee/previews/outdoor-outreach.webp",
+        "kind": "image",
+        "caption": "The IEEE outreach table and visitors on campus.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee5.png",
+        "context": "IEEE outreach",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/drone-workshop.png",
+        "poster": "images/ieee/previews/drone-workshop.webp",
+        "kind": "image",
+        "caption": "Working together on a drone build at an IEEE workshop.",
+        "width": 746,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee6.png",
+        "context": "IEEE workshops",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/pcb-design-workshop.png",
+        "poster": "images/ieee/previews/pcb-design-workshop.webp",
+        "kind": "image",
+        "caption": "A PCB design workshop with KiCad and a circuit-board layout on screen.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee7.png",
+        "context": "IEEE workshops",
+        "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "images/ieee/chapter-event.png",
+        "poster": "images/ieee/previews/chapter-event.webp",
+        "kind": "image",
+        "caption": "An IEEE chapter event in the University of Minnesota lecture hall.",
+        "width": 1316,
+        "height": 991,
+        "sourceFilename": "volunteer_ieee8.png",
+        "context": "IEEE chapter events",
+        "importBatch": "img-2026-10-07"
+      }
+    ],
+    "role": "Officer & Mentor",
+    "tint": "#191919",
+    "page": "about.html#ieee-photos",
+    "paragraphs": [
+      "Technical workshops, hands-on builds, and community outreach."
     ],
     "stills": [
       0,

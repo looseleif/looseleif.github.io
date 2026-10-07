@@ -11,7 +11,7 @@
     item.uses.push({project:project.id, title:project.title, index, caption:media.caption, year:media.year, archived:!!media.archived});
     item.archived = item.archived && !!media.archived;
   }));
-  const items = [...library.values()].filter(item => !item.duplicateOf).sort((a,b) => Number(a.archived) - Number(b.archived));
+  const items = [...library.values()].filter(item => !item.duplicateOf).sort((a,b) => Number(a.archived) - Number(b.archived) || (b.importBatch || '').localeCompare(a.importBatch || ''));
   const key = 'chase-portfolio-media-review-v1';
   const actions = {remove:'Remove', improve:'Improve', replace:'Replace'};
   const grid = document.querySelector('#photo-grid');
@@ -66,7 +66,7 @@
     entries.forEach(entry => entry.isIntersecting ? visibleVideos.add(entry.target) : visibleVideos.delete(entry.target));
     syncMotion();
   }, {threshold:.1});
-  function mediaFor(item) {
+  function mediaFor(item, fullSize = false) {
     const video = /\.(mp4|webm)$/i.test(item.src);
     const element = document.createElement(video ? 'video' : 'img');
     if (video) {
@@ -76,7 +76,7 @@
       window.portfolioMotion.configure(element,item.src);
       element.addEventListener('canplay',syncMotion);
     } else {
-      element.src = item.src; element.alt = item.caption; element.loading = 'lazy'; element.decoding = 'async';
+      element.src = fullSize ? item.src : item.poster || item.src; element.alt = item.caption; element.loading = 'lazy'; element.decoding = 'async';
     }
     return element;
   }
@@ -127,7 +127,7 @@
   function openPhoto(item,button) {
     opener = button;
     document.querySelector('#photo-dialog-title').textContent = item.uses.map(use => use.title).filter((title,i,all) => all.indexOf(title) === i).join(' / ');
-    document.querySelector('#photo-dialog-media').replaceChildren(mediaFor(item));
+    document.querySelector('#photo-dialog-media').replaceChildren(mediaFor(item,true));
     const caption = document.createElement('p');caption.textContent = item.caption;
     document.querySelector('#photo-dialog-info').replaceChildren(caption,originalLink(item),controlsFor(item));
     dialog.showModal();syncMotion();
@@ -138,7 +138,7 @@
     return (projectFilter.value === 'all' || item.uses.some(use => use.project === projectFilter.value))
       && (kindFilter.value === 'all' || item.kind === kindFilter.value)
       && (reviewFilter.value === 'all' || (reviewFilter.value === 'marked' ? !!record : reviewFilter.value === 'unmarked' ? !record : record?.action === reviewFilter.value))
-      && (!needle || [item.src,item.sourceFilename,item.year,item.context,item.caption,...item.uses.map(use => use.title)].join(' ').toLocaleLowerCase().includes(needle));
+      && (!needle || [item.src,item.sourceFilename,...(item.sourceAliases || []),item.year,item.context,item.caption,...item.uses.flatMap(use => [use.title,use.caption])].join(' ').toLocaleLowerCase().includes(needle));
   }
   function render() {
     const moveFocus = grid.contains(document.activeElement);

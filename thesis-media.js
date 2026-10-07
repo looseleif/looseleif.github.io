@@ -44,7 +44,7 @@
         if (i !== current) item.querySelector('video')?.pause();
         buttons[i].setAttribute('aria-pressed',String(i === current));
       });
-      status.textContent = `${current+1} / ${items.length} · ${items[current].matches('.thesis-demo') ? 'Demonstration' : 'Thesis figure'}`;
+      status.textContent = `${current+1} / ${items.length} · ${items[current].dataset.mediaLabel || (items[current].matches('.thesis-demo') ? 'Demonstration' : 'Thesis figure')}`;
       if (announce) {
         items[current].querySelectorAll('figcaption [data-terminal-text]').forEach(element => window.typePortfolioText?.(element));
         // Shared playback observes only the newly visible video.
