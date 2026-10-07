@@ -371,6 +371,34 @@ window.focusedProjectPhotos = {
       "originalSource": "images/electric-drives/two-wheel-prototype-electronics.png",
       "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
       "fit": "contain"
+    },
+    {
+      "mediaIndex": 11,
+      "displaySource": "images/electric-drives/previews/rover-electronics-overview.webp",
+      "originalSource": "images/electric-drives/rover-electronics-overview.png",
+      "caption": "Rover electronics, motor controllers, and battery wiring across the chassis.",
+      "fit": "contain"
+    },
+    {
+      "mediaIndex": 14,
+      "displaySource": "images/drones/previews/fpv-camera-rig.webp",
+      "originalSource": "images/drones/fpv-camera-rig.png",
+      "caption": "A camera-equipped FPV drone with its action camera mounted above the frame.",
+      "fit": "contain"
+    },
+    {
+      "mediaIndex": 19,
+      "displaySource": "images/drones/previews/holding-fpv-build.webp",
+      "originalSource": "images/drones/holding-fpv-build.png",
+      "caption": "Me with one of my FPV builds.",
+      "fit": "contain"
+    },
+    {
+      "mediaIndex": 18,
+      "displaySource": "images/drones/previews/drone-field-workstation.webp",
+      "originalSource": "images/drones/drone-field-workstation.png",
+      "caption": "An outdoor drone workstation with flight hardware, a laptop, and support equipment.",
+      "fit": "contain"
     }
   ],
   "socio": [

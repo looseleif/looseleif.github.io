@@ -42,7 +42,7 @@
     solar: { layout:'solar', areas:['hero','board','driver'], picks:[0,1,2], labels:['The team & vehicle','Telemetry electronics','Me driving'], caption:'My work with the Solar Vehicle Project: contributing to the team, designing telemetry electronics, and driving the vehicle.' },
     awear: { layout:'wearable', areas:['hero','case','wrist'], picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
     'feedback-loop': { layout:'bench', picks:[0,2,4], videos:[17], areas:['hero','sensor','board'], labels:['Device demonstration','Sensor module','Bench electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
-    'electric-drives': { layout:'drives', picks:[3,0,2,1], areas:['hero','drive','board','control'], labels:['Two-wheel prototype','Drivetrain assembly','Mountain board','Handheld control'], caption:'Ground-vehicle builds, from the two-wheel prototype to the mountain board drivetrain and rider controls.' }
+    'electric-drives': { layout:'drives', picks:[7,6,5,8], areas:['hero','drive','board','control'], labels:['My FPV build','Camera-equipped drone','Rover electronics','Drone field work'], caption:'FPV drone builds, camera integration, outdoor field setups, and rover control electronics.' }
   };
   // Keep the rotating Index easy to read: one main view and two supporting views.
   const indexCompositions = {
@@ -50,7 +50,7 @@
     aggro: { picks:[0,1,2], videos:[31,7,13] },
     socio: { picks:[5,4,8], videos:[5,4,8], labels:['Live transcription','Speaker diarization','Haptic feedback events'], caption:'Live transcription, separate speaker activity, and haptic feedback events during IYKYD field recordings.' },
     'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'] },
-    'electric-drives': { picks:[3,0,2], labels:['Two-wheel prototype','Drivetrain assembly','Mountain board'] }
+    'electric-drives': { picks:[5,6,2], labels:['Rover electronics','FPV camera rig','Mountain board'] }
   };
   function compositionFor(id, indexShowcase = false) {
     const project = projects.find(p => p.id === id);
