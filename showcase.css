@@ -316,3 +316,18 @@ video::-webkit-media-controls { display:none !important; }
 }
 
 .cardiac-chapter > [data-composition="awear"] { max-width:1060px; margin-inline:auto; }
+
+/* Let the content set its height instead of reserving empty panels. */
+.cinematic-showcase .terminal-panel { min-height:0; padding:20px 0 24px; }
+.cinematic-showcase .terminal-panel h2,.cinematic-showcase .terminal-panel dl { min-height:0; }
+.focused-reel .reel-slide figcaption,.visual-index .work-showcase .focused-reel figcaption { min-height:0; padding-block:12px; }
+.has-project-background .case-intro { min-height:0; }
+.has-project-background .site-header { background:#101010f2; }
+.visual-index .exhibit-grid .work-showcase { padding-block:30px; }
+@media(max-width:700px) {
+ .cinematic-showcase .terminal-panel { row-gap:10px; padding-block:18px; }
+ .cinematic-showcase .terminal-panel h2 { font-size:29px; }
+ .visual-index .exhibit-grid .work-showcase { gap:18px; padding-block:24px; }
+ body:has(.case-intro) .case-intro h1 { margin-block:18px 22px; }
+ body:has(.case-intro) .case-summary { gap:20px; padding-top:18px; }
+}

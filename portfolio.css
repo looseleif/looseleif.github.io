@@ -705,6 +705,30 @@ a:focus-visible,button:focus-visible,select:focus-visible { outline-color:#ddd; 
 @media(prefers-reduced-motion:reduce) { .project-directory-entry { transition:none; } }
 
 /* Reserve each character's space, preserving inline links and natural line wrapping. */
-.typed-run>span { display:inline; }
+.typed-run,.typed-glyph { display:inline; font:inherit; letter-spacing:inherit; }
 .typed-pending { visibility:hidden; }
 @media print { .typed-pending { visibility:visible; } }
+
+/* A cursor follows the revealed characters without shifting the line. */
+.typed-caret { position:relative; }
+.typed-caret::after { content:""; position:absolute; width:1px; height:.95em; background:currentColor; left:100%; bottom:0; pointer-events:none; }
+@media print { .typed-caret::after { display:none; } }
+/* Keep navigation within reach while reading a project. */
+.site-header { position:sticky; top:0; z-index:20; background:#121212f5; backdrop-filter:blur(14px); }
+html { scroll-padding-top:110px; }
+a:focus-visible,button:focus-visible,select:focus-visible { outline-color:#dedede; }
+nav a:hover { color:#fff; border-bottom-color:#999; }
+@media(max-width:700px) {
+ .site-header { gap:8px; min-height:0; padding-block:12px; }
+ .site-header nav a { min-height:40px; display:flex; align-items:center; }
+ html { scroll-padding-top:130px; }
+}
+@media print { .site-header { position:static; } }
+
+@media(max-width:700px) {
+ .contact-simple .social-row { grid-template-columns:minmax(68px,.65fr) minmax(0,1.7fr) 14px; row-gap:7px; padding-block:20px; }
+ .contact-simple .social-row>span:first-child { display:contents; }
+ .contact-simple .social-row h2 { grid-column:1; grid-row:1; }
+ .contact-simple .social-row p { grid-column:1 / -1; grid-row:2; max-width:none; font-size:13px; }
+ .contact-simple .social-handle { font-size:clamp(16px,4.2vw,22px); }
+}
