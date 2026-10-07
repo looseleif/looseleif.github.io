@@ -11,7 +11,7 @@
     item.uses.push({project:project.id, title:project.title, index, caption:media.caption, year:media.year, archived:!!media.archived});
     item.archived = item.archived && !!media.archived;
   }));
-  const items = [...library.values()].sort((a,b) => Number(a.archived) - Number(b.archived));
+  const items = [...library.values()].filter(item => !item.duplicateOf).sort((a,b) => Number(a.archived) - Number(b.archived));
   const key = 'chase-portfolio-media-review-v1';
   const actions = {remove:'Remove', improve:'Improve', replace:'Replace'};
   const grid = document.querySelector('#photo-grid');
@@ -28,7 +28,9 @@
     for (const [id, record] of Object.entries(value)) {
       if (!library.has(id)) continue;
       if (!record || !Object.hasOwn(actions, record.action) || typeof record.note !== 'string' || record.note.length > 4000) throw new Error('Invalid review entry.');
-      clean[id] = {action:record.action, note:record.note, updatedAt:typeof record.updatedAt === 'string' ? record.updatedAt : new Date().toISOString()};
+      const canonicalId = library.get(id).duplicateOf || id;
+      if (clean[canonicalId]?.updatedAt > (record.updatedAt || '')) continue;
+      clean[canonicalId] = {action:record.action, note:record.note, updatedAt:typeof record.updatedAt === 'string' ? record.updatedAt : new Date().toISOString()};
     }
     return clean;
   }
@@ -161,6 +163,8 @@
     if (moveFocus) count.focus({preventScroll:true});
   }
   projects.forEach(project => {const option = document.createElement('option');option.value = project.id;option.textContent = project.title;projectFilter.append(option);});
+  const requestedProject = new URLSearchParams(location.search).get('project');
+  if (projects.some(project => project.id === requestedProject)) projectFilter.value = requestedProject;
   filters.forEach(filter => filter.addEventListener(filter === search ? 'input' : 'change',render));
   document.querySelector('#close-photo').addEventListener('click',() => dialog.close());
   dialog.addEventListener('close',() => {

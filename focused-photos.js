@@ -199,46 +199,25 @@ window.focusedProjectPhotos = {
   ],
   "awear": [
     {
-      "mediaIndex": 18,
-      "displaySource": "images/cardiac-wearable/monitor.png",
-      "originalSource": "images/cardiac-wearable/monitor.png",
-      "caption": "The assembled aWear prototype and a trial placement beneath a wristwatch.",
-      "crop": [
-        1175,
-        182,
-        639,
-        847,
-        1920,
-        1080
-      ]
+      "mediaIndex": 13,
+      "displaySource": "images/semantic/awear-00007.png",
+      "originalSource": "images/semantic/awear-00007.png",
+      "caption": "A populated board is held with a cable connected.",
+      "position": "50% 50%"
     },
     {
-      "mediaIndex": 19,
-      "displaySource": "images/cardiac-wearable/hardware.png",
-      "originalSource": "images/cardiac-wearable/hardware.png",
-      "caption": "Four-layer, 35 mm circuit board with STM32L4, optical sensing, power electronics, and a printed enclosure.",
-      "crop": [
-        990,
-        12,
-        638,
-        625,
-        1920,
-        1080
-      ]
+      "mediaIndex": 14,
+      "displaySource": "images/semantic/awear-00008.png",
+      "originalSource": "images/semantic/awear-00008.png",
+      "caption": "The white enclosure has a central opening exposing the sensor board.",
+      "position": "50% 50%"
     },
     {
-      "mediaIndex": 20,
-      "displaySource": "images/cardiac-wearable/interface.png",
-      "originalSource": "images/cardiac-wearable/interface.png",
-      "caption": "Prototype web interface showing a reading explanation and calendar-based event history.",
-      "crop": [
-        784,
-        293,
-        1044,
-        787,
-        1920,
-        1080
-      ]
+      "mediaIndex": 16,
+      "displaySource": "images/semantic/awear-00010.png",
+      "originalSource": "images/semantic/awear-00010.png",
+      "caption": "The prototype is strapped to a wrist.",
+      "position": "50% 50%"
     }
   ],
   "feedback-loop": [

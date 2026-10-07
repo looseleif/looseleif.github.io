@@ -3,7 +3,13 @@
   const picks = window.focusedProjectPhotos || {};
   function reelFor(id, photosOverride) {
     const project = projects.find(p => p.id === id);
-    const photos = photosOverride || picks[id];
+    const seen = new Set();
+    const photos = (photosOverride || picks[id] || []).filter(photo => {
+      const media = project?.media[photo.mediaIndex];
+      const source = media?.duplicateOf || photo.originalSource || photo.displaySource;
+      if (media?.archived || seen.has(source)) return false;
+      seen.add(source);return true;
+    });
     if (!project || !photos?.length) return null;
     const reel = document.createElement('section');
     reel.className = 'project-reel focused-reel';
@@ -15,6 +21,7 @@
       link.href = photo.originalSource || photo.displaySource;
       link.dataset.project = id; link.dataset.index = photo.mediaIndex;
       if (photo.timestamp != null) link.dataset.start = photo.timestamp;
+      link.dataset.mediaView = 'image';
       link.setAttribute('aria-label', `Expand: ${photo.caption}`);
       const img = document.createElement('img');
       img.src = photo.displaySource; img.alt = photo.caption;
@@ -33,7 +40,7 @@
     'sync-tank': { picks:[0,12,7], labels:['Open Sauce 2026','Fish feed & caption experiment','Robot gripper'], caption:'Sync Tank at Open Sauce 2026: the complete exhibit, a captioned fish feed, and the robot gripper.' },
     aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
-    awear: { picks:[0,1,2], labels:['Wearable prototype','35 mm custom electronics','Reading history interface'], caption:'From the custom sensing board and wearable enclosure to the prototype interface for reviewing optical pulse readings.' },
+    awear: { picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
     'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
     'electric-drives': { picks:[0,2,1], labels:['Drivetrain assembly','Complete mountain board','Handheld control'], caption:'The electric mountain board: motor integration, assembled vehicle, and handheld control. Rover development is documented in the project.' }
   };
@@ -53,6 +60,7 @@
       link.dataset.project = id;link.dataset.index = clip ? videoIndex : photo.mediaIndex;
       link.href = clip?.src || photo.originalSource || photo.displaySource;
       if (!clip && photo.timestamp != null) link.dataset.start = photo.timestamp;
+      if (!clip) link.dataset.mediaView = 'image';
       link.setAttribute('aria-label', `${clip ? 'Watch full demonstration' : 'Expand image'}: ${config.labels[index]}`);
       const media = document.createElement(clip ? 'video' : 'img');
       if (clip) {
@@ -93,6 +101,10 @@
     const caption = document.createElement('figcaption');caption.textContent = config.caption;
     figure.append(grid,caption);return figure;
   }
+  document.querySelectorAll('[data-showcase-project]').forEach(slot => {
+    const composition = compositionFor(slot.dataset.showcaseProject);
+    if (composition) slot.replaceWith(composition);
+  });
   document.querySelectorAll('.system-slide').forEach(slide => {
     const composition = compositionFor(slide.id.replace('system-', ''));
     if (!composition) return;
@@ -145,7 +157,7 @@
     const id = sheet.querySelector('[data-project]')?.dataset.project;
     const hasClips = document.querySelector('main .clip-player video');
     const project = projects.find(p => p.id === id);
-    const additional = hasClips ? project?.media.flatMap((media, index) => media.kind === 'image' && !media.source ? [{displaySource:media.src,originalSource:media.src,mediaIndex:index,caption:media.caption}] : []) : undefined;
+    const additional = hasClips ? project?.media.flatMap((media, index) => media.kind === 'image' && !media.source && !media.archived && !media.duplicateOf ? [{displaySource:media.src,originalSource:media.src,mediaIndex:index,caption:media.caption}] : []) : undefined;
     const reel = reelFor(id, additional);
     if (!reel) {
       if (hasClips) sheet.closest('.case-media')?.remove();
@@ -159,6 +171,15 @@
     sheet.replaceWith(reel);
     document.querySelectorAll('.scene-strip').forEach(strip => strip.remove());
   });
+  const projectPage = location.pathname.replace(/\/$/, '/index.html').split('/').pop();
+  const currentProject = projects.find(project => project.page === projectPage || project.page === location.pathname.replace(/^\//, '').replace(/\/$/, '/index.html'));
+  if (currentProject && document.querySelector('main')) {
+    const collection = document.createElement('p');collection.className = 'project-photo-collection';
+    const link = document.createElement('a');link.className = 'text-link';
+    link.href = `${currentProject.id === 'socio' ? '../' : ''}photos.html?project=${encodeURIComponent(currentProject.id)}`;
+    link.textContent = 'All project photos & videos';collection.append(link);
+    document.querySelector('main').append(collection);
+  }
   if (document.querySelector('.motion-section')) {
     document.querySelectorAll('.scene-strip').forEach(strip => strip.remove());
   }

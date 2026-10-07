@@ -618,7 +618,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/aggro-00146.png",
         "source": "videos/loops/aggro.mp4",
         "timestamp": 14.6,
-        "caption": "Gray blocks move aside around orange regions; green regions become visible."
+        "caption": "Gray blocks move aside around orange regions; green regions become visible.",
+        "duplicateOf": "images/full/aggro3-0000.png"
       },
       {
         "kind": "image",
@@ -626,7 +627,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/aggro-00219.png",
         "source": "videos/loops/aggro.mp4",
         "timestamp": 29.2,
-        "caption": "Gray and white regions change as the block arrangement changes."
+        "caption": "Gray and white regions change as the block arrangement changes.",
+        "duplicateOf": "images/full/aggro4-0000.png"
       },
       {
         "kind": "image",
@@ -634,7 +636,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/aggro-00269.png",
         "source": "videos/loops/aggro.mp4",
         "timestamp": 39.2,
-        "caption": "White object silhouettes separate and regroup against a black background."
+        "caption": "White object silhouettes separate and regroup against a black background.",
+        "duplicateOf": "images/full/aggro5-0000.png"
       },
       {
         "kind": "image",
@@ -1008,7 +1011,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/awear-00001.png",
         "source": "videos/loops/awear.mp4",
         "timestamp": 0.45,
-        "caption": "A circuit board is shown inside a metal assembly fixture."
+        "caption": "A circuit board is shown inside a metal assembly fixture.",
+        "duplicateOf": "images/full/awear-0001.png"
       },
       {
         "kind": "image",
@@ -1072,7 +1076,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/awear-00009.png",
         "source": "videos/loops/awear.mp4",
         "timestamp": 4.05,
-        "caption": "Blue light is visible through the enclosure."
+        "caption": "Blue light is visible through the enclosure.",
+        "duplicateOf": "images/full/awear-0009.png"
       },
       {
         "kind": "image",
@@ -1088,7 +1093,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/awear-00011.png",
         "source": "videos/loops/awear.mp4",
         "timestamp": 4.95,
-        "caption": "A side view shows the enclosure, strap, and attached cable."
+        "caption": "A side view shows the enclosure, strap, and attached cable.",
+        "duplicateOf": "images/full/awear-0011.png"
       },
       {
         "kind": "image",
@@ -1424,7 +1430,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/homeo-00009.png",
         "source": "videos/loops/homeo.mp4",
         "timestamp": 0.9,
-        "caption": "A hand interacts near the board while the perimeter LEDs change state."
+        "caption": "A hand interacts near the board while the perimeter LEDs change state.",
+        "duplicateOf": "images/full/homeo1-0009.png"
       },
       {
         "kind": "image",
@@ -1472,7 +1479,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/homeo2-00001.png",
         "source": "videos/loops/homeo2.mp4",
         "timestamp": 0.28,
-        "caption": "An angled view shows the populated circular board."
+        "caption": "An angled view shows the populated circular board.",
+        "duplicateOf": "images/full/homeo2-0001.png"
       },
       {
         "kind": "image",
@@ -1480,7 +1488,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/homeo2-00002.png",
         "source": "videos/loops/homeo2.mp4",
         "timestamp": 0.56,
-        "caption": "Close-up of mounted modules and connectors."
+        "caption": "Close-up of mounted modules and connectors.",
+        "duplicateOf": "images/full/homeo2-0002.png"
       },
       {
         "kind": "image",
@@ -1488,7 +1497,8 @@ window.portfolioProjects = [
         "poster": "images/semantic/homeo2-00003.png",
         "source": "videos/loops/homeo2.mp4",
         "timestamp": 0.84,
-        "caption": "A two-transducer sensor sits beside a vertical board inside the light ring."
+        "caption": "A two-transducer sensor sits beside a vertical board inside the light ring.",
+        "duplicateOf": "images/full/homeo2-0003.png"
       },
       {
         "kind": "image",

@@ -70,7 +70,7 @@
   let activeIndices = [];
   function setYear(year) {
     activeIndices = currentProject.media.map((item, i) => ({ item, i }))
-      .filter(({item}) => !item.archived && (year === 'all' || item.year === year)).map(({i}) => i);
+      .filter(({item}) => !item.archived && !item.duplicateOf && (year === 'all' || item.year === year)).map(({i}) => i);
     if (!activeIndices.includes(index)) index = activeIndices[0];
   }
   yearSelect.addEventListener('change', () => { setYear(yearSelect.value); render(); });
@@ -123,7 +123,8 @@
     index = Number(link.dataset.index || 0);
     seekTime = null;
     const selected = project.media[index];
-    if (selected.source) {
+    if (selected.duplicateOf) index = project.media.findIndex(item => item.src === selected.duplicateOf);
+    if (selected.source && link.dataset.mediaView !== 'image') {
       const videoIndex = project.media.findIndex(item => item.kind === 'video' && item.src === selected.source);
       if (videoIndex >= 0) { index = videoIndex; seekTime = selected.timestamp || 0; }
     }
