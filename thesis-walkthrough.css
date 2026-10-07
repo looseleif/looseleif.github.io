@@ -20,7 +20,7 @@
 .step-number { font:24px/1.4 var(--mono); color:#858585; padding-top:5px; }
 .step-heading .eyebrow { margin:0 0 8px; }
 .step-heading h2 { margin:0; font-size:clamp(25px,2.8vw,36px); line-height:1.2; letter-spacing:-.025em; }
-.step-body { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr); gap:32px; align-items:start; }
+.step-body { display:grid; grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr); gap:28px; align-items:start; }
 .step-copy>p { font-size:16px; line-height:1.8; margin:0 0 18px; color:#ddd; }
 .step-source,.step-next { font:12px/1.7 var(--mono); color:#bbb; text-underline-offset:5px; }
 .step-next { display:block; margin-top:24px; width:fit-content; }
@@ -28,15 +28,15 @@
 .step-visuals.single-figure { grid-template-columns:minmax(0,1fr); }
 .thesis-figure,.thesis-demo { margin:0; min-width:0; }
 .figure-wide,.thesis-demo { grid-column:1 / -1; }
-.thesis-image { display:flex; justify-content:center; align-items:center; min-width:0; background:#101010; padding:0; }
-.thesis-image img { display:block; width:100%; max-width:var(--native-width); height:auto; max-height:430px; object-fit:contain; }
+.thesis-image { display:flex; justify-content:center; align-items:center; min-width:0; background:transparent; padding:0; }
+.thesis-image img { display:block; width:100%; max-width:min(var(--native-width),calc(600px * var(--media-ratio,1.5))); height:auto; object-fit:contain; }
 .thesis-image:focus-visible { outline:2px solid white; outline-offset:5px; }
 .thesis-figure figcaption,.thesis-demo figcaption { padding-top:12px; color:#bbb; font-size:13px; line-height:1.7; }
 .figure-number { display:block; font:10px/1.6 var(--mono); letter-spacing:.1em; color:#aaa; margin-bottom:4px; }
 .thesis-figure figcaption strong { display:block; color:#eee; font-size:15px; font-weight:500; }
 .thesis-figure figcaption p,.thesis-demo figcaption p { margin:6px 0 9px; }
 .thesis-figure figcaption a,.thesis-demo figcaption a { font:11px/1.7 var(--mono); text-underline-offset:4px; }
-.thesis-demo video { display:block; width:100%; max-height:420px; object-fit:contain; background:#111; }
+.thesis-demo video { display:block; width:100%; height:auto; object-fit:contain; background:transparent; }
 .policy-table { margin-top:26px; }
 .policy-table table { width:100%; border-collapse:collapse; font-size:13px; line-height:1.6; }
 .policy-table caption { text-align:left; font-size:15px; color:#eee; padding-bottom:12px; }
@@ -61,6 +61,19 @@
 .gallery-dialog[data-gallery-group="thesis"] { height:fit-content; }
 .gallery-dialog[data-gallery-group="thesis"] .gallery-stage { flex:none; }
 .gallery-dialog[data-gallery-group="thesis"] .gallery-stage img { border-radius:0; }
+.media-browser { display:block; container-type:inline-size; }
+.media-controls { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.media-position { flex:1; margin:0; color:#aaa; font:11px/1.6 var(--mono); }
+.media-controls button { min-width:44px; min-height:44px; border:1px solid #444; background:#151515; color:#eee; font:18px var(--mono); cursor:pointer; }
+.media-choices { display:flex; flex-wrap:wrap; gap:6px 18px; padding-bottom:12px; margin-bottom:16px; border-bottom:1px solid #333; }
+.media-choices button { min-height:44px; border:0; border-bottom:2px solid transparent; background:transparent; padding:8px 0; color:#888; font:11px/1.6 var(--mono); cursor:pointer; }
+.media-choices button[aria-pressed="true"] { color:white; border-bottom-color:white; }
+.media-controls button:hover,.media-choices button:hover { color:white; border-color:#aaa; }
+.media-controls button:focus-visible,.media-choices button:focus-visible { outline:2px solid white; outline-offset:3px; }
+@container (min-width:560px) {
+ .media-browser .portrait-figure { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); align-items:center; gap:22px; }
+ .media-browser .portrait-figure figcaption { padding-top:0; }
+}
 @media(max-width:850px) {
  .thesis-overview,.step-body,.thesis-team { grid-template-columns:1fr; gap:24px; }
  .thesis-nav { gap:8px 18px; }
@@ -78,7 +91,7 @@
  .step-copy>p,.thesis-overview p { font-size:15px; line-height:1.8; }
  .step-visuals { grid-template-columns:1fr; gap:24px; }
  .thesis-facts { gap:10px; flex-direction:column; }
- .thesis-image img { max-height:400px; }
+ .thesis-image img { max-width:min(var(--native-width),calc(520px * var(--media-ratio,1.5))); }
  .thesis-nav { gap:6px 16px; }
  .thesis-nav a { font-size:11px; }
  .thesis-walkthrough .project-links { gap:12px; }
