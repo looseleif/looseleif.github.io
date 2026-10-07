@@ -50,8 +50,16 @@
 .visual-index .work-showcase .focused-copy h2 { font-size:clamp(28px,2.7vw,40px); margin:12px 0 16px; }
 .visual-index .work-showcase .focused-copy>p:not(.eyebrow) { font-size:16px; line-height:1.65; }
 .visual-index .work-context { margin:20px 0; padding-top:16px; gap:9px 14px; }
-.cinematic-showcase .terminal-panel { column-gap:30px; }
+.cinematic-showcase .system-slide { display:grid; grid-template-columns:minmax(0,2fr) minmax(260px,.85fr); gap:28px; align-items:center; }
+.cinematic-showcase .terminal-panel { display:flex; flex-direction:column; padding:0; gap:14px; }
+.cinematic-showcase .terminal-panel h2 { font-size:clamp(28px,2.7vw,40px); }
+.cinematic-showcase .terminal-panel dl { margin:0; }
+.cinematic-showcase .terminal-panel dd { font-size:15px; }
+.cinematic-showcase .terminal-panel dd:last-of-type { font-size:13px; }
+.cinematic-showcase .terminal-links { margin-top:0; }
 @media(max-width:900px) {
+  .cinematic-showcase .system-slide { grid-template-columns:1fr; gap:22px; }
+  .cinematic-showcase .terminal-panel { padding:0 0 16px; }
   .visual-index .exhibit-grid .work-showcase { grid-template-columns:1fr; gap:20px; }
   .visual-index .work-showcase:nth-child(2n) .focused-copy,
   .visual-index .work-showcase:nth-child(2n) .project-composition { grid-column:auto; grid-row:auto; }
