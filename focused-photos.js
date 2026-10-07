@@ -28,6 +28,20 @@ window.focusedProjectPhotos = {
       "timestamp": null,
       "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state.",
       "fit": "contain"
+    },
+    {
+      "mediaIndex": 12,
+      "displaySource": "images/sync-tank/fish-caption-feed.png",
+      "originalSource": "images/sync-tank/fish-caption-feed.png",
+      "caption": "SEE SEA TV: aquarium fish footage with a generated caption overlay.",
+      "crop": [
+        181,
+        70,
+        642,
+        480,
+        964,
+        698
+      ]
     }
   ],
   "aggro": [

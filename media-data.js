@@ -105,6 +105,12 @@ window.portfolioProjects = [
         "kind": "image",
         "width": 1824,
         "height": 1373
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/fish-caption-feed.png",
+        "poster": "images/sync-tank/fish-caption-feed.png",
+        "caption": "SEE SEA TV: aquarium fish footage with a generated caption overlay."
       }
     ],
     "role": "Sensing hardware / Software integration",
