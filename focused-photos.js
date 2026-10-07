@@ -1,6 +1,20 @@
 window.focusedProjectPhotos = {
   "sync-tank": [
     {
+      "mediaIndex": 13,
+      "displaySource": "images/sync-tank/gantry-camera-rig.jpg",
+      "originalSource": "images/sync-tank/gantry-camera-rig.jpg",
+      "caption": "Printed pulley mount and rail hardware on the aquarium camera gantry.",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 14,
+      "displaySource": "images/sync-tank/robot-gripper.jpg",
+      "originalSource": "images/sync-tank/robot-gripper.jpg",
+      "caption": "Servo-driven robot gripper with printed fingers, linkages, and exposed wiring.",
+      "position": "50% 50%"
+    },
+    {
       "mediaIndex": 11,
       "displaySource": "images/sync-tank/tank-side-display.jpg",
       "originalSource": "images/sync-tank/tank-side-display.jpg",
@@ -369,6 +383,13 @@ window.focusedProjectPhotos = {
       "originalSource": "videos/remorse/haptic-events.mp4",
       "timestamp": 0,
       "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
+    },
+    {
+      "mediaIndex": 9,
+      "displaySource": "images/remorse/mobile-app-view.png",
+      "originalSource": "images/remorse/mobile-app-view.png",
+      "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
+      "position": "50% 50%"
     }
   ]
 };

@@ -111,6 +111,20 @@ window.portfolioProjects = [
         "src": "images/sync-tank/fish-caption-feed.png",
         "poster": "images/sync-tank/fish-caption-feed.png",
         "caption": "SEE SEA TV: aquarium fish footage with a generated caption overlay."
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/gantry-camera-rig.jpg",
+        "caption": "Printed pulley mount and rail hardware on the aquarium camera gantry.",
+        "width": 6144,
+        "height": 8160
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/robot-gripper.jpg",
+        "caption": "Servo-driven robot gripper with printed fingers, linkages, and exposed wiring.",
+        "width": 6144,
+        "height": 8160
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -1925,6 +1939,13 @@ window.portfolioProjects = [
         "poster": "images/remorse/haptic-events.jpg",
         "original": "images/remorse/haptic-events.gif",
         "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
+      },
+      {
+        "kind": "image",
+        "src": "images/remorse/mobile-app-view.png",
+        "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
+        "width": 432,
+        "height": 859
       }
     ],
     "role": "A Socio product / IYKYD field tests",

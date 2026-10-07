@@ -67,3 +67,7 @@
 .remorse-feature-copy .eyebrow { font-size:11px; }
 .remorse-feature-copy .text-link { display:inline-block; margin-top:20px; }
 @media(max-width:800px) { .remorse-feature { grid-template-columns:1fr; gap:22px; padding:32px 0; } }
+
+.remorse-mobile figure { max-width:432px; width:100%; justify-self:center; background:#080808; }
+.remorse-mobile img { width:100%; height:auto; }
+.remorse-mobile .remorse-feature-copy p+p { margin-top:16px; }
