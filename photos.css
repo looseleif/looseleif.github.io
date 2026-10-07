@@ -1,0 +1,50 @@
+.photos-page { max-width:1800px; }
+.photos-heading { display:grid; grid-template-columns:1fr 1fr; gap:70px; padding:56px 0 36px; align-items:start; }
+.photos-heading h1 { font-size:clamp(52px,7vw,96px); margin:15px 0 22px; }
+.photos-heading>div>p { max-width:540px; }
+.review-intro { border-left:1px solid var(--line); padding-left:32px; }
+.review-intro h2 { font-size:25px; margin-bottom:14px; }
+.review-intro p { font-size:14px; }
+.review-transfer { display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin:20px 0 12px; }
+.photos-page button,.import-review,#photo-dialog button { border:1px solid #555; background:#181818; color:#eee; padding:10px 14px; border-radius:3px; font:13px/1.4 var(--mono); }
+.photos-page button:hover,.import-review:hover,#photo-dialog button:hover { border-color:#eee; }
+.photos-page #export-review { background:#eee; color:#141414; }
+.import-review { cursor:pointer; }
+.visually-hidden { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.review-transfer:has(input:focus-visible) .import-review { outline:2px solid #eee; outline-offset:4px; }
+#save-status { font-size:12px; min-height:2em; }
+.photo-filters { display:grid; grid-template-columns:2fr 1.3fr 1fr 1fr; gap:16px; padding:24px 0; border-block:1px solid var(--line); }
+.photo-filters label { display:grid; gap:8px; font:11px/1.5 var(--mono); color:#bbb; min-width:0; }
+.photo-filters input,.photo-filters select { width:100%; min-width:0; border:1px solid #454545; border-radius:3px; padding:12px; background:#1b1b1b; color:#eee; font:14px/1.4 "Segoe UI",Arial,sans-serif; }
+.photo-results { display:flex; gap:20px; justify-content:space-between; padding:20px 0; font:12px/1.6 var(--mono); }
+.photo-results span { color:#aaa; }
+.photo-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px 22px; padding-bottom:64px; }
+.photo-card { min-width:0; background:linear-gradient(145deg,#242424,#171717); border:1px solid #383838; border-radius:5px; overflow:hidden; }
+.photo-card[data-action] { border-color:#aaa; }
+.photo-card .photo-open { display:block; width:100%; padding:0; border:0; border-radius:0; position:relative; aspect-ratio:4/3; background:#0d0d0d; overflow:hidden; }
+.photo-open img,.photo-open video,.photo-open .motion-fallback { width:100%; height:100%; object-fit:contain; }
+.photo-badge { position:absolute; top:10px; left:10px; padding:4px 8px; background:#111e; color:#eee; font:10px/1.4 var(--mono); }
+.photo-copy { padding:18px; }
+.photo-projects { color:#ccc; font:11px/1.6 var(--mono); margin-bottom:9px; }
+.photo-copy h2 { font-size:16px; letter-spacing:0; line-height:1.5; font-weight:400; color:#eee; }
+.photo-file { display:block; margin-top:12px; font:11px/1.6 var(--mono); color:#aaa; overflow-wrap:anywhere; text-decoration:underline; text-underline-offset:4px; }
+.review-controls { padding-top:16px; }
+.review-actions { display:flex; flex-wrap:wrap; gap:7px; align-items:center; }
+.review-actions button { padding:7px 10px; font-size:12px; }
+.review-actions button[aria-pressed="true"] { color:#121212!important; background:#eee!important; border-color:#eee!important; }
+.review-notes { display:grid; gap:7px; margin-top:12px; color:#bbb; font:11px/1.6 var(--mono); }
+.review-notes textarea { display:block; resize:vertical; min-height:86px; width:100%; border:1px solid #555; background:#111; color:#eee; padding:10px; font:14px/1.5 "Segoe UI",Arial,sans-serif; border-radius:3px; }
+.photos-page :is(button,input,select,textarea):focus-visible,#photo-dialog :is(button,a,textarea):focus-visible { outline:2px solid white; outline-offset:3px; }
+#photo-empty { padding:50px 0 100px; }
+#photo-dialog { width:min(1120px,calc(100% - 32px)); max-height:92vh; padding:0; border:1px solid #555; background:#151515; color:#eee; }
+#photo-dialog::backdrop { background:#000d; }
+.photo-dialog-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 22px; }
+.photo-dialog-header h2 { font:14px/1.5 var(--mono); overflow-wrap:anywhere; }
+#photo-dialog-media { background:#080808; }
+#photo-dialog-media img,#photo-dialog-media video { width:100%; max-height:60vh; object-fit:contain; }
+#photo-dialog-info { padding:20px 24px 26px; }
+#photo-dialog-info p { color:#ddd; }
+@media(min-width:1700px) { .photo-grid { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+@media(max-width:1000px) { .photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.photos-heading { gap:30px; }.photo-filters { grid-template-columns:1fr 1fr; } }
+@media(max-width:600px) { .photos-heading { grid-template-columns:1fr; padding-top:30px; }.review-intro { border-left:0; border-top:1px solid var(--line); padding:24px 0 0; }.photo-grid { grid-template-columns:1fr; gap:24px; }.photo-results { flex-direction:column; gap:5px; }.photo-filters { gap:14px 10px; }.photo-filters label:first-child { grid-column:1/-1; }.photo-filters label:last-child { grid-column:1/-1; } }
+@media(max-width:600px) { .photos-heading { gap:20px; padding-bottom:20px; }.photos-heading h1 { margin:10px 0 14px; }.photos-heading>div>p { font-size:14px; }.review-intro { padding-top:18px; }.review-intro h2 { font-size:22px; }.review-intro p { font-size:13px; }.review-transfer { margin:14px 0 8px; }.photo-filters { padding-block:18px; } }

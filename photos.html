@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Browse Chase Anderson's project photos, demonstrations, and development images.">
+  <meta name="theme-color" content="#121212"><title>Photos | Chase Anderson</title>
+  <link rel="icon" href="favicon.svg"><link rel="stylesheet" href="portfolio.css?v=46"><link rel="stylesheet" href="photos.css?v=1">
+  <script src="media-data.js?v=54" defer></script><script src="media-semantics.js?v=54" defer></script><script src="motion-settings.js?v=42" defer></script><script src="photos.js?v=1" defer></script><script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Chase Anderson<span>Engineering / Projects</span></a><nav aria-label="Main navigation"><a href="index.html">Index</a><a href="projects.html">Projects</a><a href="photos.html" aria-current="page">Photos</a><a href="about.html">About</a><a href="socials.html">Contact</a></nav></header>
+<main id="main" class="photos-page">
+  <section class="photos-heading"><div><p class="eyebrow">PROJECT MEDIA</p><h1>Photos</h1><p>Every indexed photo, clip, and development frame. Open an image for a closer look.</p></div><div class="review-intro"><h2>Make a review list.</h2><p>Mark entries and add notes. Your review stays in this browser; it does not change the site. Export the file to send in chat.</p><div class="review-transfer"><button id="export-review" type="button">Export review <span id="review-count">(0)</span></button><label class="import-review" for="import-review">Import review</label><input id="import-review" type="file" accept="application/json,.json" class="visually-hidden"></div><p id="save-status" role="status">Your review saves automatically in this browser.</p></div></section>
+  <form class="photo-filters" role="search" onsubmit="return false">
+    <label>Search<input id="photo-search" type="search" placeholder="Caption, filename, or project" autocomplete="off"></label>
+    <label>Project<select id="photo-project"><option value="all">All projects</option></select></label>
+    <label>Media<select id="photo-kind"><option value="all">Photos &amp; motion</option><option value="image">Photos &amp; frames</option><option value="video">Videos &amp; GIFs</option></select></label>
+    <label>Review<select id="photo-review"><option value="all">All entries</option><option value="marked">Marked entries</option><option value="remove">Remove</option><option value="improve">Improve</option><option value="replace">Replace</option><option value="unmarked">Unmarked</option></select></label>
+  </form>
+  <div class="photo-results"><p id="photo-count" role="status" tabindex="-1"></p><span>Shared files appear once. Archived entries are labeled.</span></div>
+  <div id="photo-grid" class="photo-grid"></div><p id="photo-empty" hidden>No entries match these filters.</p>
+  <noscript><p>Enable JavaScript to browse and mark the media library. <a href="projects.html">Browse the projects</a>.</p></noscript>
+</main>
+<dialog id="photo-dialog" aria-labelledby="photo-dialog-title"><div class="photo-dialog-header"><h2 id="photo-dialog-title">Photo</h2><button type="button" id="close-photo">Close</button></div><div id="photo-dialog-media"></div><div id="photo-dialog-info"></div></dialog>
+<footer><span>Chase Anderson / <span data-year>2026</span></span><div class="footer-contact"><a href="socials.html">Contact</a><a href="https://github.com/looseleif">GitHub</a><a href="https://www.linkedin.com/in/chaseleifanderson">LinkedIn</a></div></footer>
+</body></html>
