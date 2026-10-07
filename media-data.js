@@ -1543,7 +1543,7 @@ window.portfolioProjects = [
   },
   {
     "id": "feedback-loop",
-    "title": "Interactive Biology Learning Platform",
+    "title": "Biology Teaching Hardware",
     "category": "Hardware",
     "line": "Custom electronics for hands-on biology and introductory programming.",
     "media": [
@@ -1551,7 +1551,7 @@ window.portfolioProjects = [
         "src": "images/full/homeo-0000.png",
         "poster": "images/frames/homeo-0000.webp",
         "kind": "image",
-        "caption": "Custom electronics for the interactive biology learning platform, wired for bench testing.",
+        "caption": "Custom electronics for the biology teaching hardware, wired for bench testing.",
         "source": "videos/loops/homeo.mp4",
         "timestamp": 0.0,
         "width": 405,
@@ -1600,7 +1600,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/homeo.mp4",
         "poster": "images/previews/homeo.webp",
-        "caption": "interactive biology learning platform: bench demonstration and assembly.",
+        "caption": "biology teaching hardware: bench demonstration and assembly.",
         "kind": "video",
         "original": "images/homeo.gif"
       },

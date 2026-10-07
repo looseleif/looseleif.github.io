@@ -44,8 +44,20 @@
     'feedback-loop': { layout:'bench', picks:[0,2,4], videos:[17], areas:['hero','sensor','board'], labels:['Device demonstration','Sensor module','Bench electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
     'electric-drives': { layout:'drives', picks:[3,0,2,1], areas:['hero','drive','board','control'], labels:['Two-wheel prototype','Drivetrain assembly','Mountain board','Handheld control'], caption:'Ground-vehicle builds, from the two-wheel prototype to the mountain board drivetrain and rider controls.' }
   };
-  function compositionFor(id) {
-    const project = projects.find(p => p.id === id), config = compositions[id];
+  // Keep the rotating Index easy to read: one main view and two supporting views.
+  const indexCompositions = {
+    'sync-tank': { picks:[0,5,12], labels:['Open Sauce 2026','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The Open Sauce exhibit, articulated camera arm and ring light, and aquarium footage with generated captions.' },
+    aggro: { picks:[0,1,2], videos:[31,7,13] },
+    socio: { picks:[5,4,8], videos:[5,4,8], labels:['Live transcription','Speaker diarization','Haptic feedback events'], caption:'Live transcription, separate speaker activity, and haptic feedback events during IYKYD field recordings.' },
+    'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'] },
+    'electric-drives': { picks:[3,0,2], labels:['Two-wheel prototype','Drivetrain assembly','Mountain board'] }
+  };
+  function compositionFor(id, indexShowcase = false) {
+    const project = projects.find(p => p.id === id);
+    if (!project || !compositions[id]) return null;
+    const config = indexShowcase
+      ? { ...compositions[id], ...indexCompositions[id], layout:'index-three', areas:['hero','detail','context'] }
+      : compositions[id];
     if (!project || !config) return null;
     const figure = document.createElement('figure');
     figure.className = 'project-composition';
@@ -78,7 +90,7 @@
         media.loading = 'lazy';media.decoding = 'async';
       }
       const label = document.createElement('span');label.className = 'composition-label';
-      label.textContent = config.labels[index] + (clip ? ' / Expand clip' : '');
+      label.textContent = config.labels[index] + (clip && !indexShowcase ? ' / Expand clip' : '');
       if (!clip && photo.crop) {
         // Crop only the presentation; the expand link retains the original screenshot.
         const [x,y,w,h,sourceWidth,sourceHeight] = photo.crop;
@@ -109,7 +121,7 @@
     if (composition) slot.replaceWith(composition);
   });
   document.querySelectorAll('.system-slide').forEach(slide => {
-    const composition = compositionFor(slide.id.replace('system-', ''));
+    const composition = compositionFor(slide.id.replace('system-', ''), true);
     if (!composition) return;
     slide.querySelector('.exhibit-stage').replaceWith(composition);
     const description = slide.querySelector('.terminal-panel dd:last-of-type');
