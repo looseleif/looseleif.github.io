@@ -1,0 +1,86 @@
+/* Layouts follow the media: exhibits, research, interfaces, and physical builds. */
+.project-composition[data-layout] .composition-grid {
+  height:clamp(400px,40vw,560px); aspect-ratio:auto; gap:8px;
+}
+.project-composition[data-layout] .composition-tile,
+.project-composition[data-layout] .composition-tile:first-child { aspect-ratio:auto; }
+.project-composition[data-layout] .composition-tile { display:grid; grid-template-rows:minmax(0,1fr) auto; }
+.project-composition[data-layout] .composition-crop { padding:0; }
+.project-composition[data-layout] .composition-label { position:static; padding:7px 10px; font-size:11px; background:#111; }
+.project-composition[data-layout]>figcaption { font-size:13px; line-height:1.6; padding-top:12px; }
+.project-composition[data-layout="exhibit"] .composition-grid {
+  grid-template-columns:1.3fr 1fr .8fr; grid-template-rows:1.35fr 1fr;
+  grid-template-areas:"hero hero screen" "build feed screen";
+}
+.project-composition[data-layout="exhibit"] .composition-tile:nth-child(2) img { object-fit:cover !important; }
+.project-composition[data-layout="research"] .composition-grid {
+  grid-template-columns:1.4fr 1fr 1fr; grid-template-rows:1.8fr 1fr;
+  grid-template-areas:"hero hero simulation" "team masks simulation";
+}
+.project-composition[data-layout="session"] .composition-grid {
+  grid-template-columns:1fr 1fr .8fr 1.25fr; grid-template-rows:2.15fr 1fr;
+  grid-template-areas:"hero hero hero phone" "trace cue watch phone";
+}
+.project-composition[data-layout="session"] .composition-tile video { object-fit:contain; }
+.project-composition[data-layout="session"] .composition-tile:nth-child(5) img { object-position:50% 48%; }
+.project-composition[data-layout="solar"] .composition-grid {
+  grid-template-columns:1.425fr .9fr .9fr; grid-template-rows:minmax(0,1fr);
+  grid-template-areas:"hero board driver"; height:auto; aspect-ratio:3.05;
+}
+.project-composition[data-layout="wearable"] .composition-grid {
+  grid-template-columns:1.45fr 1fr; grid-template-rows:1fr 1fr;
+  grid-template-areas:"hero case" "hero wrist";
+}
+.project-composition[data-layout="drives"] .composition-grid,
+.visual-index #electric-drives .project-composition[data-layout] .composition-grid {
+  grid-template-columns:1.15fr 1fr .8fr; grid-template-rows:1fr 1fr;
+  grid-template-areas:"hero drive control" "hero board board";
+}
+.project-composition[data-layout="bench"] .composition-grid {
+  grid-template-columns:1.15fr 1fr; grid-template-rows:1.5fr 1fr;
+  grid-template-areas:"hero hero" "sensor board";
+}
+.visual-index .exhibit-grid .work-showcase {
+  grid-template-columns:minmax(0,2fr) minmax(260px,.85fr); gap:28px;
+  align-items:center; padding-block:28px;
+}
+.visual-index .work-showcase:nth-child(2n) { grid-template-columns:minmax(260px,.85fr) minmax(0,2fr); }
+.visual-index .work-showcase:nth-child(2n) .focused-copy { grid-column:1; grid-row:1; }
+.visual-index .work-showcase:nth-child(2n) .project-composition { grid-column:2; grid-row:1; }
+.visual-index .work-showcase .focused-copy h2 { font-size:clamp(28px,2.7vw,40px); margin:12px 0 16px; }
+.visual-index .work-showcase .focused-copy>p:not(.eyebrow) { font-size:16px; line-height:1.65; }
+.visual-index .work-context { margin:20px 0; padding-top:16px; gap:9px 14px; }
+.cinematic-showcase .terminal-panel { column-gap:30px; }
+@media(max-width:900px) {
+  .visual-index .exhibit-grid .work-showcase { grid-template-columns:1fr; gap:20px; }
+  .visual-index .work-showcase:nth-child(2n) .focused-copy,
+  .visual-index .work-showcase:nth-child(2n) .project-composition { grid-column:auto; grid-row:auto; }
+  .visual-index .work-showcase .focused-copy { max-width:none; }
+  .visual-index .work-context { grid-template-columns:80px 1fr; }
+}
+@media(max-width:600px) {
+  .project-composition[data-layout] .composition-grid { height:430px; }
+  .project-composition[data-layout] .composition-label { font-size:9px; padding:6px 7px; }
+  .project-composition[data-layout="exhibit"] .composition-grid {
+    grid-template-columns:1fr 1fr; grid-template-rows:1.15fr 1fr 1fr;
+    grid-template-areas:"hero hero" "build screen" "feed screen"; height:560px;
+  }
+  .project-composition[data-layout="research"] .composition-grid {
+    grid-template-columns:1fr 1fr; grid-template-rows:1.3fr 1fr 1fr;
+    grid-template-areas:"hero hero" "simulation masks" "team team"; height:560px;
+  }
+  .project-composition[data-layout="session"] .composition-grid {
+    grid-template-columns:1fr 1fr .95fr; grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:"hero hero hero" "trace cue phone" "watch watch phone"; height:570px;
+  }
+  .project-composition[data-layout="solar"] .composition-grid {
+    grid-template-columns:1fr 1fr; grid-template-rows:1.4fr 1fr;
+    grid-template-areas:"hero hero" "board driver"; aspect-ratio:auto;
+  }
+  .project-composition[data-layout="drives"] .composition-grid,
+  .visual-index #electric-drives .project-composition[data-layout] .composition-grid {
+    grid-template-columns:1.15fr 1fr; grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:"hero drive" "hero control" "board board"; height:510px;
+  }
+  .project-composition[data-layout="wearable"] .composition-grid { height:400px; }
+}

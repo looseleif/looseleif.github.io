@@ -36,13 +36,13 @@
   }
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
-    socio: { picks:[4,5,8], videos:[4,5,8], labels:['Speaker diarization','Real-time processing','Haptic feedback events'], caption:'remorse in operation: separating speaker activity, processing incoming speech, and receiving haptic feedback events.' },
-    'sync-tank': { picks:[0,11,12], labels:['Open Sauce 2026','Tank & camera interface','SEE SEA TV / Generated captions'], caption:'Sync Tank at Open Sauce 2026: the complete exhibit, the tank-and-camera interface, and aquarium footage with generated captions.' },
-    aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
-    solar: { picks:[0,1,2], labels:['The team & vehicle','Telemetry electronics','Me driving'], caption:'My work with the Solar Vehicle Project: contributing to the team, designing telemetry electronics, and driving the vehicle.' },
-    awear: { picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
-    'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
-    'electric-drives': { picks:[0,2,1], labels:['Drivetrain assembly','Complete mountain board','Handheld control'], caption:'The electric mountain board: motor integration, assembled vehicle, and handheld control. Rover development is documented in the project.' }
+    socio: { layout:'session', picks:[5,9,4,8,11], videos:[5,null,4,8,null], areas:['hero','phone','trace','cue','watch'], labels:['Live transcription','Mobile companion','Speaker diarization','Haptic events','On the wrist'], caption:'A live session, its mobile companion, and the watch prototype: speech processing, speaker activity, and feedback in context.' },
+    'sync-tank': { layout:'exhibit', picks:[0,11,12,4], areas:['hero','screen','feed','build'], labels:['Open Sauce 2026','Tank & camera interface','SEE SEA TV / Generated captions','Shrimp City habitat'], caption:'Sync Tank at Open Sauce 2026: the complete exhibit, the tank-and-camera interface, and aquarium footage with generated captions.' },
+    aggro: { layout:'research', picks:[0,1,2,5], videos:[31,7,13,null], areas:['hero','simulation','masks','team'], labels:['Robot demonstration','Robot simulation','Search environments','Research group'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
+    solar: { layout:'solar', areas:['hero','board','driver'], picks:[0,1,2], labels:['The team & vehicle','Telemetry electronics','Me driving'], caption:'My work with the Solar Vehicle Project: contributing to the team, designing telemetry electronics, and driving the vehicle.' },
+    awear: { layout:'wearable', areas:['hero','case','wrist'], picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
+    'feedback-loop': { layout:'bench', picks:[0,2,4], videos:[17], areas:['hero','sensor','board'], labels:['Device demonstration','Sensor module','Bench electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
+    'electric-drives': { layout:'drives', picks:[3,0,2,1], areas:['hero','drive','board','control'], labels:['Two-wheel prototype','Drivetrain assembly','Mountain board','Handheld control'], caption:'Ground-vehicle builds, from the two-wheel prototype to the mountain board drivetrain and rider controls.' }
   };
   function compositionFor(id) {
     const project = projects.find(p => p.id === id), config = compositions[id];
@@ -50,6 +50,7 @@
     const figure = document.createElement('figure');
     figure.className = 'project-composition';
     figure.dataset.composition = id;
+    figure.dataset.layout = config.layout;
     figure.setAttribute('aria-label', `${project.title}: overview and details`);
     const grid = document.createElement('div');grid.className = 'composition-grid';
     config.picks.forEach((pick, index) => {
@@ -57,6 +58,7 @@
       const videoIndex = config.videos?.[index];
       const clip = videoIndex != null ? project.media[videoIndex] : null;
       const link = document.createElement('a');link.className = 'composition-tile';
+      link.style.gridArea = config.areas[index];
       link.dataset.project = id;link.dataset.index = clip ? videoIndex : photo.mediaIndex;
       link.href = clip?.src || photo.originalSource || photo.displaySource;
       if (!clip && photo.timestamp != null) link.dataset.start = photo.timestamp;
@@ -72,6 +74,7 @@
         media.src = photo.displaySource;media.alt = photo.caption;
         media.style.objectPosition = photo.position || '50% 50%';
         if (photo.fit) media.style.objectFit = photo.fit;
+        if (id === 'socio' && pick === 9) media.style.objectFit = 'contain';
         media.loading = 'lazy';media.decoding = 'async';
       }
       const label = document.createElement('span');label.className = 'composition-label';

@@ -2,7 +2,11 @@
   const active = new Map();
   const registered = new WeakSet();
   const waiting = new Set();
-  const typingDuration = 1000;
+  const observed = new Set();
+  const typingDuration = 1350;
+  const seen = new WeakSet();
+  const replay = new WeakSet();
+  const forceTyping = document.documentElement.dataset.textEffect === 'typewriter';
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const excluded = 'script,style,noscript,svg,textarea,select,option,.sr-only,.typed-accessible,.typed-run,form,.review-controls,.photo-file,[role=status]';
   const blocks = 'h1,h2,h3,h4,h5,h6,p,li,dt,dd,figcaption,th,td,button,label,summary';
@@ -10,7 +14,7 @@
   const characters = text => segmenter ? [...segmenter.segment(text)].map(item => item.segment) : Array.from(text);
   function finish(element) {
     waiting.delete(element);
-    observer.unobserve(element);
+    if (!element.isConnected) { observer.unobserve(element);observed.delete(element); }
     element.querySelectorAll('.typed-caret').forEach(glyph => glyph.classList.remove('typed-caret'));
     element.querySelectorAll('.typed-pending').forEach(glyph => glyph.classList.remove('typed-pending'));
     const state = active.get(element);
@@ -42,17 +46,18 @@
     // Query in document order, including runs inside inline links and emphasis.
     glyphs.splice(0,glyphs.length,...element.querySelectorAll('.typed-glyph'));
     element.dataset.terminalText = [...element.querySelectorAll('.typed-accessible')].map(node => node.textContent).join('');
-    if (!glyphs.length || reducedMotion.matches) return;
+    if (!glyphs.length || (reducedMotion.matches && !forceTyping)) return;
     glyphs.forEach(glyph => glyph.classList.add('typed-pending'));
     waiting.add(element);
-    observer.observe(element);
+    observed.add(element);
+    observer.unobserve(element);observer.observe(element);
   }
-  function startTyping(element) {
+  function startTyping(element, delay = 0) {
     if (!waiting.has(element) || document.hidden || element.closest('[hidden]')) return;
-    waiting.delete(element);observer.unobserve(element);
+    waiting.delete(element);seen.add(element);
     const glyphs = [...element.querySelectorAll('.typed-glyph')];
     element.classList.add('is-text-typing');
-    const state = { glyphs, frame:0, shown:0, start:performance.now() };active.set(element,state);
+    const state = { glyphs, frame:0, shown:0, start:performance.now() + delay };active.set(element,state);
     const tick = now => {
       if (!element.isConnected || element.closest('[hidden]')) { finish(element);return; }
       const count = Math.min(glyphs.length,Math.max(0,Math.ceil((now-state.start)/typingDuration*glyphs.length)));
@@ -74,9 +79,15 @@
     if (current !== text) typeText(element,text);
   };
   const observer = new IntersectionObserver(entries => {
+    let stagger = 0;
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      startTyping(entry.target);
+      const element = entry.target;
+      if (!entry.isIntersecting) {
+        if (seen.has(element)) { finish(element);replay.add(element); }
+        return;
+      }
+      if (replay.has(element)) { replay.delete(element);typeText(element); }
+      startTyping(element, Math.min(stagger++ * 55, 275));
     });
   },{threshold:0});
   function collect(root) {
@@ -113,6 +124,10 @@
     reel.addEventListener('portfolio:frame',() => retypeWithin(reel.querySelector('.reel-slide:not([hidden]) figcaption')));
   });
   register(document.body);
+  // Replay after initial assets settle so loading never consumes the first reveal.
+  if (document.readyState !== 'complete') window.addEventListener('load', () => {
+    retypeWithin(document.querySelector('main'));
+  }, {once:true});
   // Captions and expanded galleries can be inserted or updated after the page loads.
   new MutationObserver(records => {
     const changed = new Set();
@@ -122,7 +137,7 @@
       if (record.type==='childList' && record.addedNodes.length && [...record.addedNodes].every(node => node.nodeType===1 && node.matches('.typed-run,.typed-accessible'))) return;
       changed.add(element);
     });
-    waiting.forEach(element => { if (!element.isConnected) finish(element); });
+    observed.forEach(element => { if (!element.isConnected) finish(element); });
     changed.forEach(element => {
       register(element);
       if (registered.has(element) && element.getClientRects().length) typeText(element);
@@ -134,6 +149,6 @@
     else waiting.forEach(element => { observer.unobserve(element);observer.observe(element); });
   });
   window.addEventListener('pageshow',event => { if (event.persisted) retypeWithin(document.querySelector('main')); });
-  reducedMotion.addEventListener('change',() => { if (reducedMotion.matches) finishAll(); });
+  reducedMotion.addEventListener('change',() => { if (reducedMotion.matches && !forceTyping) finishAll(); });
   window.addEventListener('beforeprint',finishAll);
 })();

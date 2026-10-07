@@ -5,10 +5,17 @@
     speed: 1.25,
     overrides: {},
     rateFor(source) {
+      if (source?.startsWith('videos/remorse/')) return 1;
       return (this.overrides[source] ?? window.portfolioSemantics?.[source]?.playbackRate ?? 0.65) * this.speed;
     },
     configure(video, source) {
       video.dataset.motionSource = source;
+      // Keep stable media/review IDs while refreshing the higher-quality encodes.
+      if (source?.startsWith('videos/remorse/')) {
+        const url = new URL(source, mediaRoot);url.searchParams.set('v','65');
+        video.dataset.src = url.href;
+        if (video.hasAttribute('src')) video.src = url.href;
+      }
       video.controls = false;
       video.removeAttribute('controls');
       video.defaultMuted = true;
@@ -21,8 +28,9 @@
     },
     fallback(video, source) {
       if (!video.isConnected || video.dataset.fallback) return;
-      const original = (window.portfolioProjects || []).flatMap(p => p.media)
-        .find(item => item.kind === 'video' && item.src === source)?.original;
+      const item = (window.portfolioProjects || []).flatMap(p => p.media)
+        .find(item => item.kind === 'video' && item.src === source);
+      const original = item?.original || item?.poster;
       if (!original) return;
       const image = document.createElement('img');
       image.className = 'motion-fallback';

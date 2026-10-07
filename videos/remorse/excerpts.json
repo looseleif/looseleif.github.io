@@ -1,0 +1,77 @@
+[
+  {
+    "name": "speaker-diarization",
+    "sourceUrl": "https://www.youtube.com/watch?v=kI74m7SITUA",
+    "sourceStart": 720,
+    "duration": 16,
+    "crop": "crop=672:512:848:322",
+    "encode": "H.264 CRF 17; native resolution and frame rate; no upscaling",
+    "width": 672,
+    "height": 512,
+    "frameRate": "24/1",
+    "sourceResolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "name": "live-transcription",
+    "sourceUrl": "https://www.youtube.com/watch?v=Ir4QtvsJtm4",
+    "sourceStart": 88,
+    "duration": 10,
+    "crop": "crop=1220:708:16:192",
+    "encode": "H.264 CRF 17; native resolution and frame rate; no upscaling",
+    "width": 1220,
+    "height": 708,
+    "frameRate": "30/1",
+    "sourceResolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "name": "live-context",
+    "sourceUrl": "https://www.youtube.com/watch?v=Ir4QtvsJtm4",
+    "sourceStart": 88,
+    "duration": 10,
+    "crop": null,
+    "encode": "H.264 CRF 17; native resolution and frame rate; no upscaling",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "30/1",
+    "sourceResolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "name": "haptic-events",
+    "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8",
+    "sourceStart": 232,
+    "duration": 12,
+    "crop": "crop=754:580:16:272",
+    "encode": "H.264 CRF 17; native resolution and frame rate; no upscaling",
+    "width": 754,
+    "height": 580,
+    "frameRate": "30/1",
+    "sourceResolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "name": "conversation-cues",
+    "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8",
+    "sourceStart": 227,
+    "duration": 10,
+    "crop": "crop=716:490:786:354",
+    "encode": "H.264 CRF 17; native resolution and frame rate; no upscaling",
+    "width": 716,
+    "height": 490,
+    "frameRate": "30/1",
+    "sourceResolution": [
+      1920,
+      1080
+    ]
+  }
+]

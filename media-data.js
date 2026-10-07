@@ -779,8 +779,7 @@ window.portfolioProjects = [
       {
         "kind": "video",
         "src": "videos/remorse/live-context.mp4",
-        "poster": "images/remorse/live-context.jpg",
-        "original": "images/remorse/live-context.gif",
+        "poster": "images/remorse/live-context-hd.jpg",
         "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
       },
       {
@@ -807,22 +806,19 @@ window.portfolioProjects = [
       {
         "kind": "video",
         "src": "videos/remorse/speaker-diarization.mp4",
-        "poster": "images/remorse/speaker-diarization.jpg",
-        "original": "images/remorse/speaker-diarization.gif",
+        "poster": "images/remorse/speaker-diarization-hd.jpg",
         "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
       },
       {
         "kind": "video",
         "src": "videos/remorse/live-transcription.mp4",
-        "poster": "images/remorse/live-transcription.jpg",
-        "original": "images/remorse/live-transcription.gif",
+        "poster": "images/remorse/live-transcription-hd.jpg",
         "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
       },
       {
         "kind": "video",
         "src": "videos/remorse/conversation-cues.mp4",
-        "poster": "images/remorse/conversation-cues.jpg",
-        "original": "images/remorse/conversation-cues.gif",
+        "poster": "images/remorse/conversation-cues-hd.jpg",
         "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
       },
       {
@@ -835,8 +831,7 @@ window.portfolioProjects = [
       {
         "kind": "video",
         "src": "videos/remorse/haptic-events.mp4",
-        "poster": "images/remorse/haptic-events.jpg",
-        "original": "images/remorse/haptic-events.gif",
+        "poster": "images/remorse/haptic-events-hd.jpg",
         "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
       },
       {

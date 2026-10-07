@@ -376,7 +376,7 @@ window.focusedProjectPhotos = {
   "socio": [
     {
       "mediaIndex": 0,
-      "displaySource": "images/remorse/live-context.jpg",
+      "displaySource": "images/remorse/live-context-hd.jpg",
       "originalSource": "videos/remorse/live-context.mp4",
       "timestamp": 0,
       "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
@@ -404,21 +404,21 @@ window.focusedProjectPhotos = {
     },
     {
       "mediaIndex": 4,
-      "displaySource": "images/remorse/speaker-diarization.jpg",
+      "displaySource": "images/remorse/speaker-diarization-hd.jpg",
       "originalSource": "videos/remorse/speaker-diarization.mp4",
       "timestamp": 0,
       "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
     },
     {
       "mediaIndex": 5,
-      "displaySource": "images/remorse/live-transcription.jpg",
+      "displaySource": "images/remorse/live-transcription-hd.jpg",
       "originalSource": "videos/remorse/live-transcription.mp4",
       "timestamp": 0,
       "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
     },
     {
       "mediaIndex": 6,
-      "displaySource": "images/remorse/conversation-cues.jpg",
+      "displaySource": "images/remorse/conversation-cues-hd.jpg",
       "originalSource": "videos/remorse/conversation-cues.mp4",
       "timestamp": 0,
       "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
@@ -432,7 +432,7 @@ window.focusedProjectPhotos = {
     },
     {
       "mediaIndex": 8,
-      "displaySource": "images/remorse/haptic-events.jpg",
+      "displaySource": "images/remorse/haptic-events-hd.jpg",
       "originalSource": "videos/remorse/haptic-events.mp4",
       "timestamp": 0,
       "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."

@@ -78,3 +78,20 @@
 .remorse-wearable img { width:100%; height:auto; }
 .remorse-wearable .watch-screen { width:min(100%,280px); margin-top:24px; background:#000; }
 .remorse-wearable p+p { margin-top:16px; }
+
+/* Keep interface pixels readable and show the complete recording above its copy. */
+.remorse-hero { height:auto; min-height:0; display:block; }
+.remorse-hero video,.remorse-hero>.motion-fallback { position:relative; inset:auto; z-index:auto; width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
+.remorse-hero::before { display:none; }
+.remorse-hero-copy { padding:28px 24px; gap:28px; }
+.remorse-hero h1 { font-size:clamp(68px,9vw,124px); }
+.remorse-intro { padding-block:34px; }
+.remorse-feature { padding-block:32px; gap:32px; }
+#speaker-diarization>figure { max-width:672px; justify-self:center; }
+#haptic-events>figure { max-width:754px; justify-self:center; }
+#conversation-cues>figure { max-width:716px; justify-self:center; }
+@media(max-width:800px) {
+ .remorse-hero { padding-top:0; }
+ .remorse-hero-copy { padding:24px 18px; }
+ .remorse-feature-copy h2 { font-size:32px; }
+}
