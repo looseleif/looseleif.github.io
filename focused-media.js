@@ -143,7 +143,7 @@
   });
   document.querySelectorAll('.case-media .contact-sheet').forEach(sheet => {
     const id = sheet.querySelector('[data-project]')?.dataset.project;
-    const hasClips = document.querySelector('.motion-section video');
+    const hasClips = document.querySelector('main .clip-player video');
     const project = projects.find(p => p.id === id);
     const additional = hasClips ? project?.media.flatMap((media, index) => media.kind === 'image' && !media.source ? [{displaySource:media.src,originalSource:media.src,mediaIndex:index,caption:media.caption}] : []) : undefined;
     const reel = reelFor(id, additional);

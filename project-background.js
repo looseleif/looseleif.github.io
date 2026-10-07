@@ -19,17 +19,32 @@
   background.setAttribute('aria-hidden','true');
   document.body.classList.add('has-project-background');
   document.body.prepend(background);
+  const intro = document.querySelector('.case-intro');
+  const fitOpening = () => {
+    background.style.height = `${Math.max(0, intro.getBoundingClientRect().bottom - document.body.getBoundingClientRect().top)}px`;
+  };
+  const openingLayout = new ResizeObserver(fitOpening);
+  openingLayout.observe(intro);
+  const header = document.querySelector(".site-header");
+  if (header) openingLayout.observe(header);
+  document.fonts.ready.then(fitOpening);
+  window.addEventListener('resize', fitOpening);
+  fitOpening();
   if (clip) {
     const video = document.createElement('video');
     video.src = source;video.poster = clip.poster;video.loop = true;
     video.preload = 'auto';video.tabIndex = -1;
     background.append(video);
     window.portfolioMotion.configure(video, source);
-    let galleryOpen = false;
+    let galleryOpen = false, openingVisible = true;
     const sync = () => {
-      if (document.hidden || galleryOpen) video.pause();
+      if (document.hidden || galleryOpen || !openingVisible) video.pause();
       else window.portfolioMotion.play(video);
     };
+    new IntersectionObserver(entries => {
+      openingVisible = entries[0].isIntersecting;
+      sync();
+    }, { threshold:0 }).observe(intro);
     video.addEventListener('canplay', sync);
     document.addEventListener('visibilitychange', sync);
     document.addEventListener('portfolio:gallery', event => { galleryOpen = event.detail.open;sync(); });

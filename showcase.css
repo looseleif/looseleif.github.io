@@ -267,3 +267,29 @@ video::-webkit-media-controls { display:none !important; }
 
 [data-composition="awear"] .composition-tile:nth-child(2) { grid-column:2; grid-row:1; }
 [data-composition="awear"] .composition-tile:nth-child(3) { grid-column:2; grid-row:2; }
+
+/* Opening motion gives way to media that explains individual parts of the work. */
+.has-project-background { position:relative; }
+.project-background { position:absolute; inset:0 0 auto; }
+.opening-recording { display:inline-block; margin-top:22px; }
+.work-detail { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:clamp(26px,5vw,76px); align-items:center; padding:44px 0; border-top:1px solid #ffffff24; }
+.work-detail-copy h2 { font-size:clamp(27px,3vw,42px); line-height:1.15; letter-spacing:-.035em; margin:14px 0 22px; }
+.work-detail-copy p:not(.eyebrow) { color:#c7c7c7; line-height:1.8; max-width:65ch; }
+.detail-media { min-width:0; margin:0; }
+.detail-media img,.detail-media video { display:block; width:100%; height:auto; max-height:530px; object-fit:contain; background:#101010; }
+.detail-media figcaption { font:13px/1.7 var(--mono); color:#aaa; padding-top:14px; }
+.detail-media figcaption a { display:block; width:fit-content; margin-top:8px; color:#ddd; }
+.research-section>.detail-media { grid-column:2; margin-top:20px; max-width:750px; }
+.learning-path { border-top:1px solid #ffffff24; padding:40px 0; }
+.learning-path h2 { font-size:clamp(25px,3vw,36px); max-width:700px; }
+.learning-path ol { list-style:none; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; padding:20px 0 0; }
+.learning-path li { border-top:1px solid #666; padding-top:18px; }
+.learning-path h3 { font-size:21px; margin:0 0 12px; }
+.learning-path p { color:#bcbcbc; line-height:1.75; }
+@media(max-width:700px) {
+ .work-detail { grid-template-columns:1fr; gap:22px; padding:28px 0; }
+ .work-detail-copy { grid-row:1; }
+ .detail-media img,.detail-media video { max-height:440px; }
+ .research-section>.detail-media { grid-column:1; }
+ .learning-path ol { grid-template-columns:1fr; gap:18px; }
+}
