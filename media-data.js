@@ -1080,7 +1080,7 @@ window.portfolioProjects = [
   },
   {
     "id": "feedback-loop",
-    "title": "Modular Biology Teaching Device",
+    "title": "Interactive Biology Learning Platform",
     "category": "Hardware",
     "line": "Custom electronics for hands-on biology and introductory programming.",
     "media": [
