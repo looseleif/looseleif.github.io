@@ -8,7 +8,7 @@
       kind:media.kind === 'video' || /\.gif$/i.test(media.src) ? 'video' : 'image'
     });
     const item = library.get(media.src);
-    item.uses.push({project:project.id, title:project.title, index, caption:media.caption, archived:!!media.archived});
+    item.uses.push({project:project.id, title:project.title, index, caption:media.caption, year:media.year, archived:!!media.archived});
     item.archived = item.archived && !!media.archived;
   }));
   const items = [...library.values()].sort((a,b) => Number(a.archived) - Number(b.archived));
@@ -118,7 +118,8 @@
     label.append(notes);control.append(buttons,label);return control;
   }
   function originalLink(item) {
-    const link = document.createElement('a');link.className = 'photo-file';link.href = item.src;link.target = '_blank';link.rel = 'noopener';link.textContent = item.src;
+    const link = document.createElement('a');link.className = 'photo-file';link.href = item.src;link.target = '_blank';link.rel = 'noopener';link.textContent = item.sourceFilename || item.src;
+    link.title = item.src;
     return link;
   }
   function openPhoto(item,button) {
@@ -135,7 +136,7 @@
     return (projectFilter.value === 'all' || item.uses.some(use => use.project === projectFilter.value))
       && (kindFilter.value === 'all' || item.kind === kindFilter.value)
       && (reviewFilter.value === 'all' || (reviewFilter.value === 'marked' ? !!record : reviewFilter.value === 'unmarked' ? !record : record?.action === reviewFilter.value))
-      && (!needle || [item.src,item.caption,...item.uses.map(use => use.title)].join(' ').toLocaleLowerCase().includes(needle));
+      && (!needle || [item.src,item.sourceFilename,item.year,item.context,item.caption,...item.uses.map(use => use.title)].join(' ').toLocaleLowerCase().includes(needle));
   }
   function render() {
     const moveFocus = grid.contains(document.activeElement);
@@ -169,7 +170,7 @@
   });
   document.addEventListener('visibilitychange',syncMotion);
   document.querySelector('#export-review').addEventListener('click',() => {
-    const entries = Object.entries(records).map(([id,record]) => ({id,...record,caption:library.get(id).caption,uses:library.get(id).uses}));
+    const entries = Object.entries(records).map(([id,record]) => ({id,...record,caption:library.get(id).caption,sourceFilename:library.get(id).sourceFilename,year:library.get(id).year,uses:library.get(id).uses}));
     const payload = {schema:'chase-portfolio-media-review',version:1,exportedAt:new Date().toISOString(),entries};
     const url = URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}));
     const link = document.createElement('a');link.href = url;link.download = 'portfolio-photo-review.json';document.body.append(link);link.click();link.remove();

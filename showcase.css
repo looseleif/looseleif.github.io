@@ -295,3 +295,10 @@ video::-webkit-media-controls { display:none !important; }
 }
 
 [data-composition="socio"] .composition-tile video { object-fit:contain; }
+
+/* The landscape booth photograph shows the complete installation. */
+.visual-index [data-composition="sync-tank"] .composition-grid { grid-template-columns:1fr 1fr; grid-template-rows:380px 230px; }
+.visual-index [data-composition="sync-tank"] .composition-tile:first-child { grid-column:1 / -1; grid-row:1; }
+.visual-index [data-composition="sync-tank"] .composition-tile:nth-child(2) { grid-column:1; grid-row:2; }
+.visual-index [data-composition="sync-tank"] .composition-tile:nth-child(3) { grid-column:2; grid-row:2; }
+@media(max-width:700px) { .visual-index [data-composition="sync-tank"] .composition-grid { grid-template-rows:290px 220px; } }

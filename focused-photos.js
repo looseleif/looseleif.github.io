@@ -1,6 +1,54 @@
 window.focusedProjectPhotos = {
   "sync-tank": [
     {
+      "mediaIndex": 20,
+      "displaySource": "images/sync-tank/open-sauce-2026-booth.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-booth.jpg",
+      "caption": "The complete Sync Tank booth at Open Sauce 2026, with two aquariums, camera hardware, and the software display.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 15,
+      "displaySource": "images/sync-tank/shrimp-city-print-preview.png",
+      "originalSource": "images/sync-tank/shrimp-city-print-preview.png",
+      "caption": "Shrimp City habitat geometry prepared for printing in Bambu Studio.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 16,
+      "displaySource": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+      "caption": "A green Sync Tank disc mounted against the aquarium glass in the Open Sauce 2026 display.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 17,
+      "displaySource": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+      "caption": "Exhibitor badges and event mementos beside the Sync Tank aquarium at Open Sauce 2026.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 18,
+      "displaySource": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+      "caption": "The printed Shrimp City habitat and tank-mounted camera at the Open Sauce 2026 booth.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 19,
+      "displaySource": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+      "caption": "The articulated camera arm and ring light above the aquarium at Open Sauce 2026.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
       "mediaIndex": 13,
       "displaySource": "images/sync-tank/gantry-camera-rig.jpg",
       "originalSource": "images/sync-tank/gantry-camera-rig.jpg",
@@ -239,32 +287,44 @@ window.focusedProjectPhotos = {
   ],
   "open-sauce": [
     {
-      "mediaIndex": 2,
-      "displaySource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: Dry-bench test of the tank model above a live camera feed."
+      "mediaIndex": 13,
+      "displaySource": "images/sync-tank/open-sauce-2026-booth.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-booth.jpg",
+      "caption": "The complete Sync Tank booth at Open Sauce 2026, with two aquariums, camera hardware, and the software display.",
+      "year": "2026",
+      "position": "50% 50%"
     },
     {
-      "mediaIndex": 3,
-      "displaySource": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
-      "originalSource": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2."
+      "mediaIndex": 9,
+      "displaySource": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+      "caption": "A green Sync Tank disc mounted against the aquarium glass in the Open Sauce 2026 display.",
+      "year": "2026",
+      "position": "50% 50%"
     },
     {
-      "mediaIndex": 1,
-      "displaySource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: Early 2026 interface prototype combining the tank model, camera feeds, and device state."
+      "mediaIndex": 10,
+      "displaySource": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+      "caption": "Exhibitor badges and event mementos beside the Sync Tank aquarium at Open Sauce 2026.",
+      "year": "2026",
+      "position": "50% 50%"
     },
     {
-      "mediaIndex": 4,
-      "displaySource": "images/sync-tank/reeflex-servo-control-board.jpg",
-      "originalSource": "images/sync-tank/reeflex-servo-control-board.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: PCA9685 controller and wiring in the Reeflex camera platform."
+      "mediaIndex": 11,
+      "displaySource": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+      "caption": "The printed Shrimp City habitat and tank-mounted camera at the Open Sauce 2026 booth.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 12,
+      "displaySource": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+      "originalSource": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+      "caption": "The articulated camera arm and ring light above the aquarium at Open Sauce 2026.",
+      "year": "2026",
+      "position": "50% 50%"
     }
   ],
   "maker-faire": [
@@ -389,6 +449,30 @@ window.focusedProjectPhotos = {
       "displaySource": "images/remorse/mobile-app-view.png",
       "originalSource": "images/remorse/mobile-app-view.png",
       "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 10,
+      "displaySource": "images/remorse/speaker-presence-interface.png",
+      "originalSource": "images/remorse/speaker-presence-interface.png",
+      "caption": "Speaker-presence interface showing separate activity timelines and transcript fragments for multiple speakers.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 11,
+      "displaySource": "images/remorse/watch-on-wrist.jpg",
+      "originalSource": "images/remorse/watch-on-wrist.jpg",
+      "caption": "The remorse prototype on a circular watch, shown in its muted setup state with no hub saved.",
+      "year": "2026",
+      "position": "50% 50%"
+    },
+    {
+      "mediaIndex": 12,
+      "displaySource": "images/remorse/watch-armed-screen.png",
+      "originalSource": "images/remorse/watch-armed-screen.png",
+      "caption": "The circular Armed screen, with pause-to-send and shake-to-clear guidance.",
+      "year": "2026",
       "position": "50% 50%"
     }
   ]

@@ -125,6 +125,66 @@ window.portfolioProjects = [
         "caption": "Servo-driven robot gripper with printed fingers, linkages, and exposed wiring.",
         "width": 6144,
         "height": 8160
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/shrimp-city-print-preview.png",
+        "caption": "Shrimp City habitat geometry prepared for printing in Bambu Studio.",
+        "width": 3834,
+        "height": 2154,
+        "year": "2026",
+        "sourceFilename": "Screenshot 2026-05-02 005503.png",
+        "context": "Development"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+        "caption": "A green Sync Tank disc mounted against the aquarium glass in the Open Sauce 2026 display.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260720_000547482.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+        "caption": "Exhibitor badges and event mementos beside the Sync Tank aquarium at Open Sauce 2026.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_235154219.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+        "caption": "The printed Shrimp City habitat and tank-mounted camera at the Open Sauce 2026 booth.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_235204078.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+        "caption": "The articulated camera arm and ring light above the aquarium at Open Sauce 2026.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_233958829.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-booth.jpg",
+        "caption": "The complete Sync Tank booth at Open Sauce 2026, with two aquariums, camera hardware, and the software display.",
+        "width": 8160,
+        "height": 6144,
+        "year": "2026",
+        "sourceFilename": "PXL_20260719_005430506.RAW-01.jpg",
+        "context": "Open Sauce"
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -1748,6 +1808,56 @@ window.portfolioProjects = [
         "width": 960,
         "height": 707,
         "archived": true
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+        "caption": "A green Sync Tank disc mounted against the aquarium glass in the Open Sauce 2026 display.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260720_000547482.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+        "caption": "Exhibitor badges and event mementos beside the Sync Tank aquarium at Open Sauce 2026.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_235154219.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+        "caption": "The printed Shrimp City habitat and tank-mounted camera at the Open Sauce 2026 booth.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_235204078.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+        "caption": "The articulated camera arm and ring light above the aquarium at Open Sauce 2026.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260718_233958829.RAW-01.jpg",
+        "context": "Open Sauce"
+      },
+      {
+        "kind": "image",
+        "src": "images/sync-tank/open-sauce-2026-booth.jpg",
+        "caption": "The complete Sync Tank booth at Open Sauce 2026, with two aquariums, camera hardware, and the software display.",
+        "width": 8160,
+        "height": 6144,
+        "year": "2026",
+        "sourceFilename": "PXL_20260719_005430506.RAW-01.jpg",
+        "context": "Open Sauce"
       }
     ],
     "role": "Volunteering / Project demonstrations",
@@ -1946,6 +2056,36 @@ window.portfolioProjects = [
         "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
         "width": 432,
         "height": 859
+      },
+      {
+        "kind": "image",
+        "src": "images/remorse/speaker-presence-interface.png",
+        "caption": "Speaker-presence interface showing separate activity timelines and transcript fragments for multiple speakers.",
+        "width": 945,
+        "height": 523,
+        "year": "2026",
+        "sourceFilename": "Screenshot 2026-05-20 221920.png",
+        "context": "Interface"
+      },
+      {
+        "kind": "image",
+        "src": "images/remorse/watch-on-wrist.jpg",
+        "caption": "The remorse prototype on a circular watch, shown in its muted setup state with no hub saved.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260622_100041297.RAW-01.jpg",
+        "context": "Wearable"
+      },
+      {
+        "kind": "image",
+        "src": "images/remorse/watch-armed-screen.png",
+        "caption": "The circular Armed screen, with pause-to-send and shake-to-clear guidance.",
+        "width": 384,
+        "height": 384,
+        "year": "2026",
+        "sourceFilename": "watch_media_2026-06-30_11_28_25.png",
+        "context": "Wearable"
       }
     ],
     "role": "A Socio product / IYKYD field tests",

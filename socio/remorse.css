@@ -71,3 +71,10 @@
 .remorse-mobile figure { max-width:432px; width:100%; justify-self:center; background:#080808; }
 .remorse-mobile img { width:100%; height:auto; }
 .remorse-mobile .remorse-feature-copy p+p { margin-top:16px; }
+
+.remorse-interface-reference { margin-top:28px; background:#0b0b0b; }
+.remorse-interface-reference img { width:100%; height:auto; }
+.remorse-wearable .wearable-photo { max-width:540px; justify-self:center; }
+.remorse-wearable img { width:100%; height:auto; }
+.remorse-wearable .watch-screen { width:min(100%,280px); margin-top:24px; background:#000; }
+.remorse-wearable p+p { margin-top:16px; }

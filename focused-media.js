@@ -30,7 +30,7 @@
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
     socio: { picks:[4,5,8], videos:[4,5,8], labels:['Speaker diarization','Real-time processing','Haptic feedback events'], caption:'remorse in operation: separating speaker activity, processing incoming speech, and receiving haptic feedback events.' },
-    'sync-tank': { picks:[0,6,1], labels:['Camera gantry','Fish feed & caption experiment','Robot gripper'], caption:'Aquarium camera gantry, a captioned fish feed, and the robot gripper.' },
+    'sync-tank': { picks:[0,12,7], labels:['Open Sauce 2026','Fish feed & caption experiment','Robot gripper'], caption:'Sync Tank at Open Sauce 2026: the complete exhibit, a captioned fish feed, and the robot gripper.' },
     aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
     awear: { picks:[0,1,2], labels:['Wearable prototype','35 mm custom electronics','Reading history interface'], caption:'From the custom sensing board and wearable enclosure to the prototype interface for reviewing optical pulse readings.' },

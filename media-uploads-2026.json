@@ -1,0 +1,166 @@
+[
+  {
+    "src": "images/sync-tank/shrimp-city-print-preview.png",
+    "sourceFilename": "Screenshot 2026-05-02 005503.png",
+    "caption": "Shrimp City habitat geometry prepared for printing in Bambu Studio.",
+    "year": "2026",
+    "context": "Development",
+    "width": 3834,
+    "height": 2154,
+    "sha256": "a5fe6cf72f6aab96c3d6bd4caaaf8dc398a5678b13d62e99b46311432d55ce12",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 15
+      }
+    ]
+  },
+  {
+    "src": "images/remorse/speaker-presence-interface.png",
+    "sourceFilename": "Screenshot 2026-05-20 221920.png",
+    "caption": "Speaker-presence interface showing separate activity timelines and transcript fragments for multiple speakers.",
+    "year": "2026",
+    "context": "Interface",
+    "width": 945,
+    "height": 523,
+    "sha256": "27f68d7935528ed140dd38669dd76bc8eb4bd982005e77f203d6c90e3d44d4af",
+    "uses": [
+      {
+        "project": "socio",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "src": "images/remorse/watch-on-wrist.jpg",
+    "sourceFilename": "PXL_20260622_100041297.RAW-01.jpg",
+    "caption": "The remorse prototype on a circular watch, shown in its muted setup state with no hub saved.",
+    "year": "2026",
+    "context": "Wearable",
+    "width": 6144,
+    "height": 8160,
+    "sha256": "daa2008730495e75b877dda0b46dd623b75f4db4986b027544de5d20dd689b47",
+    "uses": [
+      {
+        "project": "socio",
+        "index": 11
+      }
+    ]
+  },
+  {
+    "src": "images/remorse/watch-armed-screen.png",
+    "sourceFilename": "watch_media_2026-06-30_11_28_25.png",
+    "caption": "The circular Armed screen, with pause-to-send and shake-to-clear guidance.",
+    "year": "2026",
+    "context": "Wearable",
+    "width": 384,
+    "height": 384,
+    "sha256": "d014da62a0125d20c94e25ff403f8eed128b269ff16e39124ba7e1c93506cf67",
+    "uses": [
+      {
+        "project": "socio",
+        "index": 12
+      }
+    ]
+  },
+  {
+    "src": "images/sync-tank/open-sauce-2026-glass-disc.jpg",
+    "sourceFilename": "PXL_20260720_000547482.RAW-01.jpg",
+    "caption": "A green Sync Tank disc mounted against the aquarium glass in the Open Sauce 2026 display.",
+    "year": "2026",
+    "context": "Open Sauce",
+    "width": 6144,
+    "height": 8160,
+    "sha256": "bc77ce0036835cb4beec99fd291f56af8dae5b31d8743a007f2cbfbb1ffa38d2",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 16
+      },
+      {
+        "project": "open-sauce",
+        "index": 9
+      }
+    ]
+  },
+  {
+    "src": "images/sync-tank/open-sauce-2026-exhibitor-display.jpg",
+    "sourceFilename": "PXL_20260718_235154219.RAW-01.jpg",
+    "caption": "Exhibitor badges and event mementos beside the Sync Tank aquarium at Open Sauce 2026.",
+    "year": "2026",
+    "context": "Open Sauce",
+    "width": 6144,
+    "height": 8160,
+    "sha256": "7c529f0ec4671e0ffd7f992077d78f1244ab073bb38eba69c8319a28034ee9f0",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 17
+      },
+      {
+        "project": "open-sauce",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "src": "images/sync-tank/open-sauce-2026-shrimp-city.jpg",
+    "sourceFilename": "PXL_20260718_235204078.RAW-01.jpg",
+    "caption": "The printed Shrimp City habitat and tank-mounted camera at the Open Sauce 2026 booth.",
+    "year": "2026",
+    "context": "Open Sauce",
+    "width": 6144,
+    "height": 8160,
+    "sha256": "2c7885f5ea75f28edbca9244ef9ef8cad05817e65a802fb1629bdf3117f07f75",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 18
+      },
+      {
+        "project": "open-sauce",
+        "index": 11
+      }
+    ]
+  },
+  {
+    "src": "images/sync-tank/open-sauce-2026-camera-arm.jpg",
+    "sourceFilename": "PXL_20260718_233958829.RAW-01.jpg",
+    "caption": "The articulated camera arm and ring light above the aquarium at Open Sauce 2026.",
+    "year": "2026",
+    "context": "Open Sauce",
+    "width": 6144,
+    "height": 8160,
+    "sha256": "2d074bb701804afe7700a066aeac56ad16863c053670118c6ab93559ec8e6e5b",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 19
+      },
+      {
+        "project": "open-sauce",
+        "index": 12
+      }
+    ]
+  },
+  {
+    "src": "images/sync-tank/open-sauce-2026-booth.jpg",
+    "sourceFilename": "PXL_20260719_005430506.RAW-01.jpg",
+    "caption": "The complete Sync Tank booth at Open Sauce 2026, with two aquariums, camera hardware, and the software display.",
+    "year": "2026",
+    "context": "Open Sauce",
+    "width": 8160,
+    "height": 6144,
+    "sha256": "92159ef1c3139e002f4f026b1ade0cc47d2ea430c1134324ce663df44434bb2e",
+    "uses": [
+      {
+        "project": "sync-tank",
+        "index": 20
+      },
+      {
+        "project": "open-sauce",
+        "index": 13
+      }
+    ]
+  }
+]
