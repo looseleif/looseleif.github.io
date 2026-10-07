@@ -12,9 +12,8 @@
       const video = figure.querySelector('video');
       if (video) {
         // Reserve the original recording's proportions before lazy loading.
-        const physical = video.dataset.src?.endsWith('aggro1.mp4');
-        video.width = 720;
-        video.height = physical ? 532 : 720;
+        if (!video.hasAttribute('width')) video.width = 720;
+        if (!video.hasAttribute('height')) video.height = video.dataset.src?.endsWith('aggro1.mp4') ? 532 : 720;
       }
     });
     group.classList.add('media-browser');
@@ -31,7 +30,7 @@
     const buttons = items.map((item,i) => {
       item.id ||= `thesis-media-${groupIndex}-${i}`;
       const button = document.createElement('button');button.type = 'button';
-      button.textContent = item.querySelector('.figure-number')?.textContent || 'Demonstration';
+      button.textContent = item.dataset.mediaLabel || item.querySelector('.figure-number')?.textContent || 'Demonstration';
       button.setAttribute('aria-controls',item.id);
       button.title = item.querySelector('figcaption strong')?.textContent || 'Watch the prototype demonstration';
       choices.append(button);return button;
