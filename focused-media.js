@@ -36,9 +36,9 @@
   }
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
-    socio: { layout:'session', picks:[5,9,4,8,11], videos:[5,null,4,8,null], areas:['hero','phone','trace','cue','watch'], labels:['Live transcription','Mobile companion','Speaker diarization','Haptic events','On the wrist'], caption:'A live session, its mobile companion, and the watch prototype: speech processing, speaker activity, and feedback in context.' },
-    'sync-tank': { layout:'exhibit', picks:[0,5,12,4], areas:['hero','screen','feed','build'], labels:['Open Sauce 2026','Camera arm & ring light','SEE SEA TV / Generated captions','Shrimp City habitat'], caption:'Sync Tank at Open Sauce 2026: the complete exhibit, articulated camera arm and ring light, Shrimp City habitat, and aquarium footage with generated captions.' },
-    aggro: { layout:'research', picks:[0,1,2,5], videos:[31,7,13,null], areas:['hero','simulation','masks','team'], labels:['Robot demonstration','Robot simulation','Search environments','Research group'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
+    socio: { layout:'session', picks:[5,4,8], videos:[5,4,8], areas:['hero','detail','context'], labels:['Live transcription','Speaker diarization','Haptic events'], caption:'Live transcription, speaker activity, and haptic feedback during IYKYD field recordings.' },
+    'sync-tank': { layout:'exhibit', picks:[0,5,12], areas:['hero','detail','context'], labels:['Open Sauce 2026','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The Open Sauce exhibit, articulated camera arm and ring light, and aquarium footage with generated captions.' },
+    aggro: { layout:'research', picks:[0,1,2], videos:[31,7,13], areas:['hero','detail','context'], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { layout:'solar', areas:['hero','board','driver'], picks:[0,1,2], labels:['The team & vehicle','Telemetry electronics','Me driving'], caption:'My work with the Solar Vehicle Project: contributing to the team, designing telemetry electronics, and driving the vehicle.' },
     awear: { layout:'wearable', areas:['hero','case','wrist'], picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
     'feedback-loop': { layout:'bench', picks:[0,2,4], videos:[17], areas:['hero','sensor','board'], labels:['Device demonstration','Sensor module','Bench electronics'], caption:'A working biology teaching device, with modular sensors, custom electronics, and a responsive light ring.' },
@@ -52,6 +52,71 @@
     'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'] },
     'electric-drives': { picks:[5,6,2], labels:['Rover electronics','FPV camera rig','Mountain board'] }
   };
+  // Match column heights using the sources' actual proportions and caption heights.
+  // The media itself keeps its natural aspect ratio, without padded or cropped frames.
+  function fitComposition(grid, id) {
+    const tiles = [...grid.children];
+    let scheduled = false;
+    const layout = () => {
+      scheduled = false;
+      const width = grid.clientWidth;
+      if (!width) return;
+      const gap = 8;
+      const mobile = width < 560;
+      const ratios = tiles.map(tile => Number(tile.dataset.ratio) || 1);
+      tiles.forEach((tile, i) => { tile.style.gridArea = `media${i}`; });
+      grid.style.gridTemplateRows = 'auto';
+      if (mobile && ['research','session'].includes(grid.parentElement.dataset.layout)) {
+        grid.style.gridTemplateColumns = 'minmax(0,1fr)';
+        grid.style.gridTemplateAreas = tiles.map((_, i) => `"media${i}"`).join(' ');
+        return;
+      }
+      if (mobile && tiles.length === 3) {
+        grid.style.gridTemplateColumns = `${ratios[1]}fr ${ratios[2]}fr`;
+        grid.style.gridTemplateAreas = '"media0 media0" "media1 media2"';
+        return;
+      }
+      if (mobile && tiles.length === 4) {
+        grid.style.gridTemplateColumns = `${ratios[0]}fr ${Math.max(.1, ratios[1] - ratios[0])}fr ${ratios[0]}fr`;
+        grid.style.gridTemplateAreas = '"media0 media1 media1" "media2 media2 media3"';
+        return;
+      }
+      const columns = id === 'solar' ? [[0],[1],[2]] : tiles.length === 4 ? [[0],[1,2],[3]] : [[0],[1,2]];
+      const measures = columns.map(indices => ({
+        scale: indices.reduce((sum, i) => sum + 1 / ratios[i], 0),
+        labels: indices.reduce((sum, i) => sum + tiles[i].querySelector('.composition-label').getBoundingClientRect().height, 0) + gap * (indices.length - 1)
+      }));
+      const height = (width - gap * (columns.length - 1) + measures.reduce((sum, c) => sum + c.labels / c.scale, 0)) / measures.reduce((sum, c) => sum + 1 / c.scale, 0);
+      grid.style.gridTemplateColumns = measures.map(c => `${Math.max(1, (height - c.labels) / c.scale).toFixed(2)}px`).join(' ');
+      grid.style.gridTemplateAreas = id === 'solar' ? '"media0 media1 media2"' : tiles.length === 4 ? '"media0 media1 media3" "media0 media2 media3"' : '"media0 media1" "media0 media2"';
+    };
+    const schedule = () => {
+      if (scheduled) return;
+      scheduled = true; requestAnimationFrame(layout);
+    };
+    let lastWidth = 0;
+    new ResizeObserver(entries => {
+      const width = entries[0].contentRect.width;
+      if (Math.abs(width - lastWidth) > .5) { lastWidth = width; schedule(); }
+    }).observe(grid);
+    const captions = new ResizeObserver(schedule);
+    tiles.forEach(tile => {
+      captions.observe(tile.querySelector('.composition-label'));
+      const media = tile.querySelector('img,video');
+      if (!media) return;
+      const updateRatio = () => {
+        const width = media.naturalWidth || media.videoWidth;
+        const height = media.naturalHeight || media.videoHeight;
+        if (!width || !height) return;
+        tile.dataset.ratio = width / height;
+        tile.style.setProperty('--media-ratio', width / height);
+        schedule();
+      };
+      media.addEventListener(media.tagName === 'VIDEO' ? 'loadedmetadata' : 'load', updateRatio);
+      updateRatio();
+    });
+    schedule();
+  }
   function compositionFor(id, indexShowcase = false) {
     const project = projects.find(p => p.id === id);
     if (!project || !compositions[id]) return null;
@@ -70,6 +135,10 @@
       const videoIndex = config.videos?.[index];
       const clip = videoIndex != null ? project.media[videoIndex] : null;
       const link = document.createElement('a');link.className = 'composition-tile';
+      const source = clip || project.media[photo.mediaIndex];
+      const ratio = !clip && photo.crop ? photo.crop[2] / photo.crop[3] : (source?.width / source?.height || 1);
+      link.dataset.ratio = ratio;
+      link.style.setProperty('--media-ratio', ratio);
       link.style.gridArea = config.areas[index];
       link.dataset.project = id;link.dataset.index = clip ? videoIndex : photo.mediaIndex;
       link.href = clip?.src || photo.originalSource || photo.displaySource;
@@ -114,7 +183,9 @@
       grid.append(link);
     });
     const caption = document.createElement('figcaption');caption.textContent = config.caption;
-    figure.append(grid,caption);return figure;
+    figure.append(grid,caption);
+    if (!indexShowcase) { figure.dataset.naturalLayout = ''; fitComposition(grid, id); }
+    return figure;
   }
   document.querySelectorAll('[data-showcase-project]').forEach(slot => {
     const composition = compositionFor(slot.dataset.showcaseProject);
