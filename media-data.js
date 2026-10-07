@@ -764,7 +764,7 @@ window.portfolioProjects = [
     "page": "project-solar.html",
     "paragraphs": [
       "I worked as an infotainment and telemetry engineer with the University of Minnesota Solar Vehicle Project, contributing software development, hardware design, and system architecture to both existing systems and new work.",
-      "My engineering work included the F1 infotainment application and G1 telemetry hardware. I also served as a driver in the American Solar Challenge, contributing to the team's first-place finish in 2022.",
+      "My engineering work included the F1 infotainment application and G1 telemetry hardware. I also served as a driver in the American Solar Challenge, contributing to the team's first-place finish in the Multi-Occupant Vehicle class in 2022.",
       "Alongside engineering and driving, I filmed and developed promotional material for the team. These roles let me contribute across software and hardware architecture, media production, and vehicle operation."
     ],
     "stills": [
@@ -826,11 +826,25 @@ window.portfolioProjects = [
           "Software and hardware architecture, filming, race driving"
         ],
         [
-          "Team",
-          "Solar Vehicle Project / 2022 American Solar Challenge"
+          "Team result",
+          "2022 American Solar Challenge / 1st, Multi-Occupant Vehicle class"
         ]
       ]
-    }
+    },
+    "links": [
+      {
+        "label": "Team website",
+        "url": "https://umnsvp.org/"
+      },
+      {
+        "label": "2022 race coverage",
+        "url": "https://cse.umn.edu/college/news/student-led-solar-vehicle-project-team-wins-2022-american-solar-challenge"
+      },
+      {
+        "label": "Official results",
+        "url": "https://www.americansolarchallenge.org/american-solar-challenge/asc-fsgp-2022/"
+      }
+    ]
   },
   {
     "id": "awear",

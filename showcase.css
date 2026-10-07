@@ -216,3 +216,26 @@ video::-webkit-media-controls { display:none !important; }
   .research-section h2 { max-width:none; font-size:28px; }
   .research-section p,.research-references>p { font-size:16px; line-height:1.8; }
 }
+
+/* Race context and clearly attributed excerpts stay alongside the project work. */
+.solar-race-context { margin:0 0 34px; padding:30px; background:#101010cc; border:1px solid #ffffff26; max-width:1000px; }
+.solar-race-context h2,.solar-coverage h2 { font-size:clamp(28px,3vw,40px); line-height:1.15; margin:12px 0 20px; }
+.solar-race-context>p:not(.eyebrow) { color:#ddd; font-size:17px; line-height:1.8; }
+.solar-race-context a,.research-section a { text-decoration:underline; text-underline-offset:4px; }
+.solar-race-context .solar-context-links { font:13px/1.8 var(--mono); margin-top:24px; }
+.solar-coverage { padding:40px 0; border-top:1px solid #ffffff24; }
+.solar-quotes { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin:30px 0 38px; }
+.solar-quotes figure { margin:0; padding:24px 0 24px 24px; border-left:2px solid #bbb; }
+.solar-quotes blockquote { margin:0 0 22px; }
+.solar-quotes blockquote p { margin:0; font-size:clamp(23px,2.3vw,32px); line-height:1.4; letter-spacing:-.02em; }
+.solar-quotes figcaption { font:12px/1.8 var(--mono); color:#bcbcbc; }
+.solar-quotes figcaption a { text-decoration:underline; text-underline-offset:3px; }
+.solar-reading { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; }
+.solar-reading article { border-top:1px solid #ffffff24; padding-top:22px; }
+.solar-reading h3 { font-size:23px; line-height:1.25; margin:14px 0; }
+.solar-reading article>p:not(.eyebrow) { color:#bcbcbc; font-size:15px; line-height:1.7; }
+@media(max-width:700px) {
+ .solar-race-context { padding:22px 18px; }
+ .solar-quotes,.solar-reading { grid-template-columns:1fr; gap:24px; }
+ .solar-quotes figure { padding-left:18px; }
+}
