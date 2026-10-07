@@ -293,3 +293,5 @@ video::-webkit-media-controls { display:none !important; }
  .research-section>.detail-media { grid-column:1; }
  .learning-path ol { grid-template-columns:1fr; gap:18px; }
 }
+
+[data-composition="socio"] .composition-tile video { object-fit:contain; }

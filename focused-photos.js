@@ -334,6 +334,41 @@ window.focusedProjectPhotos = {
       "originalSource": "videos/remorse/conversation-prompts.mp4",
       "timestamp": 0,
       "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+    },
+    {
+      "mediaIndex": 4,
+      "displaySource": "images/remorse/speaker-diarization.jpg",
+      "originalSource": "videos/remorse/speaker-diarization.mp4",
+      "timestamp": 0,
+      "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
+    },
+    {
+      "mediaIndex": 5,
+      "displaySource": "images/remorse/live-transcription.jpg",
+      "originalSource": "videos/remorse/live-transcription.mp4",
+      "timestamp": 0,
+      "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
+    },
+    {
+      "mediaIndex": 6,
+      "displaySource": "images/remorse/conversation-cues.jpg",
+      "originalSource": "videos/remorse/conversation-cues.mp4",
+      "timestamp": 0,
+      "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
+    },
+    {
+      "mediaIndex": 7,
+      "displaySource": "images/remorse/morse-output.jpg",
+      "originalSource": "videos/remorse/morse-output.mp4",
+      "timestamp": 0,
+      "caption": "The on-screen Morse sequence updates alongside the incoming words."
+    },
+    {
+      "mediaIndex": 8,
+      "displaySource": "images/remorse/haptic-events.jpg",
+      "originalSource": "videos/remorse/haptic-events.mp4",
+      "timestamp": 0,
+      "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
     }
   ]
 };

@@ -1860,7 +1860,7 @@ window.portfolioProjects = [
     "id": "socio",
     "title": "remorse",
     "category": "Software",
-    "line": "Live conversation context, speaker activity, and companion views.",
+    "line": "Speaker diarization, live transcription, and conversational cues.",
     "page": "socio/",
     "media": [
       {
@@ -1890,6 +1890,41 @@ window.portfolioProjects = [
         "poster": "images/remorse/conversation-prompts.jpg",
         "original": "images/remorse/conversation-prompts.gif",
         "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/speaker-diarization.mp4",
+        "poster": "images/remorse/speaker-diarization.jpg",
+        "original": "images/remorse/speaker-diarization.gif",
+        "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/live-transcription.mp4",
+        "poster": "images/remorse/live-transcription.jpg",
+        "original": "images/remorse/live-transcription.gif",
+        "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/conversation-cues.mp4",
+        "poster": "images/remorse/conversation-cues.jpg",
+        "original": "images/remorse/conversation-cues.gif",
+        "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/morse-output.mp4",
+        "poster": "images/remorse/morse-output.jpg",
+        "original": "images/remorse/morse-output.gif",
+        "caption": "The on-screen Morse sequence updates alongside the incoming words."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/haptic-events.mp4",
+        "poster": "images/remorse/haptic-events.jpg",
+        "original": "images/remorse/haptic-events.gif",
+        "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
       }
     ],
     "role": "A Socio product / IYKYD field tests",
@@ -1899,15 +1934,15 @@ window.portfolioProjects = [
     ],
     "presentation": {
       "field": "Conversation software / A Socio product",
-      "contribution": "I?m developing remorse through real conversation tests, connecting a live transcript, speaker activity, conversational prompts, and a mobile companion.",
+      "contribution": "I am developing remorse at Socio to connect live speech processing, speaker diarization, and conversational cues with mobile and wearable interfaces.",
       "context": [
         [
           "Work",
-          "Conversation software and companion interfaces"
+          "Speaker diarization, live transcripts, and feedback interfaces"
         ],
         [
-          "Evidence",
-          "Prototype footage from IYKYD field recordings"
+          "Field tests",
+          "Feature excerpts from real IYKYD conversations"
         ]
       ]
     },

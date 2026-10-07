@@ -862,5 +862,75 @@ window.portfolioSemantics = {
       }
     ],
     "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=222s"
+  },
+  "videos/remorse/speaker-diarization.mp4": {
+    "summary": "Speaker diarization: separate activity traces for the speakers in a live session.",
+    "playbackRate": 0.8,
+    "duration": 12,
+    "sourceUrl": "https://www.youtube.com/watch?v=kI74m7SITUA&t=720s",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 12,
+        "title": "Speaker diarization",
+        "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
+      }
+    ]
+  },
+  "videos/remorse/live-transcription.mp4": {
+    "summary": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence.",
+    "playbackRate": 0.8,
+    "duration": 10,
+    "sourceUrl": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 10,
+        "title": "Live transcription",
+        "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
+      }
+    ]
+  },
+  "videos/remorse/conversation-cues.mp4": {
+    "summary": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker.",
+    "playbackRate": 0.8,
+    "duration": 9,
+    "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=227s",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 9,
+        "title": "Conversation cues",
+        "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
+      }
+    ]
+  },
+  "videos/remorse/morse-output.mp4": {
+    "summary": "The on-screen Morse sequence updates alongside the incoming words.",
+    "playbackRate": 0.8,
+    "duration": 10,
+    "sourceUrl": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 10,
+        "title": "Morse output",
+        "caption": "The on-screen Morse sequence updates alongside the incoming words."
+      }
+    ]
+  },
+  "videos/remorse/haptic-events.mp4": {
+    "summary": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals.",
+    "playbackRate": 0.8,
+    "duration": 8,
+    "sourceUrl": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=232s",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 8,
+        "title": "Phone haptic signals",
+        "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
+      }
+    ]
   }
 };

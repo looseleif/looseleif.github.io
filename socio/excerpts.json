@@ -1,0 +1,72 @@
+[
+  {
+    "name": "speaker-diarization",
+    "source": "https://www.youtube.com/watch?v=kI74m7SITUA&t=720s",
+    "sourceStartSeconds": 720,
+    "duration": 12,
+    "crop": [
+      550,
+      222,
+      462,
+      354
+    ],
+    "sourceFile": "videos/remorse/field-trial.mp4",
+    "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
+  },
+  {
+    "name": "live-transcription",
+    "source": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s",
+    "sourceStartSeconds": 88,
+    "duration": 10,
+    "crop": [
+      16,
+      246,
+      804,
+      368
+    ],
+    "sourceFile": "videos/remorse/live-context.mp4",
+    "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
+  },
+  {
+    "name": "conversation-cues",
+    "source": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=227s",
+    "sourceStartSeconds": 227,
+    "duration": 9,
+    "crop": [
+      530,
+      250,
+      470,
+      312
+    ],
+    "sourceFile": "IYKYD original recording",
+    "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
+  },
+  {
+    "name": "morse-output",
+    "source": "https://www.youtube.com/watch?v=Ir4QtvsJtm4&t=88s",
+    "sourceStartSeconds": 88,
+    "duration": 10,
+    "crop": [
+      18,
+      248,
+      798,
+      120
+    ],
+    "sourceFile": "videos/remorse/live-context.mp4",
+    "caption": "The on-screen Morse sequence updates alongside the incoming words."
+  },
+  {
+    "name": "haptic-events",
+    "source": "https://www.youtube.com/watch?v=ua6I0DFg8N8&t=232s",
+    "sourceStartSeconds": 232,
+    "duration": 8,
+    "crop": [
+      14,
+      180,
+      500,
+      376
+    ],
+    "sourceFile": "IYKYD original recording",
+    "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
+  }
+]
