@@ -29,11 +29,7 @@
     if (running) elapsed += performance.now() - startedAt;
     running = false;root.classList.remove('is-running');
     if (reset || !duration) {
-      const durations = [...slides[index].querySelectorAll('.project-loop')].map(video => {
-        const clip = (window.portfolioSemantics || {})[video.dataset.src];
-        return clip ? (clip.duration / window.portfolioMotion.rateFor(video.dataset.src) + 1) * 1000 : 0;
-      });
-      duration = Math.max(8000, ...durations);elapsed = 0;
+      duration = 6000;elapsed = 0;
       root.dataset.nextDelay = String(Math.round(duration));
     }
     const media = slides[index].querySelector('.composition-grid,.exhibit-stage');
