@@ -1,55 +1,11 @@
 window.focusedProjectPhotos = {
   "sync-tank": [
     {
-      "mediaIndex": 9,
-      "displaySource": "images/sync-tank/exhibit-table-close.jpg",
-      "originalSource": "images/sync-tank/exhibit-table-close.jpg",
-      "timestamp": null,
-      "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
-      "position": "50% 78%"
-    },
-    {
-      "mediaIndex": 10,
-      "displaySource": "images/sync-tank/sstv3.png",
-      "originalSource": "images/sync-tank/sstv3.png",
-      "timestamp": null,
-      "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
-      "crop": [
-        955,
-        100,
-        299,
-        360,
-        1902,
-        870
-      ]
-    },
-    {
       "mediaIndex": 11,
       "displaySource": "images/sync-tank/tank-side-display.jpg",
       "originalSource": "images/sync-tank/tank-side-display.jpg",
       "timestamp": null,
       "caption": "A live underwater camera feed displayed beside the aquarium."
-    },
-    {
-      "mediaIndex": 7,
-      "displaySource": "images/synctankimg.jpg",
-      "originalSource": "images/synctankimg.jpg",
-      "timestamp": null,
-      "caption": "The Sync Tank aquarium, electronics, and exhibition display."
-    },
-    {
-      "mediaIndex": 0,
-      "displaySource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "timestamp": null,
-      "caption": "Two-tank test setup with cameras and control hardware, before the portrait display was installed."
-    },
-    {
-      "mediaIndex": 2,
-      "displaySource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
-      "timestamp": null,
-      "caption": "Dry-bench test of the tank model above a live camera feed."
     },
     {
       "mediaIndex": 3,
@@ -59,19 +15,19 @@ window.focusedProjectPhotos = {
       "caption": "Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2."
     },
     {
+      "mediaIndex": 4,
+      "displaySource": "images/sync-tank/reeflex-servo-control-board.jpg",
+      "originalSource": "images/sync-tank/reeflex-servo-control-board.jpg",
+      "timestamp": null,
+      "caption": "PCA9685 controller and wiring in the Reeflex camera platform."
+    },
+    {
       "mediaIndex": 1,
       "displaySource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
       "originalSource": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
       "timestamp": null,
       "caption": "Early 2026 interface prototype combining the tank model, camera feeds, and device state.",
       "fit": "contain"
-    },
-    {
-      "mediaIndex": 4,
-      "displaySource": "images/sync-tank/reeflex-servo-control-board.jpg",
-      "originalSource": "images/sync-tank/reeflex-servo-control-board.jpg",
-      "timestamp": null,
-      "caption": "PCA9685 controller and wiring in the Reeflex camera platform."
     }
   ],
   "aggro": [
@@ -255,20 +211,6 @@ window.focusedProjectPhotos = {
   ],
   "open-sauce": [
     {
-      "mediaIndex": 7,
-      "displaySource": "images/synctankimg.jpg",
-      "originalSource": "images/synctankimg.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: The Sync Tank aquarium, electronics, and exhibition display."
-    },
-    {
-      "mediaIndex": 0,
-      "displaySource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: Two-tank test setup with cameras and control hardware, before the portrait display was installed."
-    },
-    {
       "mediaIndex": 2,
       "displaySource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
       "originalSource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
@@ -298,20 +240,6 @@ window.focusedProjectPhotos = {
     }
   ],
   "maker-faire": [
-    {
-      "mediaIndex": 7,
-      "displaySource": "images/synctankimg.jpg",
-      "originalSource": "images/synctankimg.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: The Sync Tank aquarium, electronics, and exhibition display."
-    },
-    {
-      "mediaIndex": 0,
-      "displaySource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "originalSource": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
-      "timestamp": null,
-      "caption": "Sync Tank project: Two-tank test setup with cameras and control hardware, before the portrait display was installed."
-    },
     {
       "mediaIndex": 2,
       "displaySource": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",

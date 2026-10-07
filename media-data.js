@@ -11,7 +11,8 @@ window.portfolioProjects = [
         "caption": "Two-tank test setup with cameras and control hardware, before the portrait display was installed.",
         "kind": "image",
         "width": 1824,
-        "height": 1373
+        "height": 1373,
+        "archived": true
       },
       {
         "src": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
@@ -67,7 +68,8 @@ window.portfolioProjects = [
         "caption": "The Sync Tank aquarium, electronics, and exhibition display.",
         "kind": "image",
         "width": 1209,
-        "height": 910
+        "height": 910,
+        "archived": true
       },
       {
         "src": "images/synctank.png",
@@ -75,7 +77,8 @@ window.portfolioProjects = [
         "caption": "Presenting Sync Tank at the exhibition booth.",
         "kind": "image",
         "width": 960,
-        "height": 707
+        "height": 707,
+        "archived": true
       },
       {
         "src": "images/sync-tank/exhibit-table-close.jpg",
@@ -83,7 +86,8 @@ window.portfolioProjects = [
         "caption": "Completed 2025 demo setup with the aquarium, camera mechanisms, control electronics, and desktop controls.",
         "kind": "image",
         "width": 1373,
-        "height": 1824
+        "height": 1824,
+        "archived": true
       },
       {
         "src": "images/sync-tank/sstv3.png",
@@ -91,7 +95,8 @@ window.portfolioProjects = [
         "caption": "Early SEE SEA TV experiment showing fish detection boxes and generated descriptions across camera feeds.",
         "kind": "image",
         "width": 1902,
-        "height": 870
+        "height": 870,
+        "archived": true
       },
       {
         "src": "images/sync-tank/tank-side-display.jpg",
@@ -1655,7 +1660,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: Two-tank test setup with cameras and control hardware, before the portrait display was installed.",
         "kind": "image",
         "width": 1824,
-        "height": 1373
+        "height": 1373,
+        "archived": true
       },
       {
         "src": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
@@ -1711,7 +1717,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: The Sync Tank aquarium, electronics, and exhibition display.",
         "kind": "image",
         "width": 1209,
-        "height": 910
+        "height": 910,
+        "archived": true
       },
       {
         "src": "images/synctank.png",
@@ -1719,7 +1726,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: Presenting Sync Tank at the exhibition booth.",
         "kind": "image",
         "width": 960,
-        "height": 707
+        "height": 707,
+        "archived": true
       }
     ],
     "role": "Volunteering / Project demonstrations",
@@ -1753,7 +1761,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: Two-tank test setup with cameras and control hardware, before the portrait display was installed.",
         "kind": "image",
         "width": 1824,
-        "height": 1373
+        "height": 1373,
+        "archived": true
       },
       {
         "src": "images/sync-tank/see-sea-tv-2026-interface-overview.jpg",
@@ -1809,7 +1818,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: The Sync Tank aquarium, electronics, and exhibition display.",
         "kind": "image",
         "width": 1209,
-        "height": 910
+        "height": 910,
+        "archived": true
       },
       {
         "src": "images/synctank.png",
@@ -1817,7 +1827,8 @@ window.portfolioProjects = [
         "caption": "Sync Tank project: Presenting Sync Tank at the exhibition booth.",
         "kind": "image",
         "width": 960,
-        "height": 707
+        "height": 707,
+        "archived": true
       }
     ],
     "role": "Volunteering / Project demonstrations",

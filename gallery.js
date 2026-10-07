@@ -70,7 +70,7 @@
   let activeIndices = [];
   function setYear(year) {
     activeIndices = currentProject.media.map((item, i) => ({ item, i }))
-      .filter(({item}) => year === 'all' || item.year === year).map(({i}) => i);
+      .filter(({item}) => !item.archived && (year === 'all' || item.year === year)).map(({i}) => i);
     if (!activeIndices.includes(index)) index = activeIndices[0];
   }
   yearSelect.addEventListener('change', () => { setYear(yearSelect.value); render(); });

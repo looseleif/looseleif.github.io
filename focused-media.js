@@ -30,7 +30,7 @@
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
     socio: { picks:[0,1,3], videos:[0,1,3], labels:['Live session','Speaker presence','Conversation prompts'], caption:'remorse running in IYKYD field recordings: live context, speaker activity, and conversational prompts.' },
-    'sync-tank': { picks:[0,1,7], labels:['Complete demo setup / 2025','Detection & caption experiment','Spatial interface prototype / 2026'], caption:'From the assembled aquarium and camera controls to early fish-caption experiments and a spatial interface for connected cameras.' },
+    'sync-tank': { picks:[0,1,3], labels:['Live aquarium view','Camera mechanism','Spatial camera interface'], caption:'Aquarium camera feeds, the camera platform, and a spatial interface connecting each view to its position in the tank.' },
     aggro: { picks:[0,1,2], videos:[31,7,13], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { picks:[5,0,4], labels:['Vehicle & team','Telemetry hardware','Infotainment interface'], caption:'The Solar Vehicle Project, from custom telemetry electronics to the in-vehicle software interface.' },
     awear: { picks:[0,1,2], labels:['Wearable prototype','35 mm custom electronics','Reading history interface'], caption:'From the custom sensing board and wearable enclosure to the prototype interface for reviewing optical pulse readings.' },
