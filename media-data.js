@@ -770,167 +770,136 @@ window.portfolioProjects = [
     }
   },
   {
-    "id": "solar",
-    "title": "Solar Vehicle Project",
-    "category": "Hardware",
-    "line": "Infotainment and telemetry engineering, team media, and race driving.",
+    "id": "socio",
+    "title": "remorse",
+    "category": "Software",
+    "line": "Speaker diarization, live transcription, and conversational cues.",
+    "page": "socio/",
     "media": [
       {
-        "src": "images/solar.png",
-        "poster": "images/solar.png",
-        "caption": "The University of Minnesota solar vehicle team with their car.",
-        "kind": "image",
-        "width": 1927,
-        "height": 1352
+        "kind": "video",
+        "src": "videos/remorse/live-context.mp4",
+        "poster": "images/remorse/live-context.jpg",
+        "original": "images/remorse/live-context.gif",
+        "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
       },
       {
         "kind": "video",
-        "src": "videos/loops/solar.mp4",
-        "poster": "images/semantic/solar-00000.png",
-        "original": "images/solar.gif",
-        "caption": "Solar Vehicle Project: electronics, cockpit, communications, and tablet interface."
+        "src": "videos/remorse/field-trial.mp4",
+        "poster": "images/remorse/field-trial.jpg",
+        "original": "images/remorse/field-trial.gif",
+        "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/watch-companion.mp4",
+        "poster": "images/remorse/watch-companion.jpg",
+        "original": "images/remorse/watch-companion.gif",
+        "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/conversation-prompts.mp4",
+        "poster": "images/remorse/conversation-prompts.jpg",
+        "original": "images/remorse/conversation-prompts.gif",
+        "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/speaker-diarization.mp4",
+        "poster": "images/remorse/speaker-diarization.jpg",
+        "original": "images/remorse/speaker-diarization.gif",
+        "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/live-transcription.mp4",
+        "poster": "images/remorse/live-transcription.jpg",
+        "original": "images/remorse/live-transcription.gif",
+        "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/conversation-cues.mp4",
+        "poster": "images/remorse/conversation-cues.jpg",
+        "original": "images/remorse/conversation-cues.gif",
+        "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/morse-output.mp4",
+        "poster": "images/remorse/morse-output.jpg",
+        "original": "images/remorse/morse-output.gif",
+        "caption": "The on-screen Morse sequence updates alongside the incoming words."
+      },
+      {
+        "kind": "video",
+        "src": "videos/remorse/haptic-events.mp4",
+        "poster": "images/remorse/haptic-events.jpg",
+        "original": "images/remorse/haptic-events.gif",
+        "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
       },
       {
         "kind": "image",
-        "src": "images/semantic/solar-00000.png",
-        "poster": "images/semantic/solar-00000.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 0,
-        "caption": "Close-up of a circuit board with soldered jumper wires."
+        "src": "images/remorse/mobile-app-view.png",
+        "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
+        "width": 432,
+        "height": 859
       },
       {
         "kind": "image",
-        "src": "images/semantic/solar-00001.png",
-        "poster": "images/semantic/solar-00001.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 1,
-        "caption": "A populated circuit board with controls and connectors."
+        "src": "images/remorse/speaker-presence-interface.png",
+        "caption": "Speaker-presence interface showing separate activity timelines and transcript fragments for multiple speakers.",
+        "width": 945,
+        "height": 523,
+        "year": "2026",
+        "sourceFilename": "Screenshot 2026-05-20 221920.png",
+        "context": "Interface"
       },
       {
         "kind": "image",
-        "src": "images/semantic/solar-00002.png",
-        "poster": "images/semantic/solar-00002.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 2,
-        "caption": "Electronics are visible through a translucent yellow enclosure."
+        "src": "images/remorse/watch-on-wrist.jpg",
+        "caption": "The remorse prototype on a circular watch, shown in its muted setup state with no hub saved.",
+        "width": 6144,
+        "height": 8160,
+        "year": "2026",
+        "sourceFilename": "PXL_20260622_100041297.RAW-01.jpg",
+        "context": "Wearable"
       },
       {
         "kind": "image",
-        "src": "images/semantic/solar-00003.png",
-        "poster": "images/semantic/solar-00003.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 3,
-        "caption": "Me driving the solar vehicle."
-      },
-      {
-        "kind": "image",
-        "src": "images/semantic/solar-00004.png",
-        "poster": "images/semantic/solar-00004.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 4,
-        "caption": "A handheld radio display reads CARAVAN and DRIVER."
-      },
-      {
-        "kind": "image",
-        "src": "images/semantic/solar-00005.png",
-        "poster": "images/semantic/solar-00005.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 5,
-        "caption": "A blue water bottle carries Solar Vehicle Project graphics."
-      },
-      {
-        "kind": "image",
-        "src": "images/semantic/solar-00006.png",
-        "poster": "images/semantic/solar-00006.png",
-        "source": "videos/loops/solar.mp4",
-        "timestamp": 6,
-        "caption": "A hand interacts with a map displayed on a tablet."
+        "src": "images/remorse/watch-armed-screen.png",
+        "caption": "The circular Armed screen, with pause-to-send and shake-to-clear guidance.",
+        "width": 384,
+        "height": 384,
+        "year": "2026",
+        "sourceFilename": "watch_media_2026-06-30_11_28_25.png",
+        "context": "Wearable"
       }
     ],
-    "role": "Software & hardware design / Media / Driver",
-    "tint": "#191816",
-    "page": "project-solar.html",
+    "role": "A Socio product / IYKYD field tests",
     "paragraphs": [
-      "I developed infotainment software and telemetry hardware for the University of Minnesota Solar Vehicle Project from 2021 to 2023, working across circuit design, software development, and system integration.",
-      "My work included the F1 infotainment application and G1 telemetry hardware. I also drove in the 2022 American Solar Challenge and created promotional films for the team.",
-      "Freya won the Multi-Occupant Vehicle class in 2022, Minnesota's first American Solar Challenge road-race victory."
-    ],
-    "stills": [
-      0
-    ],
-    "showcase": [
-      {
-        "mediaIndex": 2,
-        "source": "videos/loops/solar.mp4",
-        "frameIndex": 0,
-        "timestamp": 0,
-        "src": "images/semantic/solar-00000.png",
-        "caption": "Close-up of a circuit board with soldered jumper wires.",
-        "title": "PCB rework"
-      },
-      {
-        "mediaIndex": 3,
-        "source": "videos/loops/solar.mp4",
-        "frameIndex": 1,
-        "timestamp": 1,
-        "src": "images/semantic/solar-00001.png",
-        "caption": "A populated circuit board with controls and connectors.",
-        "title": "Control board"
-      },
-      {
-        "mediaIndex": 4,
-        "source": "videos/loops/solar.mp4",
-        "frameIndex": 2,
-        "timestamp": 2,
-        "src": "images/semantic/solar-00002.png",
-        "caption": "Electronics are visible through a translucent yellow enclosure.",
-        "title": "Enclosed electronics"
-      },
-      {
-        "mediaIndex": 5,
-        "source": "videos/loops/solar.mp4",
-        "frameIndex": 3,
-        "timestamp": 3,
-        "src": "images/semantic/solar-00003.png",
-        "caption": "Me driving the solar vehicle.",
-        "title": "Cockpit"
-      },
-      {
-        "mediaIndex": 8,
-        "source": "videos/loops/solar.mp4",
-        "frameIndex": 6,
-        "timestamp": 6,
-        "src": "images/semantic/solar-00006.png",
-        "caption": "A hand interacts with a map displayed on a tablet.",
-        "title": "Tablet interface"
-      }
+      "I am developing remorse at Socio as a conversational companion, bringing live transcripts, speaker activity, and prompts into a shared session.",
+      "IYKYD recordings document the prototype running in real conversations and the ongoing exploration of mobile and wearable feedback."
     ],
     "presentation": {
-      "field": "Vehicle engineering / University of Minnesota",
-      "contribution": "I developed infotainment software and telemetry hardware, produced promotional media, and drove for the team in the American Solar Challenge.",
+      "field": "Conversation software / A Socio product",
+      "contribution": "I am developing remorse at Socio to connect live speech processing, speaker diarization, and conversational cues with mobile and wearable interfaces.",
       "context": [
         [
           "Work",
-          "Software and hardware architecture, filming, race driving"
+          "Speaker diarization, live transcripts, and feedback interfaces"
         ],
         [
-          "Team result",
-          "2022 American Solar Challenge / 1st, Multi-Occupant Vehicle class"
+          "Field tests",
+          "Feature excerpts from real IYKYD conversations"
         ]
       ]
     },
     "links": [
       {
-        "label": "Team website",
-        "url": "https://umnsvp.org/"
-      },
-      {
-        "label": "2022 race coverage",
-        "url": "https://cse.umn.edu/college/news/student-led-solar-vehicle-project-team-wins-2022-american-solar-challenge"
-      },
-      {
-        "label": "Official results",
-        "url": "https://www.americansolarchallenge.org/american-solar-challenge/asc-fsgp-2022/"
+        "label": "IYKYD field recordings",
+        "url": "https://www.youtube.com/@ifyouknowyoudont"
       }
     ]
   },
@@ -1246,6 +1215,336 @@ window.portfolioProjects = [
         "url": "https://github.com/looseleif/cardiac-wearable"
       }
     ]
+  },
+  {
+    "id": "solar",
+    "title": "Solar Vehicle Project",
+    "category": "Hardware",
+    "line": "Infotainment and telemetry engineering, team media, and race driving.",
+    "media": [
+      {
+        "src": "images/solar.png",
+        "poster": "images/solar.png",
+        "caption": "The University of Minnesota solar vehicle team with their car.",
+        "kind": "image",
+        "width": 1927,
+        "height": 1352
+      },
+      {
+        "kind": "video",
+        "src": "videos/loops/solar.mp4",
+        "poster": "images/semantic/solar-00000.png",
+        "original": "images/solar.gif",
+        "caption": "Solar Vehicle Project: electronics, cockpit, communications, and tablet interface."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00000.png",
+        "poster": "images/semantic/solar-00000.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 0,
+        "caption": "Close-up of a circuit board with soldered jumper wires."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00001.png",
+        "poster": "images/semantic/solar-00001.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 1,
+        "caption": "A populated circuit board with controls and connectors."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00002.png",
+        "poster": "images/semantic/solar-00002.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 2,
+        "caption": "Electronics are visible through a translucent yellow enclosure."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00003.png",
+        "poster": "images/semantic/solar-00003.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 3,
+        "caption": "Me driving the solar vehicle."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00004.png",
+        "poster": "images/semantic/solar-00004.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 4,
+        "caption": "A handheld radio display reads CARAVAN and DRIVER."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00005.png",
+        "poster": "images/semantic/solar-00005.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 5,
+        "caption": "A blue water bottle carries Solar Vehicle Project graphics."
+      },
+      {
+        "kind": "image",
+        "src": "images/semantic/solar-00006.png",
+        "poster": "images/semantic/solar-00006.png",
+        "source": "videos/loops/solar.mp4",
+        "timestamp": 6,
+        "caption": "A hand interacts with a map displayed on a tablet."
+      }
+    ],
+    "role": "Software & hardware design / Media / Driver",
+    "tint": "#191816",
+    "page": "project-solar.html",
+    "paragraphs": [
+      "I developed infotainment software and telemetry hardware for the University of Minnesota Solar Vehicle Project from 2021 to 2023, working across circuit design, software development, and system integration.",
+      "My work included the F1 infotainment application and G1 telemetry hardware. I also drove in the 2022 American Solar Challenge and created promotional films for the team.",
+      "Freya won the Multi-Occupant Vehicle class in 2022, Minnesota's first American Solar Challenge road-race victory."
+    ],
+    "stills": [
+      0
+    ],
+    "showcase": [
+      {
+        "mediaIndex": 2,
+        "source": "videos/loops/solar.mp4",
+        "frameIndex": 0,
+        "timestamp": 0,
+        "src": "images/semantic/solar-00000.png",
+        "caption": "Close-up of a circuit board with soldered jumper wires.",
+        "title": "PCB rework"
+      },
+      {
+        "mediaIndex": 3,
+        "source": "videos/loops/solar.mp4",
+        "frameIndex": 1,
+        "timestamp": 1,
+        "src": "images/semantic/solar-00001.png",
+        "caption": "A populated circuit board with controls and connectors.",
+        "title": "Control board"
+      },
+      {
+        "mediaIndex": 4,
+        "source": "videos/loops/solar.mp4",
+        "frameIndex": 2,
+        "timestamp": 2,
+        "src": "images/semantic/solar-00002.png",
+        "caption": "Electronics are visible through a translucent yellow enclosure.",
+        "title": "Enclosed electronics"
+      },
+      {
+        "mediaIndex": 5,
+        "source": "videos/loops/solar.mp4",
+        "frameIndex": 3,
+        "timestamp": 3,
+        "src": "images/semantic/solar-00003.png",
+        "caption": "Me driving the solar vehicle.",
+        "title": "Cockpit"
+      },
+      {
+        "mediaIndex": 8,
+        "source": "videos/loops/solar.mp4",
+        "frameIndex": 6,
+        "timestamp": 6,
+        "src": "images/semantic/solar-00006.png",
+        "caption": "A hand interacts with a map displayed on a tablet.",
+        "title": "Tablet interface"
+      }
+    ],
+    "presentation": {
+      "field": "Vehicle engineering / University of Minnesota",
+      "contribution": "I developed infotainment software and telemetry hardware, produced promotional media, and drove for the team in the American Solar Challenge.",
+      "context": [
+        [
+          "Work",
+          "Software and hardware architecture, filming, race driving"
+        ],
+        [
+          "Team result",
+          "2022 American Solar Challenge / 1st, Multi-Occupant Vehicle class"
+        ]
+      ]
+    },
+    "links": [
+      {
+        "label": "Team website",
+        "url": "https://umnsvp.org/"
+      },
+      {
+        "label": "2022 race coverage",
+        "url": "https://cse.umn.edu/college/news/student-led-solar-vehicle-project-team-wins-2022-american-solar-challenge"
+      },
+      {
+        "label": "Official results",
+        "url": "https://www.americansolarchallenge.org/american-solar-challenge/asc-fsgp-2022/"
+      }
+    ]
+  },
+  {
+    "id": "electric-drives",
+    "title": "Electric Drives & Control",
+    "category": "Hardware",
+    "line": "Electric vehicles, custom batteries, FPV drones, and a VESC-based rover.",
+    "media": [
+      {
+        "src": "images/full/board-0000.png",
+        "poster": "images/frames/board-0000.webp",
+        "kind": "image",
+        "caption": "Close-up of the wheel and mechanical drive components.",
+        "source": "videos/loops/board.mp4",
+        "timestamp": 0.0,
+        "width": 498,
+        "height": 360
+      },
+      {
+        "src": "images/full/board-0001.png",
+        "poster": "images/frames/board-0001.webp",
+        "kind": "image",
+        "caption": "A handheld controller shows red and green indicator lights.",
+        "source": "videos/loops/board.mp4",
+        "timestamp": 0.5,
+        "width": 498,
+        "height": 360
+      },
+      {
+        "src": "images/full/board-0002.png",
+        "poster": "images/frames/board-0002.webp",
+        "kind": "image",
+        "caption": "The mountain board is shown under red lighting.",
+        "source": "videos/loops/board.mp4",
+        "timestamp": 1.0,
+        "width": 498,
+        "height": 360
+      },
+      {
+        "src": "videos/loops/board.mp4",
+        "poster": "images/previews/board.webp",
+        "caption": "Electric mountain board: drivetrain, handheld control, and assembled board.",
+        "kind": "video",
+        "original": "images/board.gif"
+      },
+      {
+        "src": "images/board1.jpeg",
+        "poster": "images/board1.jpeg",
+        "caption": "A closer view of the mountain board drivetrain.",
+        "kind": "image",
+        "width": 792,
+        "height": 1280
+      },
+      {
+        "src": "images/board2.jpeg",
+        "poster": "images/board2.jpeg",
+        "caption": "The handheld controller powered on.",
+        "kind": "image",
+        "width": 982,
+        "height": 1280
+      },
+      {
+        "src": "images/board3.jpeg",
+        "poster": "images/board3.jpeg",
+        "caption": "The assembled mountain board, illuminated.",
+        "kind": "image",
+        "width": 800,
+        "height": 360
+      },
+      {
+        "src": "images/fanimg.jpg",
+        "poster": "images/fanimg.jpg",
+        "caption": "The rover hardware prototype.",
+        "kind": "image",
+        "width": 128,
+        "height": 227
+      },
+      {
+        "src": "images/electric-drives/two-wheel-prototype-floor.png",
+        "poster": "images/electric-drives/two-wheel-prototype-floor.png",
+        "kind": "image",
+        "caption": "Two-wheel prototype with its battery mounted beneath the chassis.",
+        "sourceFilename": "Screenshot 2026-10-06 234528.png",
+        "context": "Two-wheel prototype",
+        "width": 543,
+        "height": 650
+      },
+      {
+        "src": "images/electric-drives/two-wheel-prototype-electronics.png",
+        "poster": "images/electric-drives/two-wheel-prototype-electronics.png",
+        "kind": "image",
+        "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
+        "sourceFilename": "Screenshot 2026-10-06 234714.png",
+        "context": "Two-wheel prototype",
+        "width": 523,
+        "height": 585
+      }
+    ],
+    "role": "Vehicle integration / Electric drivetrains / Remote operation",
+    "tint": "#181819",
+    "page": "project-electric-drives.html",
+    "paragraphs": [
+      "I build and modify electric vehicles, applying the same fundamentals of batteries, motor controllers, drivetrains, and control across ground vehicles and FPV drones.",
+      "This work spans an electric mountain board assembled from off-the-shelf parts, a self-balancing vehicle with a custom battery, Onewheel modifications, and custom FPV drone rigs for filming, racing, and recreational flight.",
+      "My current rover work uses VESC motor controllers for remote operation and exploration. The photos below document the mountain board, two-wheel prototypes, and rover hardware."
+    ],
+    "stills": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "showcase": [
+      {
+        "mediaIndex": 0,
+        "source": "videos/loops/board.mp4",
+        "frameIndex": 0,
+        "timestamp": 0,
+        "src": "images/semantic/board-00000.png",
+        "caption": "Close-up of the wheel and mechanical drive components.",
+        "title": "Drivetrain"
+      },
+      {
+        "mediaIndex": 1,
+        "source": "videos/loops/board.mp4",
+        "frameIndex": 1,
+        "timestamp": 0.5,
+        "src": "images/semantic/board-00001.png",
+        "caption": "A handheld controller shows red and green indicator lights.",
+        "title": "Handheld control"
+      },
+      {
+        "mediaIndex": 2,
+        "source": "videos/loops/board.mp4",
+        "frameIndex": 2,
+        "timestamp": 1,
+        "src": "images/semantic/board-00002.png",
+        "caption": "The mountain board is shown under red lighting.",
+        "title": "Assembled board"
+      },
+      {
+        "mediaIndex": 7,
+        "src": "images/fanimg.jpg",
+        "caption": "The rover hardware prototype.",
+        "title": "Mobile Rover: Vision & Control"
+      }
+    ],
+    "presentation": {
+      "field": "Electric vehicles / Control systems",
+      "contribution": "I build and modify electric vehicles and FPV drones, integrating batteries, motor controllers, and drivetrains. My current rover work focuses on remote operation and exploration.",
+      "context": [
+        [
+          "Builds",
+          "Mountain board, self-balancing vehicle, FPV rigs, Onewheel"
+        ],
+        [
+          "Current",
+          "VESC-based exploration rover"
+        ]
+      ]
+    }
   },
   {
     "id": "feedback-loop",
@@ -1596,171 +1895,6 @@ window.portfolioProjects = [
     }
   },
   {
-    "id": "electric-drives",
-    "title": "Electric Drives & Control",
-    "category": "Hardware",
-    "line": "Electric vehicles, custom batteries, FPV drones, and a VESC-based rover.",
-    "media": [
-      {
-        "src": "images/full/board-0000.png",
-        "poster": "images/frames/board-0000.webp",
-        "kind": "image",
-        "caption": "Close-up of the wheel and mechanical drive components.",
-        "source": "videos/loops/board.mp4",
-        "timestamp": 0.0,
-        "width": 498,
-        "height": 360
-      },
-      {
-        "src": "images/full/board-0001.png",
-        "poster": "images/frames/board-0001.webp",
-        "kind": "image",
-        "caption": "A handheld controller shows red and green indicator lights.",
-        "source": "videos/loops/board.mp4",
-        "timestamp": 0.5,
-        "width": 498,
-        "height": 360
-      },
-      {
-        "src": "images/full/board-0002.png",
-        "poster": "images/frames/board-0002.webp",
-        "kind": "image",
-        "caption": "The mountain board is shown under red lighting.",
-        "source": "videos/loops/board.mp4",
-        "timestamp": 1.0,
-        "width": 498,
-        "height": 360
-      },
-      {
-        "src": "videos/loops/board.mp4",
-        "poster": "images/previews/board.webp",
-        "caption": "Electric mountain board: drivetrain, handheld control, and assembled board.",
-        "kind": "video",
-        "original": "images/board.gif"
-      },
-      {
-        "src": "images/board1.jpeg",
-        "poster": "images/board1.jpeg",
-        "caption": "A closer view of the mountain board drivetrain.",
-        "kind": "image",
-        "width": 792,
-        "height": 1280
-      },
-      {
-        "src": "images/board2.jpeg",
-        "poster": "images/board2.jpeg",
-        "caption": "The handheld controller powered on.",
-        "kind": "image",
-        "width": 982,
-        "height": 1280
-      },
-      {
-        "src": "images/board3.jpeg",
-        "poster": "images/board3.jpeg",
-        "caption": "The assembled mountain board, illuminated.",
-        "kind": "image",
-        "width": 800,
-        "height": 360
-      },
-      {
-        "src": "images/fanimg.jpg",
-        "poster": "images/fanimg.jpg",
-        "caption": "The rover hardware prototype.",
-        "kind": "image",
-        "width": 128,
-        "height": 227
-      },
-      {
-        "src": "images/electric-drives/two-wheel-prototype-floor.png",
-        "poster": "images/electric-drives/two-wheel-prototype-floor.png",
-        "kind": "image",
-        "caption": "Two-wheel prototype with its battery mounted beneath the chassis.",
-        "sourceFilename": "Screenshot 2026-10-06 234528.png",
-        "context": "Two-wheel prototype",
-        "width": 543,
-        "height": 650
-      },
-      {
-        "src": "images/electric-drives/two-wheel-prototype-electronics.png",
-        "poster": "images/electric-drives/two-wheel-prototype-electronics.png",
-        "kind": "image",
-        "caption": "Two-wheel prototype showing the powered electronics, wiring, and battery arrangement.",
-        "sourceFilename": "Screenshot 2026-10-06 234714.png",
-        "context": "Two-wheel prototype",
-        "width": 523,
-        "height": 585
-      }
-    ],
-    "role": "Vehicle integration / Electric drivetrains / Remote operation",
-    "tint": "#181819",
-    "page": "project-electric-drives.html",
-    "paragraphs": [
-      "I build and modify electric vehicles, applying the same fundamentals of batteries, motor controllers, drivetrains, and control across ground vehicles and FPV drones.",
-      "This work spans an electric mountain board assembled from off-the-shelf parts, a self-balancing vehicle with a custom battery, Onewheel modifications, and custom FPV drone rigs for filming, racing, and recreational flight.",
-      "My current rover work uses VESC motor controllers for remote operation and exploration. The photos below document the mountain board, two-wheel prototypes, and rover hardware."
-    ],
-    "stills": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-    ],
-    "showcase": [
-      {
-        "mediaIndex": 0,
-        "source": "videos/loops/board.mp4",
-        "frameIndex": 0,
-        "timestamp": 0,
-        "src": "images/semantic/board-00000.png",
-        "caption": "Close-up of the wheel and mechanical drive components.",
-        "title": "Drivetrain"
-      },
-      {
-        "mediaIndex": 1,
-        "source": "videos/loops/board.mp4",
-        "frameIndex": 1,
-        "timestamp": 0.5,
-        "src": "images/semantic/board-00001.png",
-        "caption": "A handheld controller shows red and green indicator lights.",
-        "title": "Handheld control"
-      },
-      {
-        "mediaIndex": 2,
-        "source": "videos/loops/board.mp4",
-        "frameIndex": 2,
-        "timestamp": 1,
-        "src": "images/semantic/board-00002.png",
-        "caption": "The mountain board is shown under red lighting.",
-        "title": "Assembled board"
-      },
-      {
-        "mediaIndex": 7,
-        "src": "images/fanimg.jpg",
-        "caption": "The rover hardware prototype.",
-        "title": "Mobile Rover: Vision & Control"
-      }
-    ],
-    "presentation": {
-      "field": "Electric vehicles / Control systems",
-      "contribution": "I build and modify electric vehicles and FPV drones, integrating batteries, motor controllers, and drivetrains. My current rover work focuses on remote operation and exploration.",
-      "context": [
-        [
-          "Builds",
-          "Mountain board, self-balancing vehicle, FPV rigs, Onewheel"
-        ],
-        [
-          "Current",
-          "VESC-based exploration rover"
-        ]
-      ]
-    }
-  },
-  {
     "id": "open-sauce",
     "title": "Open Sauce",
     "category": "Volunteering",
@@ -2010,140 +2144,6 @@ window.portfolioProjects = [
       6,
       7,
       8
-    ]
-  },
-  {
-    "id": "socio",
-    "title": "remorse",
-    "category": "Software",
-    "line": "Speaker diarization, live transcription, and conversational cues.",
-    "page": "socio/",
-    "media": [
-      {
-        "kind": "video",
-        "src": "videos/remorse/live-context.mp4",
-        "poster": "images/remorse/live-context.jpg",
-        "original": "images/remorse/live-context.gif",
-        "caption": "The remorse interface running during an IYKYD conversation, with speaker turns, a live transcript, and open questions."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/field-trial.mp4",
-        "poster": "images/remorse/field-trial.jpg",
-        "original": "images/remorse/field-trial.gif",
-        "caption": "The first IYKYD field test: a live transcript and speaker-presence view alongside the mobile session."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/watch-companion.mp4",
-        "poster": "images/remorse/watch-companion.jpg",
-        "original": "images/remorse/watch-companion.gif",
-        "caption": "A follow-up field recording shows desktop and mobile session views while the conversation is transcribed."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/conversation-prompts.mp4",
-        "poster": "images/remorse/conversation-prompts.jpg",
-        "original": "images/remorse/conversation-prompts.gif",
-        "caption": "The conversation-compass prototype displays speaker turns and a suggested invitation for another person to respond."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/speaker-diarization.mp4",
-        "poster": "images/remorse/speaker-diarization.jpg",
-        "original": "images/remorse/speaker-diarization.gif",
-        "caption": "Speaker diarization: separate activity traces for the speakers in a live session."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/live-transcription.mp4",
-        "poster": "images/remorse/live-transcription.jpg",
-        "original": "images/remorse/live-transcription.gif",
-        "caption": "Real-time processing: incoming speech updates the transcript and on-screen Morse sequence."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/conversation-cues.mp4",
-        "poster": "images/remorse/conversation-cues.jpg",
-        "original": "images/remorse/conversation-cues.gif",
-        "caption": "Conversation cues: the compass suggests leaving room for a response or inviting another speaker."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/morse-output.mp4",
-        "poster": "images/remorse/morse-output.jpg",
-        "original": "images/remorse/morse-output.gif",
-        "caption": "The on-screen Morse sequence updates alongside the incoming words."
-      },
-      {
-        "kind": "video",
-        "src": "videos/remorse/haptic-events.mp4",
-        "poster": "images/remorse/haptic-events.jpg",
-        "original": "images/remorse/haptic-events.gif",
-        "caption": "Haptic feedback events: the live session changes to Phone Alert and records phone haptic signals."
-      },
-      {
-        "kind": "image",
-        "src": "images/remorse/mobile-app-view.png",
-        "caption": "The remorse mobile app showing session status, insights, a speaker-labeled transcript, and diarization activity.",
-        "width": 432,
-        "height": 859
-      },
-      {
-        "kind": "image",
-        "src": "images/remorse/speaker-presence-interface.png",
-        "caption": "Speaker-presence interface showing separate activity timelines and transcript fragments for multiple speakers.",
-        "width": 945,
-        "height": 523,
-        "year": "2026",
-        "sourceFilename": "Screenshot 2026-05-20 221920.png",
-        "context": "Interface"
-      },
-      {
-        "kind": "image",
-        "src": "images/remorse/watch-on-wrist.jpg",
-        "caption": "The remorse prototype on a circular watch, shown in its muted setup state with no hub saved.",
-        "width": 6144,
-        "height": 8160,
-        "year": "2026",
-        "sourceFilename": "PXL_20260622_100041297.RAW-01.jpg",
-        "context": "Wearable"
-      },
-      {
-        "kind": "image",
-        "src": "images/remorse/watch-armed-screen.png",
-        "caption": "The circular Armed screen, with pause-to-send and shake-to-clear guidance.",
-        "width": 384,
-        "height": 384,
-        "year": "2026",
-        "sourceFilename": "watch_media_2026-06-30_11_28_25.png",
-        "context": "Wearable"
-      }
-    ],
-    "role": "A Socio product / IYKYD field tests",
-    "paragraphs": [
-      "I am developing remorse at Socio as a conversational companion, bringing live transcripts, speaker activity, and prompts into a shared session.",
-      "IYKYD recordings document the prototype running in real conversations and the ongoing exploration of mobile and wearable feedback."
-    ],
-    "presentation": {
-      "field": "Conversation software / A Socio product",
-      "contribution": "I am developing remorse at Socio to connect live speech processing, speaker diarization, and conversational cues with mobile and wearable interfaces.",
-      "context": [
-        [
-          "Work",
-          "Speaker diarization, live transcripts, and feedback interfaces"
-        ],
-        [
-          "Field tests",
-          "Feature excerpts from real IYKYD conversations"
-        ]
-      ]
-    },
-    "links": [
-      {
-        "label": "IYKYD field recordings",
-        "url": "https://www.youtube.com/@ifyouknowyoudont"
-      }
     ]
   }
 ];
