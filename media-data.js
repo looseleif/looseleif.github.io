@@ -1088,7 +1088,7 @@ window.portfolioProjects = [
         "src": "images/full/homeo-0000.png",
         "poster": "images/frames/homeo-0000.webp",
         "kind": "image",
-        "caption": "Custom electronics for the modular biology teaching device, wired for bench testing.",
+        "caption": "Custom electronics for the interactive biology learning platform, wired for bench testing.",
         "source": "videos/loops/homeo.mp4",
         "timestamp": 0.0,
         "width": 405,
@@ -1137,7 +1137,7 @@ window.portfolioProjects = [
       {
         "src": "videos/loops/homeo.mp4",
         "poster": "images/previews/homeo.webp",
-        "caption": "Modular biology teaching device: bench demonstration and assembly.",
+        "caption": "interactive biology learning platform: bench demonstration and assembly.",
         "kind": "video",
         "original": "images/homeo.gif"
       },

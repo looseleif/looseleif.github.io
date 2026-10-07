@@ -391,7 +391,7 @@ window.portfolioSemantics = {
     ]
   },
   "videos/loops/homeo.mp4": {
-    "summary": "Modular biology teaching device: bench demonstration and assembly.",
+    "summary": "interactive biology learning platform: bench demonstration and assembly.",
     "playbackRate": 0.65,
     "duration": 13.7,
     "scenes": [
@@ -399,7 +399,7 @@ window.portfolioSemantics = {
         "start": 0,
         "end": 0.9,
         "title": "Bench prototype",
-        "caption": "Custom electronics for the modular biology teaching device, wired for bench testing.",
+        "caption": "Custom electronics for the interactive biology learning platform, wired for bench testing.",
         "evidenceFrame": 0,
         "confidence": "visual observation"
       },
