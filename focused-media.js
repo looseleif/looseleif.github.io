@@ -191,7 +191,7 @@
   if (currentProject && document.querySelector('main')) {
     const collection = document.createElement('p');collection.className = 'project-photo-collection';
     const link = document.createElement('a');link.className = 'text-link';
-    link.href = `${currentProject.id === 'socio' ? '../' : ''}photos.html?project=${encodeURIComponent(currentProject.id)}`;
+    link.href = `photos.html?project=${encodeURIComponent(currentProject.id)}`;
     link.textContent = 'All project photos & videos';collection.append(link);
     document.querySelector('main').append(collection);
   }

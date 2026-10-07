@@ -1,7 +1,7 @@
 window.portfolioProjects = [
   {
     "id": "sync-tank",
-    "title": "Sync Tank: Aquarium Networking & Habitat Monitoring",
+    "title": "Aquarium Networking & Habitat Monitoring",
     "category": "Hardware",
     "line": "Networked aquariums, habitat monitoring, and a shared observation hub.",
     "media": [
@@ -222,7 +222,7 @@ window.portfolioProjects = [
     ],
     "role": "Sensing hardware / Software integration",
     "tint": "#171918",
-    "page": "project-sync-tank.html",
+    "page": "sync-tank.html",
     "paragraphs": [
       "I am developing Sync Tank as a local network for aquarium observation and habitat monitoring. Raspberry Pi tank nodes connect cameras and devices to a shared hub, with a spatial model that relates each camera view to its position in the tank.",
       "The work spans camera hardware, control electronics, interface development, and physical testing. SEE SEA TV presents feeds, while Sightings saves observations with their tank and camera context.",
@@ -264,25 +264,25 @@ window.portfolioProjects = [
         "mediaIndex": 0,
         "src": "images/sync-tank/see-sea-tv-in-water-test-setup.jpg",
         "caption": "Two-tank test setup with cameras and control hardware, before the portrait display was installed.",
-        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
+        "title": "Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 2,
         "src": "images/sync-tank/see-sea-tv-dry-bench-demo.jpg",
         "caption": "Dry-bench test of the tank model above a live camera feed.",
-        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
+        "title": "Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 3,
         "src": "images/sync-tank/reeflex-base-bearings-and-drive.jpg",
         "caption": "Reeflex assembly: bearing track, printed gear, and drive servo. Mechanical design based on EEZYbotARM Mk2.",
-        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
+        "title": "Aquarium Networking & Habitat Monitoring"
       },
       {
         "mediaIndex": 7,
         "src": "images/synctankimg.jpg",
         "caption": "The Sync Tank aquarium, electronics, and exhibition display.",
-        "title": "Sync Tank: Aquarium Networking & Habitat Monitoring"
+        "title": "Aquarium Networking & Habitat Monitoring"
       }
     ],
     "presentation": {
@@ -974,7 +974,7 @@ window.portfolioProjects = [
     ],
     "role": "Master's research / CHOICE Robotics Lab",
     "tint": "#181919",
-    "page": "project-aggro.html",
+    "page": "aggro-research.html",
     "paragraphs": [
       "My master's research at the University of Minnesota investigated how robots can uncover and retrieve objects hidden in clutter. I developed the physical platform, perception pipeline, and reinforcement-learning experiments needed to study mechanical search across changing environments.",
       "The work expanded experimentation through automatically generated clutter, task-specific reward functions, and six policy variants trained for 3,000 iterations each. It connects target discovery, uncovering, and singulation with a platform designed to support larger-scale experimentation and future real-world online learning.",
@@ -1085,10 +1085,10 @@ window.portfolioProjects = [
   },
   {
     "id": "socio",
-    "title": "remorse",
+    "title": "Live Transcription & Conversation Feedback",
     "category": "Software",
     "line": "Speaker diarization, live transcription, and conversational cues.",
-    "page": "socio/",
+    "page": "remorse-terminal.html",
     "media": [
       {
         "kind": "video",
@@ -1443,7 +1443,7 @@ window.portfolioProjects = [
     ],
     "role": "Custom hardware design / Biomedical collaboration",
     "tint": "#191817",
-    "page": "project-awear.html",
+    "page": "awear-wearable.html",
     "paragraphs": [
       "I designed custom sensing hardware and power electronics for a wearable cardiac-monitoring prototype at the University of Minnesota. Named aWear, the team project explored optical pulse sensing in a small device intended to sit beneath an ordinary wristwatch.",
       "My work connected circuit design, power management, and physical integration. I shared hardware development with a teammate and collaborated with the algorithm and firmware team, with biomedical input on sensing and wearable use.",
@@ -1527,7 +1527,7 @@ window.portfolioProjects = [
   },
   {
     "id": "solar",
-    "title": "Solar Vehicle Project",
+    "title": "Solar Vehicle Electronics & Telemetry",
     "category": "Hardware",
     "line": "Infotainment and telemetry engineering, team media, and race driving.",
     "media": [
@@ -1605,7 +1605,7 @@ window.portfolioProjects = [
     ],
     "role": "Software & hardware design / Media / Driver",
     "tint": "#191816",
-    "page": "project-solar.html",
+    "page": "solar-vehicle.html",
     "paragraphs": [
       "I developed infotainment software and telemetry hardware for the University of Minnesota Solar Vehicle Project from 2021 to 2023, working across circuit design, software development, and system integration.",
       "My work included the F1 infotainment application and G1 telemetry hardware. I also drove in the 2022 American Solar Challenge and created promotional films for the team.",
@@ -1906,7 +1906,7 @@ window.portfolioProjects = [
     ],
     "role": "Vehicle integration / Electric drivetrains / Remote operation",
     "tint": "#181819",
-    "page": "project-electric-drives.html",
+    "page": "electric-drives.html",
     "paragraphs": [
       "I build and modify electric vehicles, applying the same fundamentals of batteries, motor controllers, drivetrains, and control across ground vehicles and FPV drones.",
       "This work spans an electric mountain board assembled from off-the-shelf parts, a self-balancing vehicle with a custom battery, Onewheel modifications, and custom FPV drone rigs for filming, racing, and recreational flight.",
@@ -2255,7 +2255,7 @@ window.portfolioProjects = [
     ],
     "role": "Custom hardware design / Biology education",
     "tint": "#191817",
-    "page": "project-feedback-loop.html",
+    "page": "feedback-loop.html",
     "paragraphs": [
       "I designed custom hardware for a modular educational device developed alongside a team of biologists. It gives biology students a simple physical system for learning how devices work and writing code that interacts with hardware.",
       "The device uses controls, sensors, and a microcontroller to connect code with observable behavior. Students can explore biological feedback and homeostasis while learning how inputs, processing, and outputs fit together.",
@@ -2681,7 +2681,7 @@ window.portfolioProjects = [
     ],
     "role": "Builds & field work",
     "tint": "#191919",
-    "page": "project-electric-drives.html#drone-work",
+    "page": "electric-drives.html#drone-work",
     "paragraphs": [
       "FPV builds, camera rigs, and field setups."
     ],
