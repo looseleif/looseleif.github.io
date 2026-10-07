@@ -67,10 +67,10 @@
   dialog.querySelector('.gallery-header').after(yearControl);
   const stage = dialog.querySelector('.gallery-stage');
   let currentProject, index = 0, opener, seekTime = null;
-  let activeIndices = [];
+  let activeIndices = [], galleryGroup = '';
   function setYear(year) {
     activeIndices = currentProject.media.map((item, i) => ({ item, i }))
-      .filter(({item}) => !item.archived && !item.duplicateOf && (year === 'all' || item.year === year)).map(({i}) => i);
+      .filter(({item}) => !item.archived && !item.duplicateOf && (!galleryGroup || item.collection === galleryGroup) && (year === 'all' || item.year === year)).map(({i}) => i);
     if (!activeIndices.includes(index)) index = activeIndices[0];
   }
   yearSelect.addEventListener('change', () => { setYear(yearSelect.value); render(); });
@@ -120,6 +120,9 @@
     if (!project) return;
     event.preventDefault();
     currentProject = project;
+    galleryGroup = link.dataset.galleryGroup || '';
+    dialog.dataset.galleryGroup = galleryGroup;
+    dialog.querySelector('.gallery-navigation').hidden = !galleryGroup;
     index = Number(link.dataset.index || 0);
     seekTime = null;
     const selected = project.media[index];
@@ -129,7 +132,7 @@
       if (videoIndex >= 0) { index = videoIndex; seekTime = selected.timestamp || 0; }
     }
     const years = [...new Set(project.media.map(item => item.year).filter(Boolean))].sort().reverse();
-    yearControl.hidden = years.length === 0;
+    yearControl.hidden = years.length === 0 || Boolean(galleryGroup);
     yearSelect.replaceChildren();
     [['all', 'All years'], ...years.map(year => [year, year])].forEach(([value, label]) => {
       const option = document.createElement('option');
@@ -147,7 +150,9 @@
     dialog.showModal();
     dialog.querySelector('.gallery-close').focus();
   }));
-  dialog.querySelector('.gallery-navigation').remove();
+  dialog.querySelector('.gallery-navigation').hidden = true;
+  dialog.querySelector('.gallery-prev').addEventListener('click', () => step(-1));
+  dialog.querySelector('.gallery-next').addEventListener('click', () => step(1));
   dialog.querySelector('.gallery-close').addEventListener('click', () => dialog.close());
   dialog.querySelector('.gallery-details').addEventListener('click', () => {
     const target = document.getElementById(currentProject.id);

@@ -662,6 +662,206 @@ window.portfolioProjects = [
         "source": "videos/loops/aggro1.mp4",
         "timestamp": 6.6,
         "caption": "The gripper rises; the green marker remains visible on the tabletop."
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-06-farmbot-speed.png",
+        "caption": "Figure 6: Checking the motion budget. Translation-time measurements compare the default and boosted FarmBot settings. I used hardware benchmarking to assess the practical cost of repeating large numbers of interactions. Thesis p. 16.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 6,
+        "pdfPage": 25,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-07-wrist-camera.png",
+        "caption": "Figure 7: The camera moves with the robot. The wrist-mounted RealSense camera and end effector on the Cartesian gantry. A known offset from the tool connects the camera view to the robot position. Thesis p. 18.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 7,
+        "pdfPage": 27,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-08-camera-comparison.png",
+        "caption": "Figure 8: Changing the view changes the input. The thesis compares the traditional view with an orthogonal view of the same target. More consistent geometry helps keep visual measurements useful for action selection. Thesis p. 20.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 8,
+        "pdfPage": 29,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-09-printed-gripper.png",
+        "caption": "Figure 9: The adapted gripper. The articulated printed gripper mounted to the z-axis, with compliant contact surfaces on its fingers. This was the result of several mechanical and material revisions. Thesis p. 21.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 9,
+        "pdfPage": 30,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-10-extrinsic-calibration.png",
+        "caption": "Figure 10: The calibration setup. The checkerboard and external camera used in the calibration process. This setup illustrates the alignment work that motivated moving to a more stable camera arrangement. Thesis p. 26.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 10,
+        "pdfPage": 35,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-11-consistent-geometry.png",
+        "caption": "Figure 11: Simulation and physical geometry. The corresponding simulated and physical views show why object scale, cropping, and camera geometry must agree before the policy can choose useful actions. Thesis p. 27.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 11,
+        "pdfPage": 36,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-12-target-mask.png",
+        "caption": "Figure 12: Turning the target into a mask. The K-means target map isolates the visible target pixels. The mask provides both a spatial cue for the policy and a way to measure how much of the target is exposed. Thesis p. 30.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 12,
+        "pdfPage": 39,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-13-clutter-types.png",
+        "caption": "Figure 13: Three levels of physical clutter. Basic, moderate, and complex block arrangements used to replicate the earlier Grasping the Invisible experiments on the AGGRO platform. Thesis p. 33.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 13,
+        "pdfPage": 42,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-14-hardware-replication.png",
+        "caption": "Figure 14: Testing the integrated platform. Average moves and the plotted margins for the three clutter types. More complex arrangements required more actions in these replication tests. Thesis p. 34.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 14,
+        "pdfPage": 43,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-15-camera-distance.png",
+        "caption": "Figure 15: Stand-off distance affects scale. Views captured at 20, 120, and 220 cm. The changing size of the same target helps explain why matching visual scale matters when transferring the pipeline. Thesis p. 37.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 15,
+        "pdfPage": 46,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-16-original-action-maps.png",
+        "caption": "Figure 16: What the existing policy would do. Action-value maps from the original GTI pipeline in a physical scene. Each rotated view represents a candidate action orientation; warmer regions indicate higher predicted value. Thesis p. 38.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 16,
+        "pdfPage": 47,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-17-workspace-heuristic.png",
+        "caption": "Figure 17: An early attempt to search a larger area. Four workspace views used for a simple scaling heuristic. I compared normalized affordance values across regions, but did not find sufficiently consistent performance to continue with this approach. Thesis p. 40.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 17,
+        "pdfPage": 49,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-18-generated-clutter.png",
+        "caption": "Figure 18: Automatically creating training scenes. The simulator places structured block arrangements at varied positions and rotations. The camera insets show the observations used to inspect those generated scenes. Thesis p. 43.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 18,
+        "pdfPage": 52,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-19-pseudo-target.png",
+        "caption": "Figure 19: A search cue when the object is hidden. A pseudo-target region gives the policy a location to investigate even without a complete visible target. In this example, the lower-valued region surrounds a small visible target sliver. Thesis p. 47.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 19,
+        "pdfPage": 56,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-20-baseline-training.png",
+        "caption": "Figure 20: Baseline training. The baseline loss trace over 3,000 training iterations. The large early error settles into a comparatively stable range as the policy learns. Thesis p. 50.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 20,
+        "pdfPage": 59,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-21-finetuned-pseudo-training.png",
+        "caption": "Figure 21: Fine-tuning with a pseudo-target. The corresponding training trace for GTI fine-tuning plus pseudo-target guidance shows larger oscillations. Training behavior differed even when the policies addressed the same uncovering task. Thesis p. 51.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 21,
+        "pdfPage": 60,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-22-policy-losses.png",
+        "caption": "Figure 22: Comparing all six training runs. Loss traces for the six policy variants. These describe learning behavior; the separate evaluation measures whether the trained policies actually uncover the target. Thesis p. 53.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 22,
+        "pdfPage": 62,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-23-uncovering-results.png",
+        "caption": "Figure 23: Comparing uncovering performance. The original mean-and-error-margin plot from the thesis, comparing the six variants with the original GTI policy. The surrounding discussion also considers how much the policies disturb nearby clutter. Thesis p. 54.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 23,
+        "pdfPage": 63,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-24-baseline-action-maps.png",
+        "caption": "Figure 24: Where the baseline policy wants to push. Baseline action-value maps across different clutter arrangements. The repeated rotations visualize candidate push directions rather than a time sequence. Thesis p. 55.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 24,
+        "pdfPage": 64,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
+      },
+      {
+        "kind": "image",
+        "src": "images/aggro/thesis/figure-25-full-occlusion-action-maps.png",
+        "caption": "Figure 25: Testing guidance under full occlusion. The original GTI and pseudo-policy action maps in the fully occluded setting. These accompany the initial physical feasibility tests, where the search region was supplied manually. Thesis p. 56.",
+        "year": "2024",
+        "collection": "thesis",
+        "thesisFigure": 25,
+        "pdfPage": 65,
+        "sourceDocument": "https://conservancy.umn.edu/server/api/core/bitstreams/7f7085aa-7e2b-481d-8938-b22e28716339/content"
       }
     ],
     "role": "Master's research / CHOICE Robotics Lab",
