@@ -1,0 +1,820 @@
+{
+  "reviewed": "2026-10-08",
+  "source": "Public IYKYD recordings and their automatic transcripts. Summaries are paraphrases; excerpt captions are automatic.",
+  "episodes": [
+    {
+      "number": 1,
+      "era": "awareness",
+      "focus": "Trust, habits, and why conversation matters",
+      "summary": "I start with trust: how familiar ways of thinking become difficult to question, and why communicating what we notice matters. Engineering is my starting point for asking how to move forward without losing sight of the consequences.",
+      "moments": [
+        {
+          "start": 313,
+          "label": "Finding a way to communicate what we notice"
+        },
+        {
+          "start": 390,
+          "label": "How the brain simplifies what we know"
+        }
+      ],
+      "clipStart": 312.85,
+      "clipEnd": 379.9,
+      "id": "jZ3GIrOxDeE",
+      "title": "We simply cannot stop talking",
+      "date": "20241201",
+      "duration": 618,
+      "clipLabel": "Finding a way to communicate what we notice",
+      "slug": "episode-01",
+      "video": "videos/iykyd/episode-01.mp4",
+      "poster": "images/iykyd/episode-01.webp",
+      "captions": "videos/iykyd/episode-01.vtt",
+      "source": "https://www.youtube.com/watch?v=jZ3GIrOxDeE",
+      "dateLabel": "Dec 2024",
+      "media": {
+        "number": 1,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 67.099675,
+        "bytes": 22747083
+      }
+    },
+    {
+      "number": 2,
+      "era": "awareness",
+      "focus": "Hope, stability, and confidence",
+      "summary": "How do you build confidence when the rules around you feel unstable? I connect education, engineering, and the pressure to act normally, asking how people can gain room to try, learn, and change their circumstances.",
+      "moments": [
+        {
+          "start": 150,
+          "label": "The foundations of confidence"
+        },
+        {
+          "start": 369,
+          "label": "Better technology can be simpler"
+        }
+      ],
+      "clipStart": 368.8,
+      "clipEnd": 414.7,
+      "id": "AVeI29Xq3sA",
+      "title": "We act so normally",
+      "date": "20250102",
+      "duration": 912,
+      "clipLabel": "Better technology can be simpler",
+      "slug": "episode-02",
+      "video": "videos/iykyd/episode-02.mp4",
+      "poster": "images/iykyd/episode-02.webp",
+      "captions": "videos/iykyd/episode-02.vtt",
+      "source": "https://www.youtube.com/watch?v=AVeI29Xq3sA",
+      "dateLabel": "Jan 2025",
+      "media": {
+        "number": 2,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60000/1001",
+        "duration": 45.912533,
+        "bytes": 21259136
+      }
+    },
+    {
+      "number": 3,
+      "era": "awareness",
+      "focus": "Making room to change your mind",
+      "summary": "I use academic self-correction as a model for everyday life: revisiting an idea should be something we can welcome. The episode asks why identity, sunk effort, and trust make it so difficult to admit that a familiar approach is no longer working.",
+      "moments": [
+        {
+          "start": 150,
+          "label": "An analogy for revising our own ideas"
+        },
+        {
+          "start": 445,
+          "label": "Why admitting an error is difficult"
+        }
+      ],
+      "clipStart": 445.45,
+      "clipEnd": 519.5,
+      "id": "GLIOICTRF_o",
+      "title": "We don't speak up all the time",
+      "date": "20250202",
+      "duration": 621,
+      "clipLabel": "Why admitting an error is difficult",
+      "slug": "episode-03",
+      "video": "videos/iykyd/episode-03.mp4",
+      "poster": "images/iykyd/episode-03.webp",
+      "captions": "videos/iykyd/episode-03.vtt",
+      "source": "https://www.youtube.com/watch?v=GLIOICTRF_o",
+      "dateLabel": "Feb 2025",
+      "media": {
+        "number": 3,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60000/1001",
+        "duration": 74.073317,
+        "bytes": 34077246
+      }
+    },
+    {
+      "number": 4,
+      "era": "awareness",
+      "focus": "Identity in an automated attention economy",
+      "summary": "Identity grows from effort and experience, but it also grows from what we are shown. I move from the constructive side of identity to the ways curated feeds and automated recommendations can steer our choices without much deliberate reflection.",
+      "moments": [
+        {
+          "start": 153,
+          "label": "Building an identity through effort"
+        },
+        {
+          "start": 510,
+          "label": "From curated identities to automated feeds"
+        }
+      ],
+      "clipStart": 509.6,
+      "clipEnd": 573.15,
+      "id": "DppKEpYyb88",
+      "title": "Identity as a function of effort",
+      "date": "20250301",
+      "duration": 791,
+      "clipLabel": "From curated identities to automated feeds",
+      "slug": "episode-04",
+      "video": "videos/iykyd/episode-04.mp4",
+      "poster": "images/iykyd/episode-04.webp",
+      "captions": "videos/iykyd/episode-04.vtt",
+      "source": "https://www.youtube.com/watch?v=DppKEpYyb88",
+      "dateLabel": "Mar 2025",
+      "media": {
+        "number": 4,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60/1",
+        "duration": 63.560998,
+        "bytes": 26596819
+      }
+    },
+    {
+      "number": 5,
+      "era": "awareness",
+      "focus": "An April Fools’ argument about authority",
+      "summary": "An intentionally inverted opening argues that we should stop questioning powerful people. I then reveal the April Fools’ setup and examine how confidence, status, and familiar stories can become substitutes for evidence.",
+      "moments": [
+        {
+          "start": 545,
+          "label": "The April Fools’ performance turns back on itself"
+        },
+        {
+          "start": 632,
+          "label": "Communicating inside a closed feedback loop"
+        }
+      ],
+      "clipStart": 544.6,
+      "clipEnd": 632.1,
+      "id": "DL5eaH7_ckM",
+      "title": "Eat your iron pyrite",
+      "date": "20250401",
+      "duration": 803,
+      "clipLabel": "The April Fools’ performance turns back on itself",
+      "slug": "episode-05",
+      "video": "videos/iykyd/episode-05.mp4",
+      "poster": "images/iykyd/episode-05.webp",
+      "captions": "videos/iykyd/episode-05.vtt",
+      "source": "https://www.youtube.com/watch?v=DL5eaH7_ckM",
+      "dateLabel": "Apr 2025",
+      "media": {
+        "number": 5,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60000/1001",
+        "duration": 87.520083,
+        "bytes": 40201734
+      }
+    },
+    {
+      "number": 6,
+      "era": "awareness",
+      "focus": "Authority, allegiance, and speaking up",
+      "summary": "I compare the release of parental control with the much larger problem of questioning authority. The question is how trust becomes allegiance, and how people can explain what feels wrong without hitting a wall of inherited certainty.",
+      "moments": [
+        {
+          "start": 122,
+          "label": "Questioning authority without losing the relationship"
+        },
+        {
+          "start": 464,
+          "label": "When allegiance becomes a wall"
+        }
+      ],
+      "clipStart": 464,
+      "clipEnd": 512,
+      "id": "2LC-lBtd6Lo",
+      "title": "Mayday Mayday (Mayday)",
+      "date": "20250502",
+      "duration": 512,
+      "clipLabel": "When allegiance becomes a wall",
+      "slug": "episode-06",
+      "video": "videos/iykyd/episode-06.mp4",
+      "poster": "images/iykyd/episode-06.webp",
+      "captions": "videos/iykyd/episode-06.vtt",
+      "source": "https://www.youtube.com/watch?v=2LC-lBtd6Lo",
+      "dateLabel": "May 2025",
+      "media": {
+        "number": 6,
+        "width": 854,
+        "height": 476,
+        "fps": "30/1",
+        "duration": 48.0,
+        "bytes": 4037248
+      }
+    },
+    {
+      "number": 7,
+      "era": "awareness",
+      "focus": "Protecting attention for what matters",
+      "summary": "Focus is about more than finishing a task. I ask what our media, advertising, and everyday rewards train us to care about, and argue for attention that reaches local people, real relationships, and small consistent efforts.",
+      "moments": [
+        {
+          "start": 121,
+          "label": "Attention in a buyer-beware world"
+        },
+        {
+          "start": 526,
+          "label": "What do we actually reward?"
+        }
+      ],
+      "clipStart": 526,
+      "clipEnd": 573.65,
+      "id": "SXSWc-kY2s0",
+      "title": "Basically we are not locked in",
+      "date": "20250602",
+      "duration": 606,
+      "clipLabel": "What do we actually reward?",
+      "slug": "episode-07",
+      "video": "videos/iykyd/episode-07.mp4",
+      "poster": "images/iykyd/episode-07.webp",
+      "captions": "videos/iykyd/episode-07.vtt",
+      "source": "https://www.youtube.com/watch?v=SXSWc-kY2s0",
+      "dateLabel": "Jun 2025",
+      "media": {
+        "number": 7,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60/1",
+        "duration": 47.671995,
+        "bytes": 22047702
+      }
+    },
+    {
+      "number": 8,
+      "era": "awareness",
+      "focus": "Reason, transparency, and room for uncertainty",
+      "summary": "I explore how to stay grounded in evidence while remaining open to unfamiliar possibilities. Transparent systems, healthy skepticism, and flexible reasoning become ways to think about problems too large for any one person to fully grasp.",
+      "moments": [
+        {
+          "start": 30,
+          "label": "Why systems should be understandable"
+        },
+        {
+          "start": 271,
+          "label": "Making room for flexible thinking"
+        }
+      ],
+      "clipStart": 271.35,
+      "clipEnd": 333,
+      "id": "U25lq533-P4",
+      "title": "Rhyme or reason",
+      "date": "20250702",
+      "duration": 751,
+      "clipLabel": "Making room for flexible thinking",
+      "slug": "episode-08",
+      "video": "videos/iykyd/episode-08.mp4",
+      "poster": "images/iykyd/episode-08.webp",
+      "captions": "videos/iykyd/episode-08.vtt",
+      "source": "https://www.youtube.com/watch?v=U25lq533-P4",
+      "dateLabel": "Jul 2025",
+      "media": {
+        "number": 8,
+        "width": 1280,
+        "height": 720,
+        "fps": "60000/1001",
+        "duration": 61.67,
+        "bytes": 13325174
+      }
+    },
+    {
+      "number": 9,
+      "era": "awareness",
+      "focus": "Ambiguity and our information diet",
+      "summary": "I connect uncertainty, the desire for safety, and the appeal of easy answers. The information-diet analogy asks whether we choose what we consume with any of the care we might bring to planning a meal.",
+      "moments": [
+        {
+          "start": 272,
+          "label": "When ambiguity becomes a source of power"
+        },
+        {
+          "start": 400,
+          "label": "Do we plan what we consume?"
+        }
+      ],
+      "clipStart": 399.9,
+      "clipEnd": 430.65,
+      "id": "BISUToPUGSw",
+      "title": "In plain sight",
+      "date": "20250802",
+      "duration": 659,
+      "clipLabel": "Do we plan what we consume?",
+      "slug": "episode-09",
+      "video": "videos/iykyd/episode-09.mp4",
+      "poster": "images/iykyd/episode-09.webp",
+      "captions": "videos/iykyd/episode-09.vtt",
+      "source": "https://www.youtube.com/watch?v=BISUToPUGSw",
+      "dateLabel": "Aug 2025",
+      "media": {
+        "number": 9,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60000/1001",
+        "duration": 30.780067,
+        "bytes": 14359076
+      }
+    },
+    {
+      "number": 10,
+      "era": "awareness",
+      "focus": "The consequences of compelling stories",
+      "summary": "Ghost stories become an analogy for the excitement and fear that persuasive ideas create, especially in technology. I ask how to enjoy possibility while paying attention to the time, trust, and choices those stories take from us.",
+      "moments": [
+        {
+          "start": 151,
+          "label": "The technology sector as a storyteller"
+        },
+        {
+          "start": 188,
+          "label": "Following the consequences of a story"
+        }
+      ],
+      "clipStart": 188.5,
+      "clipEnd": 250.8,
+      "id": "R61_EK2Y0MU",
+      "title": "Ghost stories",
+      "date": "20250901",
+      "duration": 616,
+      "clipLabel": "Following the consequences of a story",
+      "slug": "episode-10",
+      "video": "videos/iykyd/episode-10.mp4",
+      "poster": "images/iykyd/episode-10.webp",
+      "captions": "videos/iykyd/episode-10.vtt",
+      "source": "https://www.youtube.com/watch?v=R61_EK2Y0MU",
+      "dateLabel": "Sep 2025",
+      "media": {
+        "number": 10,
+        "width": 1920,
+        "height": 1080,
+        "fps": "60000/1001",
+        "duration": 62.321995,
+        "bytes": 28712853
+      }
+    },
+    {
+      "number": 11,
+      "era": "awareness",
+      "focus": "Convenience, rural life, and sustainability",
+      "summary": "Time away from the city makes me question the infrastructure and convenience I take for granted. I examine my own assumptions about rural places, the pressure to keep growing, and what allows a community to sustain itself.",
+      "moments": [
+        {
+          "start": 150,
+          "label": "The skills that convenience lets us forget"
+        },
+        {
+          "start": 497,
+          "label": "The impulse to minimize every burden"
+        }
+      ],
+      "clipStart": 497,
+      "clipEnd": 543.7,
+      "id": "j04FSjy4Ds4",
+      "title": "So far so good",
+      "date": "20251002",
+      "duration": 709,
+      "clipLabel": "The impulse to minimize every burden",
+      "slug": "episode-11",
+      "video": "videos/iykyd/episode-11.mp4",
+      "poster": "images/iykyd/episode-11.webp",
+      "captions": "videos/iykyd/episode-11.vtt",
+      "source": "https://www.youtube.com/watch?v=j04FSjy4Ds4",
+      "dateLabel": "Oct 2025",
+      "media": {
+        "number": 11,
+        "width": 854,
+        "height": 480,
+        "fps": "30/1",
+        "duration": 46.718005,
+        "bytes": 7395303
+      }
+    },
+    {
+      "number": 12,
+      "era": "awareness",
+      "focus": "Changing beyond what already works",
+      "summary": "Mutation is my metaphor for breaking out of habits that adaptation alone cannot fix. I ask how people can change without dismissing everything they have learned, and what kind of trust and support makes that possible.",
+      "moments": [
+        {
+          "start": 61,
+          "label": "Habit, adaptation, and the fear of change"
+        },
+        {
+          "start": 751,
+          "label": "Changing without throwing away your past"
+        }
+      ],
+      "clipStart": 751,
+      "clipEnd": 828.5,
+      "id": "NC4q0-cNrrY",
+      "title": "Mutants",
+      "date": "20251102",
+      "duration": 982,
+      "clipLabel": "Changing without throwing away your past",
+      "slug": "episode-12",
+      "video": "videos/iykyd/episode-12.mp4",
+      "poster": "images/iykyd/episode-12.webp",
+      "captions": "videos/iykyd/episode-12.vtt",
+      "source": "https://www.youtube.com/watch?v=NC4q0-cNrrY",
+      "dateLabel": "Nov 2025",
+      "media": {
+        "number": 12,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": 77.510998,
+        "bytes": 22141603
+      }
+    },
+    {
+      "number": 13,
+      "era": "agency",
+      "focus": "Taking the questions into conversation",
+      "summary": "The series moves from solo reflection to interviews about media literacy, information overload, and choice. People describe curating their feeds, protecting their privacy, and finding trustworthy sources; I introduce the idea of an overlay that can help us reflect on a live exchange.",
+      "moments": [
+        {
+          "start": 283,
+          "label": "The first media-literacy interviews"
+        },
+        {
+          "start": 628,
+          "label": "Wanting agency without endless decisions"
+        }
+      ],
+      "clipStart": 628.4,
+      "clipEnd": 664.85,
+      "id": "T9AT4m-4C4E",
+      "title": "What are you scared of?",
+      "date": "20251231",
+      "duration": 1303,
+      "clipLabel": "Wanting agency without endless decisions",
+      "slug": "episode-13",
+      "video": "videos/iykyd/episode-13.mp4",
+      "poster": "images/iykyd/episode-13.webp",
+      "captions": "videos/iykyd/episode-13.vtt",
+      "source": "https://www.youtube.com/watch?v=T9AT4m-4C4E",
+      "dateLabel": "Dec 2025",
+      "media": {
+        "number": 13,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24000/1001",
+        "duration": 36.457007,
+        "bytes": 13514266
+      }
+    },
+    {
+      "number": 14,
+      "era": "agency",
+      "focus": "A reminder to stay present",
+      "summary": "Slouching becomes an analogy for taking the easiest position in a difficult conversation. I explore the possibility of a small haptic reminder, then ask people how curiosity, preparation, and reflecting someone’s words back can help them stay engaged.",
+      "moments": [
+        {
+          "start": 451,
+          "label": "The idea of a tap on the shoulder"
+        },
+        {
+          "start": 708,
+          "label": "Curiosity as a listening practice"
+        }
+      ],
+      "clipStart": 708.1,
+      "clipEnd": 750.25,
+      "id": "1l900gKU0eM",
+      "title": "My back is in pain and I can’t stand it",
+      "date": "20260201",
+      "duration": 964,
+      "clipLabel": "Curiosity as a listening practice",
+      "slug": "episode-14",
+      "video": "videos/iykyd/episode-14.mp4",
+      "poster": "images/iykyd/episode-14.webp",
+      "captions": "videos/iykyd/episode-14.vtt",
+      "source": "https://www.youtube.com/watch?v=1l900gKU0eM",
+      "dateLabel": "Feb 2026",
+      "media": {
+        "number": 14,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 42.166667,
+        "bytes": 7383136
+      }
+    },
+    {
+      "number": 15,
+      "era": "agency",
+      "focus": "Why good solutions fail to travel",
+      "summary": "I borrow transfer learning from robotics to ask why an approach that succeeds in one place can fail elsewhere. Conversations about careers, community, and role models return to the importance of context, access, teaching, and a realistic path into participation.",
+      "moments": [
+        {
+          "start": 9,
+          "label": "A robot leaves the laboratory"
+        },
+        {
+          "start": 815,
+          "label": "A solution needs context and support"
+        }
+      ],
+      "clipStart": 815.4,
+      "clipEnd": 881.5,
+      "id": "qGdJHwmvwoY",
+      "title": "Not everything is just love or war",
+      "date": "20260301",
+      "duration": 1529,
+      "clipLabel": "A solution needs context and support",
+      "slug": "episode-15",
+      "video": "videos/iykyd/episode-15.mp4",
+      "poster": "images/iykyd/episode-15.webp",
+      "captions": "videos/iykyd/episode-15.vtt",
+      "source": "https://www.youtube.com/watch?v=qGdJHwmvwoY",
+      "dateLabel": "Mar 2026",
+      "media": {
+        "number": 15,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": 66.125,
+        "bytes": 30314106
+      }
+    },
+    {
+      "number": 16,
+      "era": "agency",
+      "focus": "Finding a way to speak and act",
+      "summary": "What happens when something feels broken but there is no clear route to change it? Interviews explore vulnerability, collective action, institutional frustration, and the different roles of experience and evidence. I ask how useful knowledge can reach us when we actually need it.",
+      "moments": [
+        {
+          "start": 120,
+          "label": "Remembering an idea when it matters"
+        },
+        {
+          "start": 728,
+          "label": "When complaints have no path into action"
+        }
+      ],
+      "clipStart": 728.2,
+      "clipEnd": 787.8,
+      "id": "NSc5haMd8Ew",
+      "title": "Ouch, that shit hurt",
+      "date": "20260401",
+      "duration": 1998,
+      "clipLabel": "When complaints have no path into action",
+      "slug": "episode-16",
+      "video": "videos/iykyd/episode-16.mp4",
+      "poster": "images/iykyd/episode-16.webp",
+      "captions": "videos/iykyd/episode-16.vtt",
+      "source": "https://www.youtube.com/watch?v=NSc5haMd8Ew",
+      "dateLabel": "Apr 2026",
+      "media": {
+        "number": 16,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24000/1001",
+        "duration": 59.642208,
+        "bytes": 9204816
+      }
+    },
+    {
+      "number": 17,
+      "era": "agency",
+      "focus": "Choosing an information diet",
+      "summary": "I take the information-diet metaphor into a grocery store. Interviews explore convenience, limited choices, purposeful research, and staying connected to people, asking what actually leaves us informed or sustained.",
+      "moments": [
+        {
+          "start": 10,
+          "label": "Why not shop for information?"
+        },
+        {
+          "start": 305,
+          "label": "Information that answers the question"
+        }
+      ],
+      "clipStart": 304.85,
+      "clipEnd": 359.1,
+      "id": "SEzqhD7BPGc",
+      "title": "The grocery store of information",
+      "date": "20260501",
+      "duration": 815,
+      "clipLabel": "Information that answers the question",
+      "slug": "episode-17",
+      "video": "videos/iykyd/episode-17.mp4",
+      "poster": "images/iykyd/episode-17.webp",
+      "captions": "videos/iykyd/episode-17.vtt",
+      "source": "https://www.youtube.com/watch?v=SEzqhD7BPGc",
+      "dateLabel": "May 2026",
+      "media": {
+        "number": 17,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24000/1001",
+        "duration": 54.303542,
+        "bytes": 24918448
+      }
+    },
+    {
+      "number": 18,
+      "era": "agency",
+      "focus": "Who gets heard in a conversation?",
+      "summary": "The first real-time prototype trial accompanies conversations about missed voices, interruptions, and getting someone’s attention. I explore whether a gentle signal and clearer group practices could help people participate without making the exchange feel policed.",
+      "moments": [
+        {
+          "start": 61,
+          "label": "The first real-time prototype trial"
+        },
+        {
+          "start": 158,
+          "label": "When a pause is mistaken for being finished"
+        }
+      ],
+      "clipStart": 158.5,
+      "clipEnd": 213.3,
+      "id": "kI74m7SITUA",
+      "title": "We're driving without mirrors",
+      "date": "20260601",
+      "duration": 1414,
+      "clipLabel": "When a pause is mistaken for being finished",
+      "slug": "episode-18",
+      "video": "videos/iykyd/episode-18.mp4",
+      "poster": "images/iykyd/episode-18.webp",
+      "captions": "videos/iykyd/episode-18.vtt",
+      "source": "https://www.youtube.com/watch?v=kI74m7SITUA",
+      "dateLabel": "Jun 2026",
+      "media": {
+        "number": 18,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": 54.833333,
+        "bytes": 13105647
+      }
+    },
+    {
+      "number": 19,
+      "era": "agency",
+      "focus": "Ownership, privacy, and showing up",
+      "summary": "I bring a watch into the prototype setup and meet people speaking up about 3D-printing policy. The interviews connect privacy and open-source tools to personal motivation: what makes someone move from concern to showing up in person?",
+      "moments": [
+        {
+          "start": 9,
+          "label": "Adding a watch to the prototype"
+        },
+        {
+          "start": 90,
+          "label": "From concern to showing up"
+        }
+      ],
+      "clipStart": 8.5,
+      "clipEnd": 64.2,
+      "id": "TUNlif5HVnk",
+      "title": "Intention is all you need?",
+      "date": "20260701",
+      "duration": 1124,
+      "clipLabel": "Adding a watch to the prototype",
+      "slug": "episode-19",
+      "video": "videos/iykyd/episode-19.mp4",
+      "poster": "images/iykyd/episode-19.webp",
+      "captions": "videos/iykyd/episode-19.vtt",
+      "source": "https://www.youtube.com/watch?v=TUNlif5HVnk",
+      "dateLabel": "Jul 2026",
+      "media": {
+        "number": 19,
+        "width": 1920,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": 55.708333,
+        "bytes": 24709887
+      }
+    },
+    {
+      "number": 20,
+      "era": "agency",
+      "focus": "Staying curious in a space full of choices",
+      "summary": "A museum becomes a way to think about conversation: each person has more to explore than a quick exchange can hold. Visitors describe drawing, following what they love, and making a plan as ways to slow down and give their attention somewhere meaningful.",
+      "moments": [
+        {
+          "start": 45,
+          "label": "Conversations as something worth exploring"
+        },
+        {
+          "start": 361,
+          "label": "Drawing as a way to slow down and connect"
+        }
+      ],
+      "clipStart": 361.3,
+      "clipEnd": 433.8,
+      "id": "SY8vQrFlvog",
+      "title": "Artificial immersion",
+      "date": "20260801",
+      "duration": 833,
+      "clipLabel": "Drawing as a way to slow down and connect",
+      "slug": "episode-20",
+      "video": "videos/iykyd/episode-20.mp4",
+      "poster": "images/iykyd/episode-20.webp",
+      "captions": "videos/iykyd/episode-20.vtt",
+      "source": "https://www.youtube.com/watch?v=SY8vQrFlvog",
+      "dateLabel": "Aug 2026",
+      "media": {
+        "number": 20,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 72.518005,
+        "bytes": 8199666
+      }
+    },
+    {
+      "number": 21,
+      "era": "agency",
+      "focus": "How much can five words hold?",
+      "summary": "I ask people to describe a difficult experience in about five words. Choosing those words becomes part of the conversation, revealing how much emotion and context a short response can carry. The live prototype runs alongside one of the exchanges.",
+      "moments": [
+        {
+          "start": 25,
+          "label": "The five-word challenge"
+        },
+        {
+          "start": 197,
+          "label": "Finding five words together"
+        }
+      ],
+      "clipStart": 197.4,
+      "clipEnd": 286.5,
+      "id": "ua6I0DFg8N8",
+      "title": "Not enough information",
+      "date": "20260901",
+      "duration": 412,
+      "clipLabel": "Finding five words together",
+      "slug": "episode-21",
+      "video": "videos/iykyd/episode-21.mp4",
+      "poster": "images/iykyd/episode-21.webp",
+      "captions": "videos/iykyd/episode-21.vtt",
+      "source": "https://www.youtube.com/watch?v=ua6I0DFg8N8",
+      "dateLabel": "Sep 2026",
+      "media": {
+        "number": 21,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 89.110998,
+        "bytes": 24979530
+      }
+    },
+    {
+      "number": 22,
+      "era": "agency",
+      "focus": "Making room for an unexpected answer",
+      "summary": "A deliberately impatient opening gives way to short exchanges about interests, dislikes, work, and how people feel. The different answers explore how an open invitation can lead somewhere unexpected; the prototype’s transcript and feedback remain visible alongside the conversations.",
+      "moments": [
+        {
+          "start": 22,
+          "label": "An open invitation to talk"
+        },
+        {
+          "start": 102,
+          "label": "Art as a way to express yourself"
+        }
+      ],
+      "clipStart": 101.8,
+      "clipEnd": 122.7,
+      "id": "Ir4QtvsJtm4",
+      "title": "Too slow too fast",
+      "date": "20261001",
+      "duration": 194,
+      "clipLabel": "Art as a way to express yourself",
+      "slug": "episode-22",
+      "video": "videos/iykyd/episode-22.mp4",
+      "poster": "images/iykyd/episode-22.webp",
+      "captions": "videos/iykyd/episode-22.vtt",
+      "source": "https://www.youtube.com/watch?v=Ir4QtvsJtm4",
+      "dateLabel": "Oct 2026",
+      "media": {
+        "number": 22,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 20.917007,
+        "bytes": 5751567
+      }
+    }
+  ]
+}
