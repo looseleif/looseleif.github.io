@@ -1,11 +1,21 @@
 .iykyd-page { max-width:1440px; padding:0 36px; --series-accent:#deddbb; }
 .iykyd-page a:hover { color:#fff; }
 .series-intro { display:grid; grid-template-columns:1fr 1.15fr; align-items:center; gap:60px; padding:32px 0 28px; }
-.series-intro h1 { font-size:clamp(44px,5.2vw,70px); line-height:.99; margin-top:12px; letter-spacing:-.04em; }
+.series-intro h1 { font-size:clamp(34px,3.6vw,49px); line-height:1.08; margin-top:12px; letter-spacing:-.04em; }
 .series-intro h1 em { font-family:Georgia,serif; font-weight:400; color:var(--series-accent); }
 .series-deck .lead { font-size:23px; line-height:1.4; color:#e5e5df; margin-bottom:14px; }
 .series-deck>p:not(.lead) { font-size:15px; max-width:640px; }
 .series-deck .text-link { margin:12px 22px 0 0; }
+.iykyd-products { padding:24px 0 30px; border-top:1px solid var(--line); }
+.products-heading { display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:18px; }
+.products-heading h2 { font-size:27px; }
+.iykyd-product { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:28px; align-items:center; }
+.iykyd-product video { width:100%; height:auto; aspect-ratio:16/9; background:#0c0c0c; }
+.iykyd-product figcaption { font-size:11px; line-height:1.6; margin-top:9px; }
+.product-copy h3 { font-size:42px; margin:8px 0 12px; }
+.product-copy .product-lead { font-size:22px; line-height:1.3; color:#e5e5df; margin-bottom:14px; }
+.product-copy>p:not(.eyebrow):not(.product-lead) { font-size:15px; margin-bottom:12px; }
+.product-copy .text-link { margin-right:20px; }
 .era-map { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border:1px solid #44443d; background:#1a1b19; }
 .era-map>a { padding:20px; border-bottom:0; }
 .era-map>a+a { border-left:1px solid #44443d; }
@@ -78,11 +88,13 @@
  .catalog-heading { align-items:start; flex-direction:column; gap:16px; }
  .site-header nav { gap:16px; }
  .action-next { gap:24px; }
+ .iykyd-product { grid-template-columns:1fr; gap:20px; }
+ .products-heading { align-items:start; flex-direction:column; gap:7px; }
 }
 @media(max-width:600px) {
  .iykyd-page { padding-inline:18px; }
  .series-intro { grid-template-columns:1fr; gap:20px; padding:26px 0; }
- .series-intro h1 { font-size:51px; }
+ .series-intro h1 { font-size:37px; }
  .series-deck .text-link { margin:10px 13px 0 0; font-size:12px; }
  .era-map { grid-template-columns:1fr; }
  .era-map>a { padding:16px; display:grid; grid-template-columns:105px 1fr; gap:5px 12px; }

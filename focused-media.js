@@ -191,6 +191,11 @@
     const composition = compositionFor(slot.dataset.showcaseProject);
     if (composition) slot.replaceWith(composition);
   });
+  // Editorial projects can link straight to their stories and products while
+  // sharing the same natural-size image layout as the media galleries.
+  document.querySelectorAll('[data-static-composition]').forEach(figure => {
+    fitComposition(figure.querySelector('.composition-grid'), figure.dataset.staticComposition);
+  });
   document.querySelectorAll('.system-slide').forEach(slide => {
     const composition = compositionFor(slide.id.replace('system-', ''), true);
     if (!composition) return;

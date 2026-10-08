@@ -2,6 +2,10 @@
   'use strict';
   const video = document.querySelector('#episode-video');
   if (!video) return;
+  const players = [...document.querySelectorAll('video')];
+  players.forEach(player => player.addEventListener('play', () => {
+    players.forEach(other => { if (other !== player) other.pause(); });
+  }));
   const cards = [...document.querySelectorAll('.episode-card')];
   const filters = [...document.querySelectorAll('[data-filter]')];
   const eras = [...document.querySelectorAll('[data-era-select]')];
@@ -29,7 +33,7 @@
     const next = episodes[index];
     if (!next) return;
     current = index;
-    video.pause();
+    players.forEach(player => player.pause());
     error.hidden = true;
     video.poster = next.poster;
     if (next.media) video.style.aspectRatio = `${next.media.width} / ${next.media.height}`;
@@ -92,7 +96,7 @@
   setFilter('awareness');
   video.addEventListener('error', () => { error.hidden = false; });
   video.querySelector('source').addEventListener('error', () => { error.hidden = false; });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach(player => player.pause()); });
   fetch('iykyd-episodes.json?v=77').then(response => {
     if (!response.ok) throw new Error('Episode guide unavailable');
     return response.json();
