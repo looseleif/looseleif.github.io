@@ -1,0 +1,32 @@
+.project-section-nav { display:flex; gap:26px; padding:0 0 18px; font:12px/1.6 var(--mono); }
+.project-section-nav a { padding:8px 0; border-bottom:1px solid #555; }
+#engineering-work,#volunteering { scroll-margin-top:148px; }
+.volunteering-feature { padding:32px 0 24px; border-top:1px solid var(--line); }
+.volunteering-heading { display:flex; align-items:end; justify-content:space-between; gap:28px; margin-bottom:22px; }
+.volunteering-heading h2 { margin-top:9px; font-size:clamp(32px,3.4vw,48px); letter-spacing:-.04em; }
+.volunteering-heading>p { max-width:540px; font-size:16px; line-height:1.65; }
+.volunteering-photos { display:grid; grid-template-columns:1.328fr .753fr 1.328fr; gap:12px; align-items:start; }
+.volunteering-photos figure { margin:0; min-width:0; }
+.volunteering-photos a { display:block; }
+.volunteering-photos img { display:block; width:100%; height:auto; }
+.volunteering-photos figcaption { padding:9px 0 13px; font:11px/1.5 var(--mono); color:#bbb; }
+.volunteering-entries { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:36px; }
+.volunteering-entry { padding:20px 0 22px; border-top:1px solid var(--line); min-width:0; }
+.volunteering-entry .eyebrow { font-size:10px; line-height:1.7; }
+.volunteering-entry h3 { margin:8px 0 10px; font-size:27px; line-height:1.15; letter-spacing:-.025em; }
+.volunteering-entry h3 a { display:flex; gap:16px; justify-content:space-between; align-items:baseline; }
+.volunteering-entry h3 a::after { content:'\2197'; font-size:20px; font-weight:400; color:#aaa; }
+.volunteering-entry h3 a:hover { color:#fff; }
+.volunteering-entry>p:not(.eyebrow) { max-width:610px; font-size:15px; line-height:1.65; }
+.volunteering-feature>.text-link { margin-top:2px; }
+@media(max-width:700px) {
+ .volunteering-heading { display:block; }
+ .volunteering-heading>p { margin-top:14px; font-size:15px; }
+ .volunteering-photos { grid-template-columns:.753fr 1.328fr; gap:6px 10px; }
+ .volunteering-photos figure:first-child { grid-column:1 / -1; }
+ .volunteering-entries { grid-template-columns:1fr; }
+ .volunteering-entry { padding:18px 0; }
+ .volunteering-entry h3 { font-size:25px; }
+ .volunteering-photos figcaption { font-size:10px; }
+ .volunteering-feature { padding-top:24px; }
+}
