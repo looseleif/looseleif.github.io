@@ -2,7 +2,8 @@
   'use strict';
   const video = document.querySelector('#episode-video');
   if (!video) return;
-  const players = [...document.querySelectorAll('video')];
+  const projectDetails = document.querySelector('#iykyd-work');
+  const players = [...projectDetails.querySelectorAll('video')];
   players.forEach(player => player.addEventListener('play', () => {
     players.forEach(other => { if (other !== player) other.pause(); });
   }));
@@ -76,6 +77,10 @@
   }
   function route(scroll = true) {
     const hash = location.hash.slice(1);
+    const target = document.getElementById(hash);
+    if (target && (target === projectDetails || projectDetails.contains(target))) {
+      projectDetails.open = true;
+    }
     if (hash === 'awareness' || hash === 'agency') {
       setFilter(hash);
       show(hash === 'awareness' ? 0 : 12, false);
@@ -87,6 +92,8 @@
       video.pause();
       eras.forEach(a => a.dataset.eraSelect === 'action' ? a.setAttribute('aria-current','true') : a.removeAttribute('aria-current'));
       if (scroll) document.querySelector('#action').scrollIntoView({behavior:'instant'});
+    } else if (target && (target === projectDetails || projectDetails.contains(target)) && scroll) {
+      target.scrollIntoView({behavior:'instant', block:'start'});
     }
   }
   function navigate(hash) {
@@ -94,6 +101,24 @@
     route();
   }
   setFilter('awareness');
+  route(false);
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    if (link.hasAttribute('data-episode') || link.hasAttribute('data-era-select')) return;
+    const target = document.getElementById(link.getAttribute('href').slice(1));
+    if (!target || (target !== projectDetails && !projectDetails.contains(target))) return;
+    link.addEventListener('click', event => {
+      event.preventDefault(); navigate(link.getAttribute('href').slice(1));
+    });
+  });
+  projectDetails.addEventListener('toggle', () => {
+    if (!projectDetails.open) players.forEach(player => player.pause());
+  });
+  document.querySelector('[data-iykyd-close]').addEventListener('click', () => {
+    projectDetails.open = false;
+    history.replaceState(null, '', '#iykyd');
+    projectDetails.querySelector('summary').focus({preventScroll:true});
+    document.querySelector('#iykyd').scrollIntoView({behavior:'instant', block:'start'});
+  });
   video.addEventListener('error', () => { error.hidden = false; });
   video.querySelector('source').addEventListener('error', () => { error.hidden = false; });
   document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach(player => player.pause()); });
