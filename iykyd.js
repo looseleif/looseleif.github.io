@@ -27,7 +27,7 @@
       else link.removeAttribute('aria-current');
     });
     text('#catalog-title', value === 'all' ? 'Every episode, in order' : `The ${value === 'agency' ? 'Agency' : 'Awareness'} era`);
-    text('#catalog-kicker', value === 'all' ? 'THE COMPLETE SERIES / 22 EPISODES' : value === 'agency' ? 'THE CURRENT ERA / CONVERSATIONS & PROTOTYPES' : 'THE FIRST TWELVE / SOLO VIDEOS');
+    text('#catalog-kicker', value === 'all' ? 'THE COMPLETE SERIES / 22 EPISODES' : value === 'agency' ? 'THE CURRENT ERA / CONVERSATIONS & PROTOTYPES' : 'FIGURING IT OUT');
   }
   function show(index, scroll = false) {
     const next = episodes[index];
@@ -97,7 +97,7 @@
   video.addEventListener('error', () => { error.hidden = false; });
   video.querySelector('source').addEventListener('error', () => { error.hidden = false; });
   document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach(player => player.pause()); });
-  fetch('iykyd-episodes.json?v=77').then(response => {
+  fetch('iykyd-episodes.json?v=79').then(response => {
     if (!response.ok) throw new Error('Episode guide unavailable');
     return response.json();
   }).then(data => {
