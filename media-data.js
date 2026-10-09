@@ -1186,13 +1186,13 @@ window.portfolioProjects = [
         "context": "Wearable"
       }
     ],
-    "role": "A Socio product / IYKYD field tests",
+    "role": "Conversation software / IYKYD field tests",
     "paragraphs": [
       "I am developing remorse at Socio as a conversational companion, bringing live transcripts, speaker activity, and prompts into a shared session.",
       "IYKYD recordings document the prototype running in real conversations and the ongoing exploration of mobile and wearable feedback."
     ],
     "presentation": {
-      "field": "Conversation software / A Socio product",
+      "field": "Live transcription / Wearable feedback",
       "contribution": "I am developing remorse at Socio to connect live speech processing, speaker diarization, and conversational cues with mobile and wearable interfaces.",
       "context": [
         [

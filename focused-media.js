@@ -191,7 +191,7 @@
     const composition = compositionFor(slot.dataset.showcaseProject);
     if (composition) slot.replaceWith(composition);
   });
-  // Editorial projects can link straight to their stories and products while
+  // Editorial projects can link straight to their stories and prototypes while
   // sharing the same natural-size image layout as the media galleries.
   document.querySelectorAll('[data-static-composition]').forEach(figure => {
     fitComposition(figure.querySelector('.composition-grid'), figure.dataset.staticComposition);
@@ -229,8 +229,8 @@
     else if (id === 'socio') {
       const diagram = document.createElement('figure');
       diagram.className = 'concept-stage';
-      diagram.setAttribute('aria-label', 'Socio product direction: conversation context, remorse, and wearable feedback');
-      diagram.innerHTML = '<div class="concept-label">PRODUCT DIRECTION</div><div class="concept-wordmark">socio</div><div class="concept-flow"><div><span>INPUT</span><strong>Conversation</strong><small>Context &amp; speaker activity</small></div><div><span>PRODUCT</span><strong>remorse</strong><small>Conversational support</small></div><div><span>COMPANION</span><strong>Wearables</strong><small>Haptics &amp; feedback</small></div></div><figcaption>A product in development, connecting conversation context with wearable feedback.</figcaption>';
+      diagram.setAttribute('aria-label', 'Socio prototypes: conversation context, remorse, and wearable feedback');
+      diagram.innerHTML = '<div class="concept-label">PROTOTYPES IN DEVELOPMENT</div><div class="concept-wordmark">socio</div><div class="concept-flow"><div><span>INPUT</span><strong>Conversation</strong><small>Context &amp; speaker activity</small></div><div><span>SOFTWARE</span><strong>remorse</strong><small>Conversational support</small></div><div><span>COMPANION</span><strong>Wearables</strong><small>Haptics &amp; feedback</small></div></div><figcaption>Conversation software in development, connecting live context with wearable feedback.</figcaption>';
       card.replaceChildren(diagram, copy);
     }
   });
