@@ -7,10 +7,9 @@
   const count = root.querySelector('.feature-count');
   const status = root.querySelector('[data-feature-status]');
   const progress = root.querySelector('.feature-progress');
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const duration = 7500;
   let current = 0, timer, startedAt = 0, elapsed = 0, running = false;
-  let visible = false, paused = reduced.matches, focused = false, suspended = false, touchStart;
+  let visible = false, paused = false, focused = false, suspended = false, touchStart;
 
   controls.hidden = false;
   progress.hidden = false;
@@ -62,8 +61,6 @@
       window.typePortfolioText?.(node);
     });
     if (manual) {
-      paused = true;
-      updatePause();
       status.textContent = slides[current].getAttribute('aria-label');
     }
     warmNext();
@@ -79,10 +76,12 @@
     updatePause();
     schedule();
   });
-  root.addEventListener('focusin', () => { focused = true; schedule(); });
+  // Keep project links steady for keyboard navigation; controls do not stop autoplay.
+  const projectHasFocus = () => !!document.activeElement?.closest('.feature-slide');
+  root.addEventListener('focusin', () => { focused = projectHasFocus(); schedule(); });
   root.addEventListener('focusout', () => {
     queueMicrotask(() => {
-      focused = root.contains(document.activeElement);
+      focused = projectHasFocus();
       schedule();
     });
   });
@@ -102,16 +101,16 @@
     if (Math.abs(dx) > 65 && Math.abs(dx) > Math.abs(dy) * 1.5) show(current + (dx < 0 ? 1 : -1), true);
   }, {passive:true});
   new IntersectionObserver(entries => {
-    visible = entries[0].isIntersecting && entries[0].intersectionRatio >= 0.25;
-    schedule();
-  }, {threshold:0.25}).observe(root);
+    const nextVisible = entries[0].isIntersecting;
+    if (visible !== nextVisible) { visible = nextVisible; schedule(); }
+  }, {threshold:0}).observe(root);
   document.addEventListener('visibilitychange', () => schedule());
-  reduced.addEventListener('change', () => {
-    if (reduced.matches) { paused = true; updatePause(); schedule(); }
-  });
   window.addEventListener('pagehide', () => { suspended = true; schedule(); });
   window.addEventListener('pageshow', event => { if (event.persisted) { suspended = false; schedule(); } });
   root.dataset.current = slides[0].dataset.feature;
   updatePause();
   warmNext();
+  const box = root.getBoundingClientRect();
+  visible = box.width > 0 && box.bottom > 0 && box.top < innerHeight;
+  schedule();
 })();
