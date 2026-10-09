@@ -715,6 +715,8 @@ a:focus-visible,button:focus-visible,select:focus-visible { outline-color:#ddd; 
 @media print { .typed-caret::after { display:none; } }
 /* Keep navigation within reach while reading a project. */
 .site-header { position:sticky; top:0; z-index:20; background:#121212f5; backdrop-filter:blur(14px); }
+.site-header nav { flex-wrap:wrap; }
+.volunteering-referral { padding:20px 0 28px; border-top:1px solid var(--line); scroll-margin-top:150px; }
 html { scroll-padding-top:110px; }
 a:focus-visible,button:focus-visible,select:focus-visible { outline-color:#dedede; }
 nav a:hover { color:#fff; border-bottom-color:#999; }

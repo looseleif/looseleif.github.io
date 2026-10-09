@@ -2803,7 +2803,7 @@ window.portfolioProjects = [
     ],
     "role": "Officer & Mentor",
     "tint": "#191919",
-    "page": "about.html#ieee-photos",
+    "page": "volunteering.html#ieee",
     "paragraphs": [
       "Technical workshops, hands-on builds, and community outreach."
     ],

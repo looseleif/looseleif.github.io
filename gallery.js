@@ -122,7 +122,7 @@
     currentProject = project;
     galleryGroup = link.dataset.galleryGroup || '';
     dialog.dataset.galleryGroup = galleryGroup;
-    dialog.querySelector('.gallery-navigation').hidden = !galleryGroup;
+    dialog.querySelector('.gallery-navigation').hidden = !galleryGroup && !link.hasAttribute('data-gallery-browse');
     index = Number(link.dataset.index || 0);
     seekTime = null;
     const selected = project.media[index];
