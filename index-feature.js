@@ -18,6 +18,22 @@
   count.setAttribute('aria-live', 'off');
   count.textContent = `01 / ${String(slides.length).padStart(2, '0')}`;
 
+  function updateMedia() {
+    slides.forEach((slide, index) => {
+      slide.querySelectorAll('video').forEach(video => {
+        if (index !== current || !visible || paused || focused || suspended || document.hidden) {
+          video.pause();
+          return;
+        }
+        if (!video.hasAttribute('src')) video.src = video.dataset.src;
+        if (video.paused) {
+          video.muted = true;
+          video.play().catch(() => {});
+        }
+      });
+    });
+  }
+
   function schedule(reset = false) {
     clearTimeout(timer);
     if (running) elapsed += performance.now() - startedAt;
@@ -26,6 +42,7 @@
     progress.firstElementChild.style.transform = `scaleX(${Math.min(1, elapsed / duration)})`;
     progress.firstElementChild.style.transition = 'none';
     root.dataset.running = 'false';
+    updateMedia();
     if (!visible || paused || focused || suspended || document.hidden) return;
     const remaining = Math.max(0, duration - elapsed);
     void progress.offsetWidth;
@@ -57,7 +74,7 @@
     });
     root.dataset.current = slides[current].dataset.feature;
     count.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
-    slides[current].querySelectorAll('.feature-copy > p,.feature-copy h2,.feature-link').forEach(node => {
+    slides[current].querySelectorAll('.feature-copy > p,.feature-copy h2,.feature-link,.feature-caption').forEach(node => {
       window.typePortfolioText?.(node);
     });
     if (manual) {
