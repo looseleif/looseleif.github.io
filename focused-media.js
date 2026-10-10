@@ -37,7 +37,7 @@
   // Each composition pairs a project-level view with distinct implementation details.
   const compositions = {
     socio: { layout:'session', picks:[5,4,8], videos:[5,4,8], areas:['hero','detail','context'], labels:['Live transcription','Speaker diarization','Haptic events'], caption:'Live transcription, speaker activity, and haptic feedback during IYKYD field recordings.' },
-    'sync-tank': { layout:'exhibit', picks:[0,5,12], areas:['hero','detail','context'], labels:['Open Sauce 2026','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The Open Sauce exhibit, articulated camera arm and ring light, and aquarium footage with generated captions.' },
+    'sync-tank': { layout:'exhibit', picks:[8,5,12], areas:['hero','detail','context'], labels:['Aquarium & live camera view','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The aquarium and its underwater camera view, the articulated camera arm, and aquarium footage with generated captions.' },
     aggro: { layout:'research', picks:[0,1,2], videos:[31,7,13], areas:['hero','detail','context'], labels:['Robot demonstration','Robot simulation','Search environments'], caption:'Physical robot tests alongside simulation and cluttered search environments.' },
     solar: { layout:'solar', areas:['hero','board','driver'], picks:[0,1,2], labels:['The team & vehicle','Telemetry electronics','Me driving'], caption:'My work with the Solar Vehicle Project: contributing to the team, designing telemetry electronics, and driving the vehicle.' },
     awear: { layout:'wearable', areas:['hero','case','wrist'], picks:[0,1,2], labels:['Assembled sensing board','Sensor enclosure','Wrist-worn prototype'], caption:'The cardiac monitor as built: populated electronics, the sensor opening in the enclosure, and placement on the wrist.' },
@@ -46,7 +46,7 @@
   };
   // Keep the rotating Index easy to read: one main view and two supporting views.
   const indexCompositions = {
-    'sync-tank': { picks:[0,5,12], labels:['Open Sauce 2026','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The Open Sauce exhibit, articulated camera arm and ring light, and aquarium footage with generated captions.' },
+    'sync-tank': { picks:[8,5,12], labels:['Aquarium & live camera view','Camera arm & ring light','SEE SEA TV / Generated captions'], caption:'The aquarium and its underwater camera view, the articulated camera arm, and aquarium footage with generated captions.' },
     aggro: { picks:[0,1,2], videos:[31,7,13] },
     socio: { picks:[5,4,8], videos:[5,4,8], labels:['Live transcription','Speaker diarization','Haptic feedback events'], caption:'Live transcription, separate speaker activity, and haptic feedback events during IYKYD field recordings.' },
     'feedback-loop': { picks:[0,1,3], videos:[17], labels:['Device demonstration','Modules & connectors','Custom electronics'] },
