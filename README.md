@@ -8,7 +8,7 @@ Static personal website published at https://looseleif.github.io/ through GitHub
 - `projects.html`: project previews with curated three-view compositions and continuous demonstrations.
 - `project-*.html`: project descriptions, recordings, and additional photographs.
 - `volunteering.html`: illustrated stories from Maker Faire, Open Sauce, and IEEE, with a brief entry for new Fixit Clinic volunteering.
-- `about.html`: background, printable resume, education, and volunteering.
+- `about.html`: background, professional experience, education, specialties, and printable resume.
 - `socials.html`: contact profiles.
 - `socio/index.html`: remorse, the Socio product, shown through real IYKYD field recordings.
 

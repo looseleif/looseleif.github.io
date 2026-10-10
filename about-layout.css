@@ -9,7 +9,6 @@
 .about-page .experience-row .experience-date { font:12px/1.7 var(--mono); color:#999; margin-top:11px; }
 .about-page .experience-row .experience-location { font:12px/1.7 var(--mono); color:#999; margin:0 0 15px; }
 .about-page .resume-bullets { font-size:15px; line-height:1.8; margin-top:12px; }
-.about-page #volunteering .experience-row>div>p:not(.experience-date):not(.experience-location) { font-size:15px; line-height:1.8; }
 .education-section { scroll-margin-top:24px; }
 .about-page .education-section>h2 { margin-bottom:9px; }
 .education-institution { font-size:16px; color:#bbb; margin-bottom:26px; }
@@ -39,7 +38,7 @@
   .about-page .experience-row { grid-template-columns:180px 1fr; padding:12pt 0; gap:20px; }
   .about-page .experience-row h3 { font-size:13pt; }.about-page .experience-row h4 { font-size:11pt; }
   .about-page .experience-row .experience-date,.about-page .experience-row .experience-location { font-size:9pt; }
-  .about-page .resume-bullets,.about-page #volunteering .experience-row>div>p:not(.experience-date):not(.experience-location) { font-size:10pt; line-height:1.5; }
+  .about-page .resume-bullets { font-size:10pt; line-height:1.5; }
   .about-page .resume-section>h2 { font-size:18pt; }
   .education-list { grid-template-columns:1fr 1fr; gap:20pt; }
   .education-entry { break-inside:avoid; padding-top:10pt; }
