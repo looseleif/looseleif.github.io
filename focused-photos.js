@@ -109,7 +109,7 @@ window.focusedProjectPhotos = {
       "mediaIndex": 25,
       "displaySource": "images/sync-tank/maker-faire-2026-tank-hardware.webp",
       "originalSource": "images/sync-tank/maker-faire-2026-tank-hardware.webp",
-      "caption": "The planted aquarium, camera gantry, articulated arm, and control electronics at Maker Faire 2026.",
+      "caption": "The planted aquarium, camera gantry, articulated arm, and control electronics in the Sync Tank demo setup.",
       "year": "2026",
       "crop": [
         330,
@@ -124,7 +124,7 @@ window.focusedProjectPhotos = {
       "mediaIndex": 26,
       "displaySource": "images/sync-tank/maker-faire-2026-hands-on.webp",
       "originalSource": "images/sync-tank/maker-faire-2026-hands-on.webp",
-      "caption": "A hands-on demonstration of the articulated mechanisms at the Maker Faire 2026 Sync Tank display.",
+      "caption": "A hands-on demonstration of the articulated mechanisms in the Sync Tank demo setup.",
       "year": "2026",
       "crop": [
         0,
