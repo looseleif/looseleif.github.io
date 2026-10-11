@@ -230,6 +230,30 @@ window.portfolioProjects = [
         "context": "Maker Faire 2026",
         "sourceFilename": "PXL_20260927_230555956.mp4",
         "importBatch": "maker-faire-video-2026-10-10"
+      },
+      {
+        "src": "images/sync-tank/maker-faire-2026-tank-hardware.webp",
+        "kind": "image",
+        "width": 1920,
+        "height": 1080,
+        "caption": "The planted aquarium, camera gantry, articulated arm, and control electronics at Maker Faire 2026.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "extractedFrom": "PXL_20260927_230555956.mp4",
+        "timestamp": 9,
+        "importBatch": "2026-10-11-maker-faire-frames"
+      },
+      {
+        "src": "images/sync-tank/maker-faire-2026-hands-on.webp",
+        "kind": "image",
+        "width": 1920,
+        "height": 1080,
+        "caption": "A hands-on demonstration of the articulated mechanisms at the Maker Faire 2026 Sync Tank display.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "extractedFrom": "PXL_20260927_230555956.mp4",
+        "timestamp": 26,
+        "importBatch": "2026-10-11-maker-faire-frames"
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -2597,6 +2621,30 @@ window.portfolioProjects = [
         "context": "Maker Faire 2026",
         "sourceFilename": "PXL_20260927_230555956.mp4",
         "importBatch": "maker-faire-video-2026-10-10"
+      },
+      {
+        "src": "images/sync-tank/maker-faire-2026-tank-hardware.webp",
+        "kind": "image",
+        "width": 1920,
+        "height": 1080,
+        "caption": "The planted aquarium, camera gantry, articulated arm, and control electronics at Maker Faire 2026.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "extractedFrom": "PXL_20260927_230555956.mp4",
+        "timestamp": 9,
+        "importBatch": "2026-10-11-maker-faire-frames"
+      },
+      {
+        "src": "images/sync-tank/maker-faire-2026-hands-on.webp",
+        "kind": "image",
+        "width": 1920,
+        "height": 1080,
+        "caption": "A hands-on demonstration of the articulated mechanisms at the Maker Faire 2026 Sync Tank display.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "extractedFrom": "PXL_20260927_230555956.mp4",
+        "timestamp": 26,
+        "importBatch": "2026-10-11-maker-faire-frames"
       }
     ],
     "role": "Volunteering / Project demonstrations",

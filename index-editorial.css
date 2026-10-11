@@ -21,7 +21,7 @@
 /* Reserve room for the longest title so automatic rotation never moves the directory. */
 .feature-slide[hidden] { display:grid!important; visibility:hidden; pointer-events:none; }
 .feature-media { display:grid; grid-template-columns:var(--feature-columns,1.35fr 1.18fr 1fr); height:clamp(270px,28vw,360px); gap:12px; min-width:0; }
-[data-feature=sync-tank] { --feature-columns:1.777fr .753fr 1.338fr; --support-columns:.753fr 1.338fr; }
+[data-feature=sync-tank] { --feature-columns:1.777fr 1fr 1fr; --support-columns:1fr 1fr; }
 [data-feature=iykyd] { --feature-columns:1.777fr 1.777fr .753fr; --support-columns:1.777fr .753fr; }
 [data-feature=awear] { --feature-columns:1fr 1fr 1fr; }
 [data-feature=solar] { --feature-columns:1.425fr .911fr .911fr; }

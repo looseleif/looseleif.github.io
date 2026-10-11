@@ -7,13 +7,14 @@
   const count = root.querySelector('.feature-count');
   const status = root.querySelector('[data-feature-status]');
   const progress = root.querySelector('.feature-progress');
-  const duration = 7500;
+  const defaultDuration = 7500;
+  const slideDuration = () => Number(slides[current].dataset.featureDuration) || defaultDuration;
   let current = 0, timer, startedAt = 0, elapsed = 0, running = false;
   let visible = false, paused = false, focused = false, suspended = false, touchStart;
 
   controls.hidden = false;
   progress.hidden = false;
-  root.dataset.interval = String(duration);
+  root.dataset.interval = String(slideDuration());
   count.setAttribute('role', 'status');
   count.setAttribute('aria-live', 'off');
   count.textContent = `01 / ${String(slides.length).padStart(2, '0')}`;
@@ -35,6 +36,8 @@
   }
 
   function schedule(reset = false) {
+    const duration = slideDuration();
+    root.dataset.interval = String(duration);
     clearTimeout(timer);
     if (running) elapsed += performance.now() - startedAt;
     running = false;
