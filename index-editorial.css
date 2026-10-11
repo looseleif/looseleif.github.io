@@ -27,7 +27,6 @@
 [data-feature=solar] { --feature-columns:1.425fr .911fr .911fr; }
 [data-feature=electric-drives] { --feature-columns:1.328fr 1.328fr 2.22fr; --support-columns:1.328fr 2.22fr; }
 [data-feature=feedback-loop] { --feature-columns:1fr 1fr 1fr; }
-[data-feature=volunteering] { --feature-columns:1.328fr .753fr 1.328fr; --support-columns:.753fr 1.328fr; }
 .feature-tile { display:grid; grid-template-rows:minmax(0,1fr) auto; min-width:0; min-height:0; }
 .feature-tile img,.feature-tile video,.feature-crop { display:block; width:100%; height:100%; min-height:0; min-width:0; object-fit:contain; }
 .feature-caption { display:block; padding:8px 0 4px; font:10px/1.5 var(--mono); color:#aaa; }
