@@ -218,6 +218,18 @@ window.portfolioProjects = [
         "sourceFilename": "sync3.png",
         "context": "Early Sync Tank prototypes",
         "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "videos/sync-tank/maker-faire-2026-demo.mp4",
+        "poster": "images/sync-tank/previews/maker-faire-2026-display.webp",
+        "kind": "video",
+        "width": 1920,
+        "height": 1080,
+        "caption": "Sync Tank at Maker Faire 2026: aquarium camera feeds, habitat hardware, and a hands-on mechanism demonstration.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "sourceFilename": "PXL_20260927_230555956.mp4",
+        "importBatch": "maker-faire-video-2026-10-10"
       }
     ],
     "role": "Sensing hardware / Software integration",
@@ -2573,6 +2585,18 @@ window.portfolioProjects = [
         "sourceFilename": "make1.png",
         "context": "First Maker Faire presentation",
         "importBatch": "img-2026-10-07"
+      },
+      {
+        "src": "videos/sync-tank/maker-faire-2026-demo.mp4",
+        "poster": "images/sync-tank/previews/maker-faire-2026-display.webp",
+        "kind": "video",
+        "width": 1920,
+        "height": 1080,
+        "caption": "Sync Tank at Maker Faire 2026: aquarium camera feeds, habitat hardware, and a hands-on mechanism demonstration.",
+        "year": "2026",
+        "context": "Maker Faire 2026",
+        "sourceFilename": "PXL_20260927_230555956.mp4",
+        "importBatch": "maker-faire-video-2026-10-10"
       }
     ],
     "role": "Volunteering / Project demonstrations",

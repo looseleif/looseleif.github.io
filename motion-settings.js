@@ -5,7 +5,7 @@
     speed: 1.25,
     overrides: {},
     rateFor(source) {
-      if (source?.startsWith('videos/remorse/')) return 1;
+      if (source?.startsWith('videos/remorse/') || source?.startsWith('videos/sync-tank/')) return 1;
       return (this.overrides[source] ?? window.portfolioSemantics?.[source]?.playbackRate ?? 0.65) * this.speed;
     },
     configure(video, source) {

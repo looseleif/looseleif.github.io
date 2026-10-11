@@ -27,7 +27,7 @@
 .story-links a { font-size:12px; }
 .story-photo { min-width:0; }
 .story-photo>a { display:block; }
-.story-photo img { display:block; width:100%; height:auto; object-fit:contain; }
+.story-photo img,.story-photo video { display:block; width:100%; height:auto; object-fit:contain; }
 .story-photo figcaption { padding-top:8px; font:11px/1.55 var(--mono); color:#aaa; }
 .story-photo figcaption strong { color:#d0d0c8; font-weight:400; }
 .story-pair { display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:28px; }
