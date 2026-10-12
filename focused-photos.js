@@ -134,6 +134,12 @@ window.focusedProjectPhotos = {
         1920,
         1080
       ]
+    },
+    {
+      "mediaIndex": 22,
+      "displaySource": "images/sync-tank/previews/early-automated-feeder.webp",
+      "originalSource": "images/sync-tank/early-automated-feeder.png",
+      "caption": "An early automated feeder and microcontroller mounted above a planted glass bowl."
     }
   ],
   "aggro": [
